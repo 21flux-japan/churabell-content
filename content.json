@@ -1,7 +1,7 @@
 {
   "schema": "nuchi-ping-content",
   "version": 13,
-  "updated": "2026-10-28T19:00:00+09:00",
+  "updated": "2026-10-28T19:30:00+09:00",
   "example_data": true,
   "notes": "EXAMPLE DATA shipped with ChuraBell (formerly Nuchi Ping) v0.8. Replace with your own. Events are illustrative; place hours/fees need verification. RESTAURANTS (v0.18.0): all listed restaurants are REAL, from official chain store locators / official shop pages and OCVB okinawastory.jp gourmet pages (docs/restaurants_research.md). Fictional restaurant examples removed. example_data remains true because bundled events (and a few other example items) are still illustrative. Featured (PR) flags are examples. Kukuru Kids Play Dome is a FICTIONAL place. BEACHES (v0.10.0, schema 9): all 80 beaches are REAL, from official sources (OCVB VISIT OKINAWA JAPAN beach information and okinawastory.jp, municipalities, tourism associations, operators) checked 2026-10-22 (docs/beaches_research.md). The `beach` box (toilets, lifeguard, showers, jellyfish net, swimming season) only holds facts an official source states — a missing key means not confirmed, not \"no\". Korean beach texts are own translations (review deferred). Coordinates from OCVB, checked against OpenStreetMap beach/coastline data. MEDICAL (v0.9.2): medical facilities, phone_lines and kids_rotation are REAL, checked against official sources on 2026-10-21 (docs/medical_research.md); re-check at least every 3 months. Korean (_ko) medical texts are own translations and NEED NATIVE REVIEW. Coordinates geocoded from the official addresses (GSI). Holidays: Cabinet Office list 2026–2027. Korean/German (_ko/_de) texts on a few items are a demo (own translations). All structured `parking` boxes (lots, fees, spaces, stops, walk times, shuttles, closures) are ILLUSTRATIVE EXAMPLES — check with the organiser/venue before publishing. Kadena Fall Fest dates (Nov 7–8) and Sunset Beach Fest are EXAMPLES. Entry & ID (`entry`) on Kadena Fall Fest and Flightline Fair is EXAMPLE data modelled on public notices for Kadena America Fest and the MCAS Futenma Flight Line Fair (see entry.sources) — both events are fictional examples; re-check the organiser's notice before publishing. ISLANDS (v0.9.4, schema 8): island clinics and the islands list are REAL, from official pages checked 2026-10-21 (docs/islands_medical_research.md); clinic English names are our translations; clinic addresses/coordinates left out (district-level only).",
   "notices": [
@@ -37110,6 +37110,281 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료"
+    },
+    {
+      "id": "donkey-2231",
+      "name_en": "Bikkuri Donkey Ryubo Amaku",
+      "name_ja": "びっくりドンキー りうぼう天久店",
+      "name_ko": "빗쿠리동키 리우보우 天久",
+      "cuisine": "family",
+      "area": "Naha",
+      "locality_en": "Naha",
+      "locality_ja": "那覇",
+      "locality_ko": "나하",
+      "lat": 26.229254,
+      "lng": 127.691176,
+      "price_range": 2,
+      "hours_en": "9:00–00:00 (LO 23:30); morning 9:00–11:00; lunch 10:00–17:00",
+      "hours_ja": "9:00〜深夜0:00（LO 23:30）；モーニング9:00〜11:00；ランチ10:00〜17:00",
+      "hours_ko": "9:00–00:00 (LO 23:30); 모닝 9:00–11:00; 런치 10:00–17:00",
+      "payment": "card_ok",
+      "english_menu": false,
+      "indoor": true,
+      "kids": {
+        "kids_friendly": true,
+        "kids_menu": true,
+        "high_chairs": false,
+        "stroller_access": false,
+        "play_corner": false,
+        "nursing_changing": true
+      },
+      "menu": [
+        {
+          "name_en": "Bu-chan's kids lunch",
+          "name_ja": "ぶ〜ちゃんのおこさまランチ",
+          "name_ko": "부짱 어린이 런치",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids curry",
+          "name_ja": "おこさまカレー",
+          "name_ko": "어린이 카레",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids spaghetti",
+          "name_ja": "おこさまスパゲティ",
+          "name_ko": "어린이 스파게티",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids zangi",
+          "name_ja": "おこさまザンギ",
+          "name_ko": "어린이 잔기",
+          "is_kids": true
+        }
+      ],
+      "phone": "098-863-1029",
+      "last_checked": "2026-10-28",
+      "source": "Bikkuri Donkey official shop page (bikkuri-donkey.com)",
+      "url": "https://www.bikkuri-donkey.com/shop/shop_2231/",
+      "desc_en": "Hamburg-steak family restaurant (Ryubo-operated in Okinawa). Hours, parking and kids menu from the official shop page. Kids menu includes Bu-chan kids lunch, kids curry, kids spaghetti and kids zangi.",
+      "desc_ja": "ハンバーグのファミリーレストラン（沖縄はりうぼう運営）。公式店舗ページの営業時間・駐車場・おこさまメニュー。ぶ〜ちゃんのおこさまランチ、おこさまカレー、おこさまスパゲティ、おこさまザンギなど。",
+      "desc_ko": "함버그 패밀리 레스토랑(오키나와는 리우보우 운영). 공식 매장 페이지의 영업시간·주차·어린이 메뉴.",
+      "example": false,
+      "parking": {
+        "type": "free",
+        "spaces": 1000
+      },
+      "parking_en": "1,000 shared spaces, free",
+      "parking_ja": "駐車場1,000台共用・無料",
+      "parking_ko": "공용 1,000대, 무료"
+    },
+    {
+      "id": "donkey-2232",
+      "name_en": "Bikkuri Donkey Hamby Chatan",
+      "name_ja": "びっくりドンキー ハンビー北谷店",
+      "name_ko": "빗쿠리동키 한비 北谷",
+      "cuisine": "family",
+      "area": "Chatan",
+      "locality_en": "Chatan",
+      "locality_ja": "北谷",
+      "locality_ko": "차탄",
+      "lat": 26.30432,
+      "lng": 127.762016,
+      "price_range": 2,
+      "hours_en": "9:00–00:00 (LO 23:30); morning 9:00–11:00; lunch 10:00–17:00",
+      "hours_ja": "9:00〜深夜0:00（LO 23:30）；モーニング9:00〜11:00；ランチ10:00〜17:00",
+      "hours_ko": "9:00–00:00 (LO 23:30); 모닝 9:00–11:00; 런치 10:00–17:00",
+      "payment": "card_ok",
+      "english_menu": false,
+      "indoor": true,
+      "kids": {
+        "kids_friendly": true,
+        "kids_menu": true,
+        "high_chairs": false,
+        "stroller_access": false,
+        "play_corner": false,
+        "nursing_changing": true
+      },
+      "menu": [
+        {
+          "name_en": "Bu-chan's kids lunch",
+          "name_ja": "ぶ〜ちゃんのおこさまランチ",
+          "name_ko": "부짱 어린이 런치",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids curry",
+          "name_ja": "おこさまカレー",
+          "name_ko": "어린이 카레",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids spaghetti",
+          "name_ja": "おこさまスパゲティ",
+          "name_ko": "어린이 스파게티",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids zangi",
+          "name_ja": "おこさまザンギ",
+          "name_ko": "어린이 잔기",
+          "is_kids": true
+        }
+      ],
+      "phone": "098-936-4129",
+      "last_checked": "2026-10-28",
+      "source": "Bikkuri Donkey official shop page (bikkuri-donkey.com)",
+      "url": "https://www.bikkuri-donkey.com/shop/shop_2232/",
+      "desc_en": "Hamburg-steak family restaurant (Ryubo-operated in Okinawa). Hours, parking and kids menu from the official shop page. Kids menu includes Bu-chan kids lunch, kids curry, kids spaghetti and kids zangi.",
+      "desc_ja": "ハンバーグのファミリーレストラン（沖縄はりうぼう運営）。公式店舗ページの営業時間・駐車場・おこさまメニュー。ぶ〜ちゃんのおこさまランチ、おこさまカレー、おこさまスパゲティ、おこさまザンギなど。",
+      "desc_ko": "함버그 패밀리 레스토랑(오키나와는 리우보우 운영). 공식 매장 페이지의 영업시간·주차·어린이 메뉴.",
+      "example": false,
+      "parking": {
+        "type": "free",
+        "spaces": 55
+      },
+      "parking_en": "55 spaces, free",
+      "parking_ja": "駐車場55台・無料",
+      "parking_ko": "55대, 무료"
+    },
+    {
+      "id": "donkey-2233",
+      "name_en": "Bikkuri Donkey Ashibinaa Toyosaki",
+      "name_ja": "びっくりドンキー あしびなー豊崎店",
+      "name_ko": "빗쿠리동키 아시비나 豊崎",
+      "cuisine": "family",
+      "area": "Tomigusuku",
+      "locality_en": "Tomigusuku",
+      "locality_ja": "豊見城",
+      "locality_ko": "도미구스쿠",
+      "lat": 26.158782,
+      "lng": 127.658606,
+      "price_range": 2,
+      "hours_en": "9:00–00:00 (LO 23:30); morning 9:00–11:00; lunch 10:00–17:00",
+      "hours_ja": "9:00〜深夜0:00（LO 23:30）；モーニング9:00〜11:00；ランチ10:00〜17:00",
+      "hours_ko": "9:00–00:00 (LO 23:30); 모닝 9:00–11:00; 런치 10:00–17:00",
+      "payment": "card_ok",
+      "english_menu": false,
+      "indoor": true,
+      "kids": {
+        "kids_friendly": true,
+        "kids_menu": true,
+        "high_chairs": false,
+        "stroller_access": false,
+        "play_corner": false,
+        "nursing_changing": true
+      },
+      "menu": [
+        {
+          "name_en": "Bu-chan's kids lunch",
+          "name_ja": "ぶ〜ちゃんのおこさまランチ",
+          "name_ko": "부짱 어린이 런치",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids curry",
+          "name_ja": "おこさまカレー",
+          "name_ko": "어린이 카레",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids spaghetti",
+          "name_ja": "おこさまスパゲティ",
+          "name_ko": "어린이 스파게티",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids zangi",
+          "name_ja": "おこさまザンギ",
+          "name_ko": "어린이 잔기",
+          "is_kids": true
+        }
+      ],
+      "phone": "098-851-4029",
+      "last_checked": "2026-10-28",
+      "source": "Bikkuri Donkey official shop page (bikkuri-donkey.com)",
+      "url": "https://www.bikkuri-donkey.com/shop/shop_2233/",
+      "desc_en": "Hamburg-steak family restaurant (Ryubo-operated in Okinawa). Hours, parking and kids menu from the official shop page. Kids menu includes Bu-chan kids lunch, kids curry, kids spaghetti and kids zangi.",
+      "desc_ja": "ハンバーグのファミリーレストラン（沖縄はりうぼう運営）。公式店舗ページの営業時間・駐車場・おこさまメニュー。ぶ〜ちゃんのおこさまランチ、おこさまカレー、おこさまスパゲティ、おこさまザンギなど。",
+      "desc_ko": "함버그 패밀리 레스토랑(오키나와는 리우보우 운영). 공식 매장 페이지의 영업시간·주차·어린이 메뉴.",
+      "example": false,
+      "parking": {
+        "type": "free"
+      },
+      "parking_en": "Parking available, free",
+      "parking_ja": "駐車場あり・無料",
+      "parking_ko": "주차 가능, 무료"
+    },
+    {
+      "id": "donkey-2234",
+      "name_en": "Bikkuri Donkey Koza Matsumoto",
+      "name_ja": "びっくりドンキー コザ松本店",
+      "name_ko": "빗쿠리동키 코자 松本",
+      "cuisine": "family",
+      "area": "Okinawa City",
+      "locality_en": "Okinawa City",
+      "locality_ja": "沖縄市",
+      "locality_ko": "오키나와시",
+      "lat": 26.3525753,
+      "lng": 127.8229101,
+      "price_range": 2,
+      "hours_en": "9:00–00:00 (LO 23:30); morning 9:00–11:00; lunch 10:00–17:00",
+      "hours_ja": "9:00〜深夜0:00（LO 23:30）；モーニング9:00〜11:00；ランチ10:00〜17:00",
+      "hours_ko": "9:00–00:00 (LO 23:30); 모닝 9:00–11:00; 런치 10:00–17:00",
+      "payment": "card_ok",
+      "english_menu": false,
+      "indoor": true,
+      "kids": {
+        "kids_friendly": true,
+        "kids_menu": true,
+        "high_chairs": false,
+        "stroller_access": false,
+        "play_corner": false,
+        "nursing_changing": true
+      },
+      "menu": [
+        {
+          "name_en": "Bu-chan's kids lunch",
+          "name_ja": "ぶ〜ちゃんのおこさまランチ",
+          "name_ko": "부짱 어린이 런치",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids curry",
+          "name_ja": "おこさまカレー",
+          "name_ko": "어린이 카레",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids spaghetti",
+          "name_ja": "おこさまスパゲティ",
+          "name_ko": "어린이 스파게티",
+          "is_kids": true
+        },
+        {
+          "name_en": "Kids zangi",
+          "name_ja": "おこさまザンギ",
+          "name_ko": "어린이 잔기",
+          "is_kids": true
+        }
+      ],
+      "phone": "098-923-0829",
+      "last_checked": "2026-10-28",
+      "source": "Bikkuri Donkey official shop page (bikkuri-donkey.com)",
+      "url": "https://www.bikkuri-donkey.com/shop/shop_2234/",
+      "desc_en": "Hamburg-steak family restaurant (Ryubo-operated in Okinawa). Hours, parking and kids menu from the official shop page. Kids menu includes Bu-chan kids lunch, kids curry, kids spaghetti and kids zangi. Official facilities list a smoking room.",
+      "desc_ja": "ハンバーグのファミリーレストラン（沖縄はりうぼう運営）。公式店舗ページの営業時間・駐車場・おこさまメニュー。ぶ〜ちゃんのおこさまランチ、おこさまカレー、おこさまスパゲティ、おこさまザンギなど。 公式設備に喫煙ルームあり。",
+      "desc_ko": "함버그 패밀리 레스토랑(오키나와는 리우보우 운영). 공식 매장 페이지의 영업시간·주차·어린이 메뉴.",
+      "example": false,
+      "parking": {
+        "type": "free",
+        "spaces": 49
+      },
+      "parking_en": "49 spaces, free",
+      "parking_ja": "駐車場49台・無料",
+      "parking_ko": "49대, 무료"
     }
   ],
   "medical": [
