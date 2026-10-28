@@ -16,6 +16,8 @@ CURRENT_VERSION = 13
 # audio_guide, visit_time_*, free_basis). Older 0.14 apps ignore the unknown key; do NOT bump version for museum alone.
 # v0.16.0 keeps schema 13 and adds optional "activity" (setting, water, booking, age/height_limit_*, duration_*,
 # season_*, includes_*, kids_ok, free_basis). Older apps ignore the unknown key; do NOT bump version for activity alone.
+# v0.17.0 keeps schema 13 and adds optional "viewpoint" (views[], sunset/sunrise/night, access drive_up|short_walk|hike,
+# walk_time_*, free_basis). Older apps ignore the unknown key; do NOT bump version for viewpoint alone.
 # v0.13.0 (schema 12): parks & gardens — optional "park" object on places (kind = public / private; toilets / playground /
 # bbq / pets = true/false only when an official source says so; highlight_* text; free_basis). Missing key = not confirmed.
 # Every parks_gardens place must have Free or a fee. park.free_basis:
@@ -631,9 +633,60 @@ def validate(root, today=None):
             if not isinstance(p.get("activity"), dict) or not p["activity"].get("setting"):
                 err(w, 'activities need activity.setting (indoor / outdoor / both)')
 
-        researched = cat in ("beaches", "castles") or (cat == "shrines_temples" and v11) or (cat == "parks_gardens" and v12) or (in_kids and v13) or (in_museums and v13) or (in_activities and v13)
+
+        # v0.17.0 (schema 13 additive): viewpoint facts
+        VIEWPOINT_VIEWS = {"sea", "city", "cliffs", "islands", "forest", "bridge"}
+        VIEWPOINT_ACCESS = {"drive_up", "short_walk", "hike"}
+        VIEWPOINT_FREE_BASES = {"official_free", "municipal_free", "permanent_free", "public_park", "open_lookout"}
+        VIEWPOINT_BOOLS = ("sunset", "sunrise", "night")
+        VIEWPOINT_TEXTS = ("walk_time",)
+        if "viewpoint" in p and p["viewpoint"] is not None:
+            vo = p["viewpoint"]
+            if not isinstance(vo, dict): err(w, 'viewpoint must be an object like {"views": ["sea"], "access": "drive_up"}')
+            else:
+                check_langs(vo, w + " viewpoint")
+                if "views" in vo:
+                    vs = vo["views"]
+                    if not isinstance(vs, list): err(w, 'viewpoint.views must be a list of short tags')
+                    else:
+                        for v in vs:
+                            if not isinstance(v, str) or v.strip().lower() not in VIEWPOINT_VIEWS:
+                                err(w, f'viewpoint.views entry must be one of {sorted(VIEWPOINT_VIEWS)}')
+                if "access" in vo and vo["access"] not in VIEWPOINT_ACCESS:
+                    err(w, f'viewpoint.access must be one of {sorted(VIEWPOINT_ACCESS)}')
+                for k in VIEWPOINT_BOOLS:
+                    if k in vo and not isinstance(vo[k], bool): err(w, f'viewpoint.{k} must be true or false — leave it out when not confirmed (never "unknown")')
+                if "free_basis" in vo:
+                    fb = vo["free_basis"]
+                    if not isinstance(fb, str) or not fb.strip(): err(w, 'viewpoint.free_basis must be a non-empty string')
+                    elif fb.strip().lower() not in VIEWPOINT_FREE_BASES:
+                        warn(w, f'viewpoint.free_basis "{fb}" is not one of {sorted(VIEWPOINT_FREE_BASES)} — prefer those')
+                known = set(VIEWPOINT_BOOLS) | {"views", "access", "free_basis"} | {f"{tx}_{l}" for tx in VIEWPOINT_TEXTS for l in ("en", "ja", "ko", "de")}
+                for k in vo:
+                    if k not in known: warn(w, f'viewpoint: unknown key "{k}" (ignored)')
+                for tx in VIEWPOINT_TEXTS:
+                    if (vo.get(tx + "_ja") or vo.get(tx + "_ko")) and not vo.get(tx + "_en"): warn(w, f"viewpoint.{tx}_en missing (English users see nothing)")
+                    if vo.get(tx + "_en") and not vo.get(tx + "_ja"): warn(w, f"viewpoint.{tx}_ja missing")
+                if not any(k in vo for k in list(VIEWPOINT_BOOLS) + ["views", "access", "free_basis"]) and not any(vo.get(f"{tx}_{l}") for tx in VIEWPOINT_TEXTS for l in ("en", "ja")):
+                    warn(w, "viewpoint object is empty — leave it out")
+                if not v13: warn(w, f'"viewpoint" needs "version" 13 (now {version}) — older apps ignore it')
+        in_viewpoints = cat == "viewpoints" or (isinstance(also, list) and "viewpoints" in [str(x).strip().lower() for x in also])
+        if in_viewpoints and v13 and not p.get("example"):
+            if not p.get("free") and not any(p.get(f"fee_{l}") for l in ("en", "ja")):
+                err(w, 'Viewpoints places need a price: free: true (with viewpoint.free_basis) or a confirmed fee_en / fee_ja — never guess')
+            if p.get("free"):
+                vo = p.get("viewpoint") if isinstance(p.get("viewpoint"), dict) else {}
+                if not (vo and vo.get("free_basis")) and not any(p.get(f"fee_{l}") for l in ("en", "ja")):
+                    err(w, 'free: true on a viewpoint needs viewpoint.free_basis (official_free / public_park / open_lookout / …) or a fee_* reason text — never guess')
+            if not isinstance(p.get("viewpoint"), dict) or not p["viewpoint"].get("access"):
+                err(w, 'viewpoints need viewpoint.access (drive_up / short_walk / hike)')
+            if not isinstance(p.get("viewpoint"), dict) or not p["viewpoint"].get("views"):
+                err(w, 'viewpoints need viewpoint.views (non-empty list of sea / city / cliffs / islands / forest / bridge)')
+
+
+        researched = cat in ("beaches", "castles") or (cat == "shrines_temples" and v11) or (cat == "parks_gardens" and v12) or (in_kids and v13) or (in_museums and v13) or (in_activities and v13) or (in_viewpoints and v13)
         if researched and not p.get("example"):
-            kind = {"beaches": "beach", "castles": "castle", "parks_gardens": "park", "museums": "museum", "kids": "family", "activities": "activity"}.get(cat, "shrine")
+            kind = {"beaches": "beach", "castles": "castle", "parks_gardens": "park", "museums": "museum", "kids": "family", "activities": "activity", "viewpoints": "viewpoint"}.get(cat, "shrine")
             if not p.get("source"): err(w, f"{cat} need a source (official pages)")
             if "last_checked" not in p: warn(w, f'no last_checked date ("YYYY-MM-DD") for this {kind}')
             if any(str(v).strip().lower() in ("unknown", "不明", "알 수 없음") for k, v in p.items() if re.fullmatch(r"(fee|parking|hours)_[a-z]+", k)):

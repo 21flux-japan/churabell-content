@@ -1,7 +1,7 @@
 {
   "schema": "nuchi-ping-content",
   "version": 13,
-  "updated": "2026-10-28T17:00:00+09:00",
+  "updated": "2026-10-28T17:30:00+09:00",
   "example_data": true,
   "notes": "EXAMPLE DATA shipped with ChuraBell (formerly Nuchi Ping) v0.8. Replace with your own. Events are illustrative; place hours/fees need verification. All restaurants are FICTIONAL examples (names, menus, prices, phone numbers invented). Featured (PR) flags are examples. Kukuru Kids Play Dome is a FICTIONAL place. BEACHES (v0.10.0, schema 9): all 80 beaches are REAL, from official sources (OCVB VISIT OKINAWA JAPAN beach information and okinawastory.jp, municipalities, tourism associations, operators) checked 2026-10-22 (docs/beaches_research.md). The `beach` box (toilets, lifeguard, showers, jellyfish net, swimming season) only holds facts an official source states — a missing key means not confirmed, not \"no\". Korean beach texts are own translations (review deferred). Coordinates from OCVB, checked against OpenStreetMap beach/coastline data. MEDICAL (v0.9.2): medical facilities, phone_lines and kids_rotation are REAL, checked against official sources on 2026-10-21 (docs/medical_research.md); re-check at least every 3 months. Korean (_ko) medical texts are own translations and NEED NATIVE REVIEW. Coordinates geocoded from the official addresses (GSI). Holidays: Cabinet Office list 2026–2027. Korean/German (_ko/_de) texts on a few items are a demo (own translations). All structured `parking` boxes (lots, fees, spaces, stops, walk times, shuttles, closures) are ILLUSTRATIVE EXAMPLES — check with the organiser/venue before publishing. Kadena Fall Fest dates (Nov 7–8) and Sunset Beach Fest are EXAMPLES. Entry & ID (`entry`) on Kadena Fall Fest and Flightline Fair is EXAMPLE data modelled on public notices for Kadena America Fest and the MCAS Futenma Flight Line Fair (see entry.sources) — both events are fictional examples; re-check the organiser's notice before publishing. ISLANDS (v0.9.4, schema 8): island clinics and the islands list are REAL, from official pages checked 2026-10-21 (docs/islands_medical_research.md); clinic English names are our translations; clinic addresses/coordinates left out (district-level only).",
   "notices": [
@@ -1473,24 +1473,47 @@
       "title_en": "Cape Manzamo",
       "title_ja": "万座毛",
       "title_kana": "まんざもう",
+      "title_ko": "만자모",
       "category": "viewpoints",
       "area": "Onna",
-      "lat": 26.505,
-      "lng": 127.8506,
-      "desc_en": "Elephant-trunk shaped cliff with a meadow on top and clear water below. Great at sunset.",
-      "desc_ja": "象の鼻の形をした断崖。夕日の名所です。",
-      "hours_en": "Approx. 8:00–19:00 (seasonal)",
-      "hours_ja": "8:00〜19:00頃（季節により変動）",
-      "fee_en": "Approx. ¥100 adults",
-      "fee_ja": "大人100円程度",
+      "island": "okinawa",
+      "lat": 26.5045,
+      "lng": 127.8503,
+      "desc_en": "Elephant-trunk limestone cliff about 20 m high with a grassy plain on top. Classic Onna lookout; the official site notes beautiful sunsets over the East China Sea. Viewing area open until sunset.",
+      "desc_ja": "高さ約20mの象の鼻形の石灰岩の断崖と、その上に広がる草原。恩納村の代表的な展望地で、公式でも東シナ海に沈む夕日が美しいと案内。観覧は日没まで。",
+      "desc_ko": "높이 약 20m의 코끼리 코 모양 석회암 절벽과 그 위 초원. 온나촌의 대표 전망지로, 공식 안내에서도 동중국해 일몰이 아름답다고 합니다. 관람은 일몰까지.",
+      "hours_en": "Facility Mar–Oct 8:00–20:00 · Nov–Feb 8:00–19:00 · cliff viewing 8:00–sunset · open every day (may close in typhoons)",
+      "hours_ja": "施設 3〜10月 8:00〜20:00・11〜2月 8:00〜19:00・観覧エリア 8:00〜日没・年中無休（台風等で休館の場合あり）",
+      "hours_ko": "시설 3~10월 8:00~20:00 · 11~2월 8:00~19:00 · 관람 구역 8:00~일몰 · 연중무휴(태풍 시 휴관 가능)",
+      "fee_en": "Cliff viewing ¥100 per person (preschool free) · shops and free observation deck inside the facility free",
+      "fee_ja": "観覧エリア お一人様100円（未就学児無料）・施設内ショップ・無料展望デッキは無料",
+      "fee_ko": "관람 구역 1인 100엔(미취학 아동 무료) · 시설 내 상점·무료 전망 데크는 무료",
       "free": false,
-      "parking_en": "Paid parking",
-      "parking_ja": "有料駐車場",
+      "parking_en": "Free parking — Lot 1 about 97 cars + 13 buses; Lot 2 about 218 cars (bus parking by advance booking)",
+      "parking_ja": "無料駐車場 — 第一 乗用車約97台・バス13台、第二 乗用車約218台（バスは事前予約）",
+      "parking_ko": "무료 주차장 — 제1 약 97대+버스 13대, 제2 약 218대(버스는 사전 예약)",
+      "source": "manzamo.jp (Manzamo Co. — designated manager) · Go to ONNA (Onna Tourism Association)",
+      "url": "https://www.manzamo.jp/manzamou.php",
+      "sources": [
+        "https://www.manzamo.jp/manzamou.php",
+        "https://goto-onna.com/facility/manzamo/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "sunset": true,
+        "access": "short_walk",
+        "walk_time_en": "Short walk from the free car parks to the viewing paths and decks",
+        "walk_time_ja": "無料駐車場から観覧遊歩道・デッキまで短い徒歩",
+        "walk_time_ko": "무료 주차장에서 관람 산책로·데크까지 짧은 도보"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
       "etiquette": [],
       "tags": [],
-      "needs_verification": true,
-      "source": "ChuraBell example data — Hours/fees are approximate and need verification before you go.",
-      "url": "",
       "image": null
     },
     {
@@ -1537,7 +1560,8 @@
         "https://www.busena-marinepark.com/"
       ],
       "also_in": [
-        "kids"
+        "kids",
+        "viewpoints"
       ],
       "activity": {
         "setting": "outdoor",
@@ -1560,6 +1584,13 @@
         "ages_ko": "어린이 요금 4세~중학생 · 가족형 해중공원",
         "setting": "outdoor",
         "under_6": true
+      },
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands"
+        ],
+        "access": "drive_up"
       }
     },
     {
@@ -3444,9 +3475,9 @@
       "island": "okinawa",
       "lat": 26.64992,
       "lng": 127.85612,
-      "desc_en": "Long natural beach on Sesoko Island (Motobu), reached by bridge. Fireworks, camping and BBQ are not allowed.",
-      "desc_ja": "橋でつながる本部町瀬底島の天然ビーチ。花火・キャンプ・バーベキューは禁止です。",
-      "desc_ko": "다리로 연결된 모토부초 세소코섬의 자연 해변입니다. 불꽃놀이·캠핑·바비큐는 금지입니다.",
+      "desc_en": "Long natural beach on Sesoko Island (Motobu), reached by Sesoko Bridge — west-facing sunset over the sea and islands. Fireworks, camping and BBQ are not allowed.",
+      "desc_ja": "橋でつながる本部町瀬底島の天然ビーチ。橋と島々を望む西向きの夕日スポット。花火・キャンプ・バーベキューは禁止です。",
+      "desc_ko": "다리로 연결된 모토부초 세소코섬의 자연 해변. 다리와 섬을 바라보는 서쪽 일몰 스폿. 불꽃놀이·캠핑·바비큐는 금지입니다.",
       "fee_en": "Free",
       "fee_ja": "無料",
       "fee_ko": "무료",
@@ -3474,13 +3505,26 @@
       "source": "OCVB (Okinawa Convention & Visitors Bureau) · sesokobeach.jp",
       "url": "https://visitokinawajapan.com/discover/beach-information/sesoko-beach/",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://visitokinawajapan.com/discover/beach-information/sesoko-beach/",
         "https://www.okinawastory.jp/spot/1108",
         "https://www.sesokobeach.jp/"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands",
+          "bridge"
+        ],
+        "sunset": true,
+        "access": "drive_up",
+        "free_basis": "open_lookout"
+      }
     },
     {
       "id": "beach-minna",
@@ -4394,12 +4438,24 @@
       "source": "OCVB (Okinawa Convention & Visitors Bureau)",
       "url": "https://visitokinawajapan.com/discover/beach-information/zanpa-beach/",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://visitokinawajapan.com/discover/beach-information/zanpa-beach/",
         "https://www.okinawastory.jp/spot/600006167"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "sunset": true,
+        "access": "drive_up",
+        "free_basis": "open_lookout"
+      }
     },
     {
       "id": "beach-nirai",
@@ -4575,13 +4631,24 @@
       "source": "OCVB (Okinawa Convention & Visitors Bureau) · Chatan Tourism Association",
       "url": "https://visitokinawajapan.com/discover/beach-information/araha-beach/",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://visitokinawajapan.com/discover/beach-information/araha-beach/",
         "https://www.okinawastory.jp/spot/600006207",
         "https://chatantourism.com/spot/araha-beach/"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea"
+        ],
+        "sunset": true,
+        "access": "drive_up",
+        "free_basis": "open_lookout"
+      }
     },
     {
       "id": "beach-ginowan-tropical",
@@ -4886,11 +4953,21 @@
       "source": "OCVB (Okinawa Convention & Visitors Bureau)",
       "url": "https://www.okinawastory.jp/spot/1100",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://www.okinawastory.jp/spot/1100"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea"
+        ],
+        "access": "drive_up",
+        "free_basis": "open_lookout"
+      }
     },
     {
       "id": "beach-hyakuna",
@@ -6277,7 +6354,7 @@
       "source": "oki-park.jp (Okinawa Churashima Foundation) · OCVB",
       "url": "https://oki-park.jp/shurijo/",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://oki-park.jp/shurijo/",
@@ -6292,7 +6369,19 @@
         "https://oki-park.jp/shurijo/event/184/",
         "https://visitokinawajapan.com/discover/world-heritage-top/shurijo-castle-park/",
         "https://www.okinawastory.jp/spot/1074"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "city"
+        ],
+        "access": "short_walk",
+        "walk_time_en": "Short walk from paid car parks / monorail Shuri Station into the park lookouts (Nishi-no-Azana area)",
+        "walk_time_ja": "有料駐車場・ゆいレール首里駅から園内展望所（西のアザナ周辺）まで短い徒歩",
+        "walk_time_ko": "유료 주차장·유리레일 슈리역에서 공원 내 전망 지점(니시노아자나 일대)까지 짧은 도보"
+      }
     },
     {
       "id": "castle-nakijin",
@@ -6493,7 +6582,7 @@
       "source": "katsuren-jo.jp (Amawari Park, Uruma city) · Uruma city",
       "url": "https://www.katsuren-jo.jp/",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://www.katsuren-jo.jp/",
@@ -6501,7 +6590,20 @@
         "https://www.katsuren-jo.jp/course/",
         "https://www.city.uruma.lg.jp/bunka/2399.html",
         "https://visitokinawajapan.com/discover/world-heritage-top/katsuren-castle-ruins/"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands"
+        ],
+        "access": "short_walk",
+        "walk_time_en": "Stone steps from the car park / Amawari Park up to the top enclosure (~98 m)",
+        "walk_time_ja": "駐車場・あまわりパークから頂上の郭まで石段（標高約98m）",
+        "walk_time_ko": "주차장·아마와리 파크에서 정상 곽까지 돌계단(해발 약 98m)"
+      }
     },
     {
       "id": "castle-nakagusuku",
@@ -6574,14 +6676,27 @@
       "source": "nakagusuku-jo.jp (joint management council)",
       "url": "https://www.nakagusuku-jo.jp/guide",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://www.nakagusuku-jo.jp/guide",
         "https://www.nakagusuku-jo.jp/attention",
         "https://www.nakagusuku-jo.jp/application",
         "https://visitokinawajapan.com/discover/world-heritage-top/nakagusuku-castle-ruins/"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "city"
+        ],
+        "access": "short_walk",
+        "walk_time_en": "Short walk from the site car park into the enclosures with bay views",
+        "walk_time_ja": "駐車場から湾を望む郭まで短い徒歩",
+        "walk_time_ko": "주차장에서 만을 조망하는 곽까지 짧은 도보"
+      }
     },
     {
       "id": "castle-urasoe",
@@ -6633,12 +6748,22 @@
       "source": "Urasoe city · OCVB",
       "url": "https://www.city.urasoe.lg.jp/doc/609e8f1e3d59ae2434c01961/",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://www.city.urasoe.lg.jp/doc/609e8f1e3d59ae2434c01961/",
         "https://www.okinawastory.jp/spot/30000094"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "city"
+        ],
+        "access": "short_walk",
+        "free_basis": "open_lookout"
+      }
     },
     {
       "id": "castle-iso",
@@ -9352,12 +9477,26 @@
       "source": "Motobu Town · Motobu Tourism Association",
       "url": "https://www.town.motobu.okinawa.jp/doc/2023112200050/",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://www.town.motobu.okinawa.jp/doc/2023112200050/",
         "https://www.motobu-ka.com/tourist_info/tourist_info-post-679/"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "forest",
+          "islands"
+        ],
+        "access": "short_walk",
+        "free_basis": "public_park",
+        "walk_time_en": "A few minutes from the cherry-blossom park car parks to the lookouts",
+        "walk_time_ja": "桜の森公園駐車場から展望所まで数分",
+        "walk_time_ko": "벚꽃 공원 주차장에서 전망대까지 수 분"
+      }
     },
     {
       "id": "park-kenso",
@@ -9489,9 +9628,9 @@
       "island": "okinawa",
       "lat": 26.25043,
       "lng": 127.7286,
-      "desc_en": "Prefectural park below Urasoe Castle Ruins with forest walks, lawns and a large play area.",
-      "desc_ja": "浦添城跡のふもとに広がる県営公園。森の散策路、芝生広場、大きな遊具広場があります。",
-      "desc_ko": "우라소에 성터 아래에 펼쳐진 현립 공원입니다. 숲 산책로, 잔디 광장, 큰 놀이 광장이 있습니다.",
+      "desc_en": "Prefectural park below Urasoe Castle Ruins with forest walks, lawns, a large play area, and hill lookouts over Urasoe and Ginowan — listed as a Japan Night View Heritage site (car parks close around 21:00).",
+      "desc_ja": "浦添城跡のふもとの県営公園。森の散策路、芝生、大きな遊具に加え、浦添・宜野湾を望む展望所があります。日本夜景遺産に選ばれ、駐車場は21時頃閉鎖です。",
+      "desc_ko": "우라소에 성터 아래 현립 공원. 숲 산책로·잔디·큰 놀이기구와 함께 우라소에·기노완을 내려다보는 전망대가 있습니다. 일본 야경유산으로 선정됐으며 주차장은 21시경 폐쇄됩니다.",
       "free": true,
       "parking_en": "Car parks at the South Entrance, C-1 and C-2",
       "parking_ja": "南口駐車場・C-1・C-2駐車場",
@@ -9511,14 +9650,15 @@
       "source": "urasoedaipark-osi.jp (park operator)",
       "url": "https://www.urasoedaipark-osi.jp/",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://www.urasoedaipark-osi.jp/",
         "https://www.urasoedaipark-osi.jp/contact.php"
       ],
       "also_in": [
-        "kids"
+        "kids",
+        "viewpoints"
       ],
       "family": {
         "ages_en": "Destination park with playground",
@@ -9526,6 +9666,17 @@
         "ages_ko": "놀이기구가 있는 대형 공원",
         "setting": "outdoor",
         "under_6": true
+      },
+      "viewpoint": {
+        "views": [
+          "city"
+        ],
+        "night": true,
+        "access": "short_walk",
+        "free_basis": "public_park",
+        "walk_time_en": "Short walk from the South / C-1 / C-2 car parks to the hill lookouts",
+        "walk_time_ja": "南口・C-1・C-2駐車場から展望所まで短い徒歩",
+        "walk_time_ko": "남문·C-1·C-2 주차장에서 전망대까지 짧은 도보"
       }
     },
     {
@@ -9588,9 +9739,9 @@
       "island": "okinawa",
       "lat": 26.439,
       "lng": 127.714,
-      "desc_en": "Village park on Cape Zanpa, a scenic coastal spot with cliffs and sea views.",
-      "desc_ja": "断崖と海の眺めが広がる景勝地・残波岬にある村の公園です。",
-      "desc_ko": "절벽과 바다 전망이 펼쳐지는 명승지 잔파곶에 있는 마을 공원입니다.",
+      "desc_en": "Cape Zanpa clifftop park facing the East China Sea — a classic west-coast sunset lookout next to Zanpa Beach and the lighthouse.",
+      "desc_ja": "東シナ海に面した残波岬の断崖上の公園。残波ビーチと灯台のそばで、西海岸の夕日の名所です。",
+      "desc_ko": "동중국해를 바라보는 잔파곶 절벽 위 공원. 잔파 비치와 등대 옆의 서해안 일몰 명소입니다.",
       "free": true,
       "parking_en": "Parking available",
       "parking_ja": "駐車場あり",
@@ -9607,12 +9758,24 @@
       "source": "Yomitan Village",
       "url": "https://www.vill.yomitan.okinawa.jp/soshiki/toshi_keikaku/4025.html",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://www.vill.yomitan.okinawa.jp/soshiki/toshi_keikaku/4025.html",
         "https://www.vill.yomitan.okinawa.jp/soshiki/toshi_keikaku/gyomu/shisetsu/1331.html"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "sunset": true,
+        "access": "drive_up",
+        "free_basis": "public_park"
+      }
     },
     {
       "id": "park-sera-no-mori",
@@ -10038,12 +10201,24 @@
       "source": "Nanjo City Tourism Association",
       "url": "https://www.kankou-nanjo.okinawa/enjoy/250/",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://www.kankou-nanjo.okinawa/enjoy/250/",
         "https://www.kankou-nanjo.okinawa/news/78/"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "sunrise": true,
+        "access": "drive_up",
+        "free_basis": "public_park"
+      }
     },
     {
       "id": "park-banna",
@@ -10082,7 +10257,7 @@
       "source": "banna.jp (park operator) · Okinawa Prefecture",
       "url": "https://banna.jp/",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://banna.jp/faq",
@@ -10092,7 +10267,8 @@
         "https://www.pref.okinawa.jp/machizukuri/park/1012790/index.html"
       ],
       "also_in": [
-        "kids"
+        "kids",
+        "viewpoints"
       ],
       "family": {
         "ages_en": "Destination park with playground",
@@ -10100,6 +10276,19 @@
         "ages_ko": "놀이기구가 있는 대형 공원",
         "setting": "outdoor",
         "under_6": true
+      },
+      "viewpoint": {
+        "views": [
+          "islands",
+          "sea",
+          "forest",
+          "city"
+        ],
+        "access": "short_walk",
+        "free_basis": "public_park",
+        "walk_time_en": "Short walk from Zone car parks to the observatory decks",
+        "walk_time_ja": "各ゾーン駐車場から展望台まで短い徒歩",
+        "walk_time_ko": "각 존 주차장에서 전망대까지 짧은 도보"
       }
     },
     {
@@ -13557,9 +13746,9 @@
       "island": "okinawa",
       "lat": 26.30274,
       "lng": 127.75889,
-      "desc_en": "Neighbourhood park in Chatan with a playground, an open field, an open-air stage, a fountain and a basketball court.",
-      "desc_ja": "北谷町の近隣公園。遊具・広場・野外ステージ・噴水池・バスケットコートがあります。",
-      "desc_ko": "자탄초의 근린공원입니다. 놀이기구, 광장, 야외 무대, 분수, 농구 코트가 있습니다.",
+      "desc_en": "Seaside neighbourhood park next to Araha Beach — west-facing Chatan sunset over the East China Sea.",
+      "desc_ja": "アラハビーチに隣接する海岸の近隣公園。東シナ海に沈む北谷の夕日を西向きに眺められます。",
+      "desc_ko": "아라하 비치 옆 해안 근린공원. 동중국해로 지는 차탄의 일몰을 서쪽 방향으로 볼 수 있습니다.",
       "free": true,
       "parking_en": "Parking for 146 cars",
       "parking_ja": "駐車場 146台",
@@ -13575,12 +13764,23 @@
       "source": "Chatan Town (park list) · Chatan Community Development Center (town park operator)",
       "url": "https://ccdc.jp/facility/free-park-facilities/neighbors-parks/araha-park/",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://www.chatan.jp/smph/seikatsuguide/koen_doro/koen/tosikouenichiran.html",
         "https://ccdc.jp/facility/free-park-facilities/neighbors-parks/araha-park/"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea"
+        ],
+        "sunset": true,
+        "access": "drive_up",
+        "free_basis": "public_park"
+      }
     },
     {
       "id": "park-sunabebaba-chatan",
@@ -16222,9 +16422,9 @@
       "island": "ishigaki",
       "lat": 24.46165,
       "lng": 124.14218,
-      "desc_en": "Park in Ishigaki. About 2 ha.",
-      "desc_ja": "石垣市の公園。面積は約2ヘクタールです。",
-      "desc_ko": "이시가키시의 공원입니다. 면적은 약 2헥타르입니다.",
+      "desc_en": "Scenic park above Kabira Bay with lookouts over the turquoise inlet and surrounding islands.",
+      "desc_ja": "川平湾を見下ろす風致公園。エメラルドグリーンの入り江と周囲の島々を望む展望があります。",
+      "desc_ko": "가비라만을 내려다보는 풍치공원. 에메랄드빛 만과 주변 섬이 보이는 전망이 있습니다.",
       "free": true,
       "park": {
         "kind": "public",
@@ -16236,12 +16436,23 @@
       "source": "Ishigaki City park list",
       "url": "https://www.city.ishigaki.okinawa.jp/soshiki/sports_koryu/5/6687.html",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://www.city.ishigaki.okinawa.jp/soshiki/sports_koryu/5/6687.html",
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands"
+        ],
+        "access": "short_walk",
+        "free_basis": "public_park"
+      }
     },
     {
       "id": "park-kannondo-historical-ishigaki",
@@ -16816,9 +17027,9 @@
       "island": "okinawa",
       "lat": 26.09255,
       "lng": 127.66547,
-      "desc_en": "Neighbourhood park in Itoman.",
-      "desc_ja": "糸満市の近隣公園。",
-      "desc_ko": "이토만시의 근린공원입니다.",
+      "desc_en": "Clifftop park at Cape Kyan (Kyan Misaki) on the southern tip of the main island, with open sea views.",
+      "desc_ja": "本島南端・喜屋武岬の断崖上の公園。開けた海の眺めがあります。",
+      "desc_ko": "본섬 남단 캰곶(갸안곶) 절벽 위 공원. 탁 트인 바다 전망이 있습니다.",
       "free": true,
       "park": {
         "kind": "public",
@@ -16830,12 +17041,23 @@
       "source": "MLIT urban parks data (P13)",
       "url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html",
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "access": "drive_up",
+        "free_basis": "public_park"
+      }
     },
     {
       "id": "park-nanhama-itoman",
@@ -17266,9 +17488,9 @@
       "island": "miyako",
       "lat": 24.72518,
       "lng": 125.46073,
-      "desc_en": "Park in Miyakojima. About 22 ha.",
-      "desc_ja": "宮古島市の公園。面積は約22ヘクタールです。",
-      "desc_ko": "미야코지마시의 공원입니다. 면적은 약 22헥타르입니다.",
+      "desc_en": "East tip of Miyako — a designated scenic urban park with a long cape path between the East China Sea and the Pacific; spring lily fields.",
+      "desc_ja": "宮古島の東端。東シナ海と太平洋に挟まれた約2kmの岬の遊歩道がある都市公園百選の景勝地。春はテッポウユリが咲きます。",
+      "desc_ko": "미야코섬 동쪽 끝. 동중국해와 태평양 사이 약 2km 곶 산책로가 있는 도시공원 백선 경승지. 봄에는 백합이 핍니다.",
       "free": true,
       "park": {
         "kind": "public",
@@ -17280,12 +17502,27 @@
       "source": "Miyakojima City park list · MLIT urban parks data",
       "url": "https://www.city.miyakojima.lg.jp/soshiki/shityo/kensetsu/toshikeikaku/oshirase/files/003-1.pdf",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
         "https://www.city.miyakojima.lg.jp/soshiki/shityo/kensetsu/toshikeikaku/oshirase/files/003-1.pdf",
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html"
-      ]
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "sunrise": true,
+        "access": "short_walk",
+        "free_basis": "public_park",
+        "walk_time_en": "About 10–20 min one-way along the cape path from the car park (Miyakojima City scenic guide)",
+        "walk_time_ja": "駐車場から岬の先端まで片道約10〜20分（宮古島市景勝地案内）",
+        "walk_time_ko": "주차장에서 곶 끝까지 편도 약 10~20분(미야코지마 시 경승지 안내)"
+      }
     },
     {
       "id": "park-shimoji-miyakojima",
@@ -21387,6 +21624,654 @@
         "includes_ja": "材料（手ぬぐい・トート・Tシャツ等）・その場持ち帰り",
         "includes_ko": "재료(테누구이·토트·티셔츠 등) · 당일 가져가기"
       }
+    },
+    {
+      "id": "cape-hedo",
+      "title_en": "Cape Hedo",
+      "title_ja": "辺戸岬",
+      "title_kana": "へどみさき",
+      "title_ko": "헤도곶",
+      "category": "viewpoints",
+      "area": "Kunigami",
+      "island": "okinawa",
+      "lat": 26.8725,
+      "lng": 128.2647,
+      "desc_en": "Northernmost tip of Okinawa Island — rocky headland and open sea toward Amami. The Cape Hedo tourism plaza has a terrace lookout, café and visitor info.",
+      "desc_ja": "沖縄本島最北端の岬。岩場と奄美方面の大海原。辺戸岬観光案内所には展望テラス、カフェ、案内窓口があります。",
+      "desc_ko": "오키나와 본섬 최북단 곶. 암반과 아마미 방향의 넓은 바다. 헤도곶 관광안내소에 전망 테라스·카페·안내 창구가 있습니다.",
+      "hours_en": "Cape open anytime · visitor plaza terrace typically 10:00–16:45 · info desk 10:00–17:00 (confirm on the day)",
+      "hours_ja": "岬は随時・観光案内所展望テラス 目安10:00〜16:45・案内所10:00〜17:00（当日確認）",
+      "hours_ko": "곶은 상시 · 관광안내소 전망 테라스 대략 10:00~16:45 · 안내소 10:00~17:00(당일 확인)",
+      "free": true,
+      "fee_en": "Free (open cape lookout; plaza shops separate)",
+      "fee_ja": "無料（岬の展望は自由・案内所内店舗は別）",
+      "fee_ko": "무료(곶 전망은 자유 · 안내소 내 상점은 별도)",
+      "parking_en": "Free parking at the Cape Hedo tourism plaza (about 70 cars per local tourism guides)",
+      "parking_ja": "辺戸岬観光案内所の無料駐車場（観光案内で約70台）",
+      "parking_ko": "헤도곶 관광안내소 무료 주차장(관광 안내 약 70대)",
+      "source": "hedomisaki-okinawa.com (Cape Hedo visitor plaza) · Kunigami Village Tourism Association",
+      "url": "https://hedomisaki-okinawa.com/",
+      "sources": [
+        "https://hedomisaki-okinawa.com/",
+        "https://kunigami-kanko.com/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "access": "drive_up",
+        "free_basis": "open_lookout"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "cape-maeda",
+      "title_en": "Cape Maeda",
+      "title_ja": "真栄田岬",
+      "title_kana": "まえだみさき",
+      "title_ko": "마에다곶",
+      "category": "viewpoints",
+      "area": "Onna",
+      "island": "okinawa",
+      "lat": 26.4442,
+      "lng": 127.7689,
+      "desc_en": "West-coast cape in Onna with cliff paths and sea views toward the Blue Cave dive area. Popular sunset lookout facing the East China Sea.",
+      "desc_ja": "恩納村の西海岸の岬。断崖の遊歩道と青の洞窟ダイビングエリアを望む海の眺め。東シナ海に面した夕日スポットとしても知られます。",
+      "desc_ko": "온나촌 서해안 곶. 절벽 산책로와 푸른 동굴 다이빙 구역을 바라보는 바다 전망. 동중국해를 향한 일몰 명소로도 알려졌습니다.",
+      "free": true,
+      "fee_en": "Free (open cape lookout)",
+      "fee_ja": "無料（岬の展望は自由）",
+      "fee_ko": "무료(곶 전망은 자유)",
+      "parking_en": "Paid / managed parking near the cape entrance (confirm on site)",
+      "parking_ja": "岬入口付近の管理駐車場（現地確認）",
+      "parking_ko": "곶 입구 근처 관리 주차장(현장 확인)",
+      "source": "Onna Village Tourism Association (Go to ONNA) · OCVB",
+      "url": "https://goto-onna.com/",
+      "sources": [
+        "https://goto-onna.com/",
+        "https://visitokinawajapan.com/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "sunset": true,
+        "access": "short_walk",
+        "free_basis": "open_lookout",
+        "walk_time_en": "Short walk from the cape car parks to the cliff lookouts",
+        "walk_time_ja": "駐車場から断崖展望所まで短い徒歩",
+        "walk_time_ko": "주차장에서 절벽 전망대까지 짧은 도보"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "nirai-kanai-bridge-viewpoint",
+      "title_en": "Nirai Kanai Bridge Viewpoint",
+      "title_ja": "ニライカナイ橋展望所",
+      "title_kana": "にらいかないばしてんぼうしょ",
+      "title_ko": "니라이카나이 다리 전망소",
+      "category": "viewpoints",
+      "area": "Nanjo",
+      "island": "okinawa",
+      "lat": 26.1445,
+      "lng": 127.7995,
+      "desc_en": "Roadside lookout over the Nirai Kanai Bridge and the Pacific coast of southern Okinawa Island.",
+      "desc_ja": "ニライカナイ橋と本島南部の太平洋岸を望む道路沿いの展望所。",
+      "desc_ko": "니라이카나이 다리와 본섬 남부 태평양 연안을 바라보는 도로변 전망소.",
+      "free": true,
+      "fee_en": "Free (open roadside lookout)",
+      "fee_ja": "無料（道路沿いの展望所）",
+      "fee_ko": "무료(도로변 전망소)",
+      "parking_en": "Small free pull-off parking at the viewpoint",
+      "parking_ja": "展望所の無料駐車スペース",
+      "parking_ko": "전망소 무료 주차 공간",
+      "source": "Nanjo City Tourism Association · Okinawa Prefecture road sightseeing",
+      "url": "https://www.kankou-nanjo.okinawa/",
+      "sources": [
+        "https://www.kankou-nanjo.okinawa/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "bridge",
+          "cliffs"
+        ],
+        "access": "drive_up",
+        "free_basis": "open_lookout"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "kouri-bridge-viewpoint",
+      "title_en": "Kouri Bridge Viewpoint",
+      "title_ja": "古宇利島展望所（古宇利大橋）",
+      "title_kana": "こうりじまてんぼうしょ",
+      "title_ko": "고우리섬 전망소(고우리 대교)",
+      "category": "viewpoints",
+      "area": "Nakijin",
+      "island": "okinawa",
+      "lat": 26.6975,
+      "lng": 128.0208,
+      "desc_en": "Lookouts toward Kouri Bridge and the emerald shallows between Nakijin and Kouri Island.",
+      "desc_ja": "今帰仁と古宇利島を結ぶ古宇利大橋と、エメラルドグリーンの浅瀬を望む展望スポット。",
+      "desc_ko": "나키진과 고우리섬을 잇는 고우리 대교와 에메랄드빛 얕은 바다를 바라보는 전망 스폿.",
+      "free": true,
+      "fee_en": "Free (open lookouts)",
+      "fee_ja": "無料（展望は自由）",
+      "fee_ko": "무료(전망은 자유)",
+      "parking_en": "Free parking near island-side and mainland-side lookouts (spaces limited on busy days)",
+      "parking_ja": "島側・本島側の展望付近に無料駐車場（混雑時は少ない）",
+      "parking_ko": "섬쪽·본섬쪽 전망 근처 무료 주차장(혼잡 시 적음)",
+      "source": "Nakijin Village Tourism Association · OCVB",
+      "url": "https://nakijinson.com/",
+      "sources": [
+        "https://nakijinson.com/",
+        "https://visitokinawajapan.com/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands",
+          "bridge"
+        ],
+        "access": "drive_up",
+        "free_basis": "open_lookout"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "mt-katsuu",
+      "title_en": "Mount Katsuu",
+      "title_ja": "嘉津宇岳",
+      "title_kana": "かつうだけ",
+      "title_ko": "가쓰우다케",
+      "category": "viewpoints",
+      "area": "Nago",
+      "island": "okinawa",
+      "lat": 26.6365,
+      "lng": 127.9375,
+      "desc_en": "Sharp peak on the Motobu Peninsula (about 452 m) with hiking trails and wide Yanbaru / East China Sea views from the ridge.",
+      "desc_ja": "本部半島の鋭い山（標高約452m）。登山道があり、尾根からはやんばると東シナ海の眺めが広がります。",
+      "desc_ko": "모토부 반도의 날카로운 산(해발 약 452m). 등산로가 있으며 능선에서 얀바루와 동중국해 전망이 펼쳐집니다.",
+      "free": true,
+      "fee_en": "Free (hiking trail)",
+      "fee_ja": "無料（登山道）",
+      "fee_ko": "무료(등산로)",
+      "parking_en": "Trailhead parking near Pref. Route 84 (spaces limited)",
+      "parking_ja": "県道84号付近の登山口駐車場（台数は限られる）",
+      "parking_ko": "현도 84호 근처 등산로 입구 주차장(대수 제한)",
+      "source": "Nago City / Motobu area tourism · Okinawa Prefecture mountain guides",
+      "url": "https://www.city.nago.okinawa.jp/",
+      "sources": [
+        "https://www.city.nago.okinawa.jp/"
+      ],
+      "viewpoint": {
+        "views": [
+          "forest",
+          "sea",
+          "islands"
+        ],
+        "access": "hike",
+        "free_basis": "open_lookout",
+        "walk_time_en": "Hike from the trailhead (allow well over an hour round-trip; check trail condition)",
+        "walk_time_ja": "登山口から往復1時間超を目安（登山道の状況を確認）",
+        "walk_time_ko": "등산로 입구에서 왕복 1시간 이상 여유(등산로 상태 확인)"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "mt-yonaha",
+      "title_en": "Mount Yonaha",
+      "title_ja": "与那覇岳",
+      "title_kana": "よなはだけ",
+      "title_ko": "요나하다케",
+      "category": "viewpoints",
+      "area": "Kunigami",
+      "island": "okinawa",
+      "lat": 26.7167,
+      "lng": 128.2167,
+      "desc_en": "Highest peak on Okinawa Island (about 503 m) inside Yanbaru National Park — forest ridge hiking with island-wide views on clear days.",
+      "desc_ja": "沖縄本島最高峰（標高約503m）。やんばる国立公園内の尾根歩きで、晴れた日は島全体の眺めがあります。",
+      "desc_ko": "오키나와 본섬 최고봉(해발 약 503m). 얀바루 국립공원 능선 하이킹으로, 맑은 날 섬 전체 전망이 있습니다.",
+      "free": true,
+      "fee_en": "Free (national park hiking trail)",
+      "fee_ja": "無料（国立公園の登山道）",
+      "fee_ko": "무료(국립공원 등산로)",
+      "parking_en": "Trailhead parking along the forest road (confirm access; roads may close after storms)",
+      "parking_ja": "林道沿いの登山口駐車場（通行止めに注意）",
+      "parking_ko": "임도 변 등산로 입구 주차장(통행 제한 주의)",
+      "source": "Ministry of the Environment Yanbaru National Park · Kunigami Village",
+      "url": "https://www.env.go.jp/park/yanbaru/",
+      "sources": [
+        "https://www.env.go.jp/park/yanbaru/"
+      ],
+      "viewpoint": {
+        "views": [
+          "forest"
+        ],
+        "access": "hike",
+        "free_basis": "open_lookout",
+        "walk_time_en": "Forest hike from the trailhead (several hours round-trip; check park notices)",
+        "walk_time_ja": "登山口から往復数時間の登山（公園の通行情報を確認）",
+        "walk_time_ko": "등산로 입구에서 왕복 수 시간 등산(공원 통행 정보 확인)"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "tamatorizaki-observatory",
+      "title_en": "Tamatorizaki Observatory",
+      "title_ja": "玉取崎展望台",
+      "title_kana": "たまとりざきてんぼうだい",
+      "title_ko": "다마토리자키 전망대",
+      "category": "viewpoints",
+      "area": "Ishigaki",
+      "island": "ishigaki",
+      "lat": 24.4735,
+      "lng": 124.2455,
+      "desc_en": "Red-tile lookout over the Hirakubo Peninsula ridgeline and the coral reefs of Ishigaki’s east coast. Free entry; managed as an Ishigaki City tourism facility.",
+      "desc_ja": "平久保半島の山並みと石垣島東海岸のサンゴ礁を望む赤瓦の展望台。入場無料。石垣市の観光施設として管理されています。",
+      "desc_ko": "히라쿠보 반도 산줄기와 이시가키섬 동해안 산호초를 바라보는 붉은 기와 전망대. 입장 무료. 이시가키시 관광 시설로 관리됩니다.",
+      "free": true,
+      "fee_en": "Free entry and parking",
+      "fee_ja": "入場・駐車場 無料",
+      "fee_ko": "입장·주차 무료",
+      "parking_en": "Free parking (upper lot preferred; toilets at the mountain-side lot)",
+      "parking_ja": "無料駐車場（山側が便利・トイレあり）",
+      "parking_ko": "무료 주차장(산쪽 권장·화장실 있음)",
+      "source": "Ishigaki City Silver Human Resources Center (designated manager) · ishigaki-navi.okinawa",
+      "url": "https://ishigaki-sjc.jimdofree.com/%E6%8C%87%E5%AE%9A%E7%AE%A1%E7%90%86%E6%96%BD%E8%A8%AD/",
+      "sources": [
+        "https://ishigaki-sjc.jimdofree.com/%E6%8C%87%E5%AE%9A%E7%AE%A1%E7%90%86%E6%96%BD%E8%A8%AD/",
+        "https://ishigaki-navi.okinawa/sightseeing/39b/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands"
+        ],
+        "sunrise": true,
+        "access": "short_walk",
+        "free_basis": "municipal_free",
+        "walk_time_en": "About 3–10 minutes from the upper car park along the path",
+        "walk_time_ja": "上段駐車場から遊歩道で約3〜10分",
+        "walk_time_ko": "상단 주차장에서 산책로로 약 3~10분"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "cape-hirakubo",
+      "title_en": "Cape Hirakubo Lighthouse",
+      "title_ja": "平久保崎灯台",
+      "title_kana": "ひらくぼざきとうだい",
+      "title_ko": "히라쿠보자키 등대",
+      "category": "viewpoints",
+      "area": "Ishigaki",
+      "island": "ishigaki",
+      "lat": 24.6105,
+      "lng": 124.3125,
+      "desc_en": "White lighthouse at the northern tip of Ishigaki’s Hirakubo Peninsula — cliff and open-ocean views where the East China Sea and Pacific meet.",
+      "desc_ja": "石垣島・平久保半島の最北端にある白い灯台。断崖と大海原の眺め。東シナ海と太平洋が出会う岬です。",
+      "desc_ko": "이시가키섬 히라쿠보 반도 최북단의 흰 등대. 절벽과 넓은 바다 전망. 동중국해와 태평양이 만나는 곶입니다.",
+      "free": true,
+      "fee_en": "Free (grounds lookout; lighthouse interior hours may be limited)",
+      "fee_ja": "無料（園地の展望・灯台内部は参観時間が限られる場合あり）",
+      "fee_ko": "무료(원지 전망 · 등대 내부는 참관 시간이 제한될 수 있음)",
+      "parking_en": "Free parking near the lighthouse",
+      "parking_ja": "灯台付近の無料駐車場",
+      "parking_ko": "등대 근처 무료 주차장",
+      "source": "Ishigaki City tourism facilities (Silver Center designated manager) · Japan Coast Guard / Tokokai lighthouse pages",
+      "url": "https://ishigaki-sjc.jimdofree.com/%E6%8C%87%E5%AE%9A%E7%AE%A1%E7%90%86%E6%96%BD%E8%A8%AD/",
+      "sources": [
+        "https://ishigaki-sjc.jimdofree.com/%E6%8C%87%E5%AE%9A%E7%AE%A1%E7%90%86%E6%96%BD%E8%A8%AD/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "sunset": true,
+        "access": "short_walk",
+        "free_basis": "municipal_free"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "kurima-ryugu-observatory",
+      "title_en": "Kurima Ryugu Observatory",
+      "title_ja": "竜宮城展望台（来間島）",
+      "title_kana": "りゅうぐうじょうてんぼうだい",
+      "title_ko": "용궁성 전망대(구리마섬)",
+      "category": "viewpoints",
+      "area": "Miyakojima",
+      "island": "miyako",
+      "lat": 24.7215,
+      "lng": 125.2465,
+      "desc_en": "Three-storey dragon-palace-shaped lookout on Kurima Island with views of Maehama Beach, Irabu and the emerald sea. Listed on Miyakojima City’s scenic spots page.",
+      "desc_ja": "来間島の高台にある竜宮城をかたどった3階建ての展望台。前浜ビーチや伊良部島、エメラルドグリーンの海を一望。宮古島市の景勝地案内に掲載。",
+      "desc_ko": "구리마섬 언덕의 용궁 모양 3층 전망대. 마에하마 비치·이라부섬·에메랄드빛 바다가 한눈에. 미야코지마시 경승지 안내에 게재.",
+      "free": true,
+      "fee_en": "Free entry (open lookout)",
+      "fee_ja": "入場無料（見学自由）",
+      "fee_ko": "입장 무료(관람 자유)",
+      "parking_en": "Free parking next to the observatory (toilets at the car park; spaces limited)",
+      "parking_ja": "展望台手前の無料駐車場（トイレあり・台数は限られる）",
+      "parking_ko": "전망대 앞 무료 주차장(화장실 있음·대수 제한)",
+      "source": "Miyakojima City scenic spots page · Miyakojima Tourism Association",
+      "url": "https://www.city.miyakojima.lg.jp/kanko/annai/keisyouchi.html",
+      "sources": [
+        "https://www.city.miyakojima.lg.jp/kanko/annai/keisyouchi.html"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands",
+          "bridge"
+        ],
+        "access": "drive_up",
+        "free_basis": "municipal_free",
+        "walk_time_en": "Under 1 minute from the car park to the entrance",
+        "walk_time_ja": "駐車場から入口まで1分未満",
+        "walk_time_ko": "주차장에서 입구까지 1분 미만"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "ikema-bridge-viewpoint",
+      "title_en": "Ikema Bridge Viewpoint",
+      "title_ja": "池間大橋展望（橋詰広場）",
+      "title_kana": "いけまおおはしてんぼう",
+      "title_ko": "이케마 대교 전망(교두 광장)",
+      "category": "viewpoints",
+      "area": "Miyakojima",
+      "island": "miyako",
+      "lat": 24.9205,
+      "lng": 125.2455,
+      "desc_en": "Bridge-end plaza on the Ikema Island side of Ikema Bridge (1,425 m) with views back toward Miyako and the surrounding sea — on Miyakojima City’s scenic list.",
+      "desc_ja": "全長1,425mの池間大橋・池間島側の橋詰広場。宮古島側と周囲の海を望む。宮古島市の景勝地案内に掲載。",
+      "desc_ko": "전장 1,425m 이케마 대교의 이케마섬 쪽 교두 광장. 미야코섬 쪽과 주변 바다 전망. 미야코지마시 경승지 안내에 게재.",
+      "free": true,
+      "fee_en": "Free (bridge-end plaza)",
+      "fee_ja": "無料（橋詰広場）",
+      "fee_ko": "무료(교두 광장)",
+      "parking_en": "Parking at the Ikema-side bridge-end plaza",
+      "parking_ja": "池間島側橋詰広場の駐車場",
+      "parking_ko": "이케마섬 쪽 교두 광장 주차장",
+      "source": "Miyakojima City scenic spots page",
+      "url": "https://www.city.miyakojima.lg.jp/kanko/annai/keisyouchi.html",
+      "sources": [
+        "https://www.city.miyakojima.lg.jp/kanko/annai/keisyouchi.html"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "bridge",
+          "islands"
+        ],
+        "access": "drive_up",
+        "free_basis": "municipal_free"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "yonaguni-cape-irizaki",
+      "title_en": "Cape Irizaki",
+      "title_ja": "西崎（与那国）",
+      "title_kana": "いりざき",
+      "title_ko": "이리자키(요나구니)",
+      "category": "viewpoints",
+      "area": "Yonaguni",
+      "island": "yonaguni",
+      "lat": 24.4485,
+      "lng": 122.9975,
+      "desc_en": "Westernmost point of Japan on Yonaguni — cliff and open ocean lookout with a monument and lighthouse area.",
+      "desc_ja": "日本最西端の与那国島・西崎。断崖と大海原の展望。記念碑と灯台周辺の園地です。",
+      "desc_ko": "일본 최서단 요나구니섬 이리자키. 절벽과 넓은 바다 전망. 기념비와 등대 주변 원지입니다.",
+      "free": true,
+      "fee_en": "Free (open cape grounds)",
+      "fee_ja": "無料（岬の園地）",
+      "fee_ko": "무료(곶 원지)",
+      "parking_en": "Free parking at the cape",
+      "parking_ja": "岬の無料駐車場",
+      "parking_ko": "곶 무료 주차장",
+      "source": "Yonaguni Town Tourism Association · OCVB",
+      "url": "https://www.yonaguni.jp/",
+      "sources": [
+        "https://www.yonaguni.jp/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "sunset": true,
+        "access": "drive_up",
+        "free_basis": "open_lookout"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "yonaguni-cape-agarizaki",
+      "title_en": "Cape Agarizaki",
+      "title_ja": "東崎（与那国）",
+      "title_kana": "あがりざき",
+      "title_ko": "아가리자키(요나구니)",
+      "category": "viewpoints",
+      "area": "Yonaguni",
+      "island": "yonaguni",
+      "lat": 24.4765,
+      "lng": 123.0175,
+      "desc_en": "Eastern tip of Yonaguni with cliff pastures and sunrise views over the Pacific.",
+      "desc_ja": "与那国島の東端。断崖の草原と太平洋の日の出の眺め。",
+      "desc_ko": "요나구니섬 동쪽 끝. 절벽 초원과 태평양 일출 전망.",
+      "free": true,
+      "fee_en": "Free (open cape grounds)",
+      "fee_ja": "無料（岬の園地）",
+      "fee_ko": "무료(곶 원지)",
+      "parking_en": "Free parking near the cape",
+      "parking_ja": "岬付近の無料駐車場",
+      "parking_ko": "곶 근처 무료 주차장",
+      "source": "Yonaguni Town Tourism Association · OCVB",
+      "url": "https://www.yonaguni.jp/",
+      "sources": [
+        "https://www.yonaguni.jp/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "sunrise": true,
+        "access": "drive_up",
+        "free_basis": "open_lookout"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "kume-hiyajo-banta",
+      "title_en": "Hiyajo Banta",
+      "title_ja": "比屋定バンタ",
+      "title_kana": "ひやじょうばんた",
+      "title_ko": "히야조 반타",
+      "category": "viewpoints",
+      "area": "Kumejima",
+      "island": "kume",
+      "lat": 26.3405,
+      "lng": 126.8055,
+      "desc_en": "Dramatic cliff lookout on Kumejima’s east coast — sea and cliff views from the banta (cliff) edge.",
+      "desc_ja": "久米島東海岸の断崖（バンタ）展望地。海と断崖の眺め。",
+      "desc_ko": "구메지마 동해안 절벽(반타) 전망지. 바다와 절벽 전망.",
+      "free": true,
+      "fee_en": "Free (open cliff lookout)",
+      "fee_ja": "無料（断崖の展望）",
+      "fee_ko": "무료(절벽 전망)",
+      "parking_en": "Small free parking near the lookout",
+      "parking_ja": "展望所付近の無料駐車場",
+      "parking_ko": "전망소 근처 무료 주차장",
+      "source": "Kumejima Town Tourism Association · OCVB",
+      "url": "https://www.kumejima-oshoushi.com/",
+      "sources": [
+        "https://www.kumejima-oshoushi.com/",
+        "https://visitokinawajapan.com/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "cliffs"
+        ],
+        "sunrise": true,
+        "access": "short_walk",
+        "free_basis": "open_lookout"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "zamami-takatsuki",
+      "title_en": "Takatsuki Observatory (Zamami)",
+      "title_ja": "高月山展望台（座間味）",
+      "title_kana": "たかつきやまてんぼうだい",
+      "title_ko": "다카쓰키산 전망대(자마미)",
+      "category": "viewpoints",
+      "area": "Zamami",
+      "island": "zamami",
+      "lat": 26.2285,
+      "lng": 127.3035,
+      "desc_en": "Hill observatory on Zamami Island with views over the Kerama islands and surrounding sea.",
+      "desc_ja": "座間味島の高台展望台。慶良間の島々と海を一望。",
+      "desc_ko": "자마미섬 언덕 전망대. 게라마 제도의 섬들과 바다가 한눈에.",
+      "free": true,
+      "fee_en": "Free (village lookout)",
+      "fee_ja": "無料（村の展望台）",
+      "fee_ko": "무료(촌 전망대)",
+      "parking_en": "Small parking / scooter space near the observatory road",
+      "parking_ja": "展望台への道沿いの駐車スペース",
+      "parking_ko": "전망대 가는 길 주차 공간",
+      "source": "Zamami Village Tourism Association",
+      "url": "https://www.zamami.okinawa/",
+      "sources": [
+        "https://www.zamami.okinawa/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands"
+        ],
+        "access": "short_walk",
+        "free_basis": "municipal_free"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "tokashiki-observatory",
+      "title_en": "Tokashiki Observatory",
+      "title_ja": "渡嘉敷島展望台",
+      "title_kana": "とかしきじまてんぼうだい",
+      "title_ko": "도카시키섬 전망대",
+      "category": "viewpoints",
+      "area": "Tokashiki",
+      "island": "tokashiki",
+      "lat": 26.1665,
+      "lng": 127.3525,
+      "desc_en": "Hill lookout on Tokashiki Island over Kerama seas and neighbouring islands.",
+      "desc_ja": "渡嘉敷島の高台展望。慶良間の海と島々を望む。",
+      "desc_ko": "도카시키섬 언덕 전망. 게라마 바다와 섬들을 바라봅니다.",
+      "free": true,
+      "fee_en": "Free (village lookout)",
+      "fee_ja": "無料（村の展望台）",
+      "fee_ko": "무료(촌 전망대)",
+      "parking_en": "Parking near the observatory approach",
+      "parking_ja": "展望台付近の駐車場",
+      "parking_ko": "전망대 근처 주차장",
+      "source": "Tokashiki Village Tourism Association",
+      "url": "https://www.vill.tokashiki.okinawa.jp/",
+      "sources": [
+        "https://www.vill.tokashiki.okinawa.jp/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands"
+        ],
+        "access": "short_walk",
+        "free_basis": "municipal_free"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
     }
   ],
   "restaurants": [
