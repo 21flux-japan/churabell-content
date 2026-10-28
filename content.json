@@ -1,7 +1,7 @@
 {
   "schema": "nuchi-ping-content",
   "version": 13,
-  "updated": "2026-10-29T22:00:00+09:00",
+  "updated": "2026-10-29T23:30:00+09:00",
   "example_data": false,
   "notes": "EXAMPLE DATA shipped with ChuraBell (formerly Nuchi Ping) v0.8. Replace with your own. Events are illustrative; place hours/fees need verification. RESTAURANTS (v0.18.0): all listed restaurants are REAL, from official chain store locators / official shop pages and OCVB okinawastory.jp gourmet pages (docs/restaurants_research.md). Fictional restaurant examples removed. example_data remains true because bundled events (and a few other example items) are still illustrative. Featured (PR) flags are examples. Kukuru Kids Play Dome is a FICTIONAL place. BEACHES (v0.10.0, schema 9): all 80 beaches are REAL, from official sources (OCVB VISIT OKINAWA JAPAN beach information and okinawastory.jp, municipalities, tourism associations, operators) checked 2026-10-22 (docs/beaches_research.md). The `beach` box (toilets, lifeguard, showers, jellyfish net, swimming season) only holds facts an official source states — a missing key means not confirmed, not \"no\". Korean beach texts are own translations (review deferred). Coordinates from OCVB, checked against OpenStreetMap beach/coastline data. MEDICAL (v0.9.2): medical facilities, phone_lines and kids_rotation are REAL, checked against official sources on 2026-10-21 (docs/medical_research.md); re-check at least every 3 months. Korean (_ko) medical texts are own translations and NEED NATIVE REVIEW. Coordinates geocoded from the official addresses (GSI). Holidays: Cabinet Office list 2026–2027. Korean/German (_ko/_de) texts on a few items are a demo (own translations). All structured `parking` boxes (lots, fees, spaces, stops, walk times, shuttles, closures) are ILLUSTRATIVE EXAMPLES — check with the organiser/venue before publishing. Kadena Fall Fest dates (Nov 7–8) and Sunset Beach Fest are EXAMPLES. Entry & ID (`entry`) on Kadena Fall Fest and Flightline Fair is EXAMPLE data modelled on public notices for Kadena America Fest and the MCAS Futenma Flight Line Fair (see entry.sources) — both events are fictional examples; re-check the organiser's notice before publishing. ISLANDS (v0.9.4, schema 8): island clinics and the islands list are REAL, from official pages checked 2026-10-21 (docs/islands_medical_research.md); clinic English names are our translations; clinic addresses/coordinates left out (district-level only).",
   "notices": [
@@ -1611,9 +1611,9 @@
       "hours_en": "Usually 10:00–17:00 (varies by day — check official calendar). From Jan 2027: Mondays closed except holidays and peak periods.",
       "hours_ja": "目安10:00〜17:00（日により変動・公式カレンダーで確認）。2027年1月以降は原則月曜休園（祝日・繁忙期除く）。",
       "hours_ko": "보통 10:00~17:00 (날짜별 변동·공식 캘린더 확인). 2027년 1월부터 원칙적으로 월요일 휴원(공휴일·성수기 제외).",
-      "fee_en": "1-Day ticket (standard/base): Adult 12+ ¥8,800 tax-in · Child 4–11 ¥5,940 · under 3 free. Official prices vary by date — confirm on junglia.jp/ticket.",
-      "fee_ja": "1デイチケット（標準料金）：大人（12歳以上）税込8,800円・小人（4〜11歳）税込5,940円・3歳以下無料。料金は日により変動 — junglia.jp/ticket で確認。",
-      "fee_ko": "1일권(표준/기본): 어른(12세 이상) 세금 포함 8,800엔 · 어린이(4~11세) 5,940엔 · 3세 이하 무료. 날짜에 따라 변동 — junglia.jp/ticket 확인.",
+      "fee_en": "1Day Adult 12+ ¥8,800 tax-in · Child 4–11 ¥5,940 · under 3 free",
+      "fee_ja": "1デイ：大人（12歳以上）税込8,800円・小人（4〜11歳）税込5,940円・3歳以下無料",
+      "fee_ko": "1일권: 어른(12세 이상) 세금 포함 8,800엔 · 어린이(4~11세) 5,940엔 · 3세 이하 무료",
       "free": false,
       "indoor": false,
       "parking_en": "On-site JUNGLIA OKINAWA Parking (553-1 Gogayama, Nakijin): ¥2,000 tax-in/car. Partner Parking なきじん (1284-1 Wakugawa): ¥800 tax-in/car + free shuttle ~10 min. Peak days may require advance booking (announced 2 months ahead).",
@@ -1635,7 +1635,10 @@
         "https://support.junglia.jp/hc/ja/articles/43626168661913",
         "https://support.junglia.jp/hc/ja/articles/40523460161433",
         "https://www.junglia.jp/parking-status",
-        "https://junglia.jp/en/service-guide?section=park-nursing"
+        "https://junglia.jp/en/service-guide?section=park-nursing",
+        "https://junglia.jp/ticket",
+        "https://support.junglia.jp/hc/en-us/articles/46098562425241-What-documents-prove-residency-in-Japan",
+        "https://support.junglia.jp/hc/ja/articles/46097562957465-1Day%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B"
       ],
       "family": {
         "ages_en": "All ages · under 3 free · Child ticket ages 4–11 · Adult 12+",
@@ -1658,6 +1661,15 @@
         "includes_en": "Theme-park attractions (ticketed)",
         "includes_ja": "テーマパークアトラクション（チケット制）",
         "includes_ko": "테마파크 어트랙션(티켓제)"
+      },
+      "resident_discount": {
+        "text_en": "Japan residents: 1Day Adult ¥6,930 / Child ¥4,950",
+        "text_ja": "国内在住者：1デイ大人¥6,930 / 小人¥4,950",
+        "text_ko": "일본 거주자: 1일권 어른 ¥6,930 / 어린이 ¥4,950",
+        "proof_en": "ID with current Japan address (My Number card, driver’s license, residence card, certificate of residence, etc.); plus a utility bill from the last 3 months if the address is missing",
+        "proof_ja": "日本国内の現住所がわかる公的書類（マイナンバーカード・運転免許証・在留カード・住民票など）。住所記載がない場合は直近3か月以内の公共料金領収書等も提示",
+        "proof_ko": "일본 현주소가 나오는 공적 신분증(마이넘버·운전면허·재류카드·주민표 등). 주소가 없으면 최근 3개월 이내 공과금 영수증 등도 제시",
+        "source": "https://junglia.jp/ticket"
       }
     },
     {
