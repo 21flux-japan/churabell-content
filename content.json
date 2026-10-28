@@ -1,7 +1,7 @@
 {
   "schema": "nuchi-ping-content",
   "version": 13,
-  "updated": "2026-10-28T20:00:00+09:00",
+  "updated": "2026-10-28T21:00:00+09:00",
   "example_data": true,
   "notes": "EXAMPLE DATA shipped with ChuraBell (formerly Nuchi Ping) v0.8. Replace with your own. Events are illustrative; place hours/fees need verification. RESTAURANTS (v0.18.0): all listed restaurants are REAL, from official chain store locators / official shop pages and OCVB okinawastory.jp gourmet pages (docs/restaurants_research.md). Fictional restaurant examples removed. example_data remains true because bundled events (and a few other example items) are still illustrative. Featured (PR) flags are examples. Kukuru Kids Play Dome is a FICTIONAL place. BEACHES (v0.10.0, schema 9): all 80 beaches are REAL, from official sources (OCVB VISIT OKINAWA JAPAN beach information and okinawastory.jp, municipalities, tourism associations, operators) checked 2026-10-22 (docs/beaches_research.md). The `beach` box (toilets, lifeguard, showers, jellyfish net, swimming season) only holds facts an official source states — a missing key means not confirmed, not \"no\". Korean beach texts are own translations (review deferred). Coordinates from OCVB, checked against OpenStreetMap beach/coastline data. MEDICAL (v0.9.2): medical facilities, phone_lines and kids_rotation are REAL, checked against official sources on 2026-10-21 (docs/medical_research.md); re-check at least every 3 months. Korean (_ko) medical texts are own translations and NEED NATIVE REVIEW. Coordinates geocoded from the official addresses (GSI). Holidays: Cabinet Office list 2026–2027. Korean/German (_ko/_de) texts on a few items are a demo (own translations). All structured `parking` boxes (lots, fees, spaces, stops, walk times, shuttles, closures) are ILLUSTRATIVE EXAMPLES — check with the organiser/venue before publishing. Kadena Fall Fest dates (Nov 7–8) and Sunset Beach Fest are EXAMPLES. Entry & ID (`entry`) on Kadena Fall Fest and Flightline Fair is EXAMPLE data modelled on public notices for Kadena America Fest and the MCAS Futenma Flight Line Fair (see entry.sources) — both events are fictional examples; re-check the organiser's notice before publishing. ISLANDS (v0.9.4, schema 8): island clinics and the islands list are REAL, from official pages checked 2026-10-21 (docs/islands_medical_research.md); clinic English names are our translations; clinic addresses/coordinates left out (district-level only).",
   "notices": [
@@ -1424,8 +1424,8 @@
       "title_kana": "じょいぷらねっと",
       "area": "Ginowan",
       "island": "okinawa",
-      "lat": 26.2812,
-      "lng": 127.739,
+      "lat": 26.275093,
+      "lng": 127.730797,
       "desc_en": "Indoor ball-pool and game play spot on the 2nd floor of San-A Ginowan Convention City — ages 0–12.",
       "desc_ja": "サンエー宜野湾コンベンションシティ2階の屋内遊び場。ボールプールなど0〜12歳向け。",
       "desc_ko": "산에이 기노완 컨벤션시티 2층의 실내 놀이터. 볼풀 등 0~12세 대상.",
@@ -1458,7 +1458,9 @@
         "ages_ko": "0~12세 (보호자 18세 이상)",
         "setting": "indoor",
         "under_6": true
-      }
+      },
+      "address_ja": "沖縄県宜野湾市宇地泊3-6-1 サンエー宜野湾コンベンションシティ2階",
+      "address_en": "2F San-A Ginowan Convention City, 3-6-1 Uchidomari, Ginowan, Okinawa"
     },
     {
       "id": "cape-manzamo",
@@ -19587,8 +19589,8 @@
       "title_ja": "ラウンドワンスタジアム 沖縄・宜野湾店",
       "title_ko": "라운드원 스타디움 오키나와 기노완",
       "title_kana": "らうんどわんすたじあむおきなわ・ぎのわんてん",
-      "lat": 26.2812,
-      "lng": 127.7395,
+      "lat": 26.276442,
+      "lng": 127.731689,
       "indoor": true,
       "desc_en": "Bowling, karaoke, Spoccha indoor sports park and amusement at Convention Center, Ginowan. Shoe rental ¥440 for bowling; Spoccha packs from ¥2,440 (adult 90 min, visitor).",
       "desc_ja": "宜野湾コンベンションセンター前のボウリング・カラオケ・スポッチャ・アミューズメント。ボウリング貸靴440円、スポッチャ90分パック大人2,440円〜（ビジター）。",
@@ -19620,7 +19622,9 @@
         "includes_en": "Bowling, karaoke, Spoccha, amusement · shoe rental extra for bowling",
         "includes_ja": "ボウリング・カラオケ・スポッチャ・アミューズメント・ボウリングは貸靴別",
         "includes_ko": "볼링·노래방·스포차·오락 · 볼링은 신발 대여 별도"
-      }
+      },
+      "address_ja": "沖縄県宜野湾市真志喜3丁目28番8号",
+      "address_en": "3-28-8 Mashiki, Ginowan, Okinawa"
     },
     {
       "etiquette": [],
@@ -19639,8 +19643,8 @@
       "title_ja": "ラウンドワン 沖縄・南風原店",
       "title_ko": "라운드원 오키나와 하에바루",
       "title_kana": "らうんどわんおきなわ・はえばるてん",
-      "lat": 26.194,
-      "lng": 127.729,
+      "lat": 26.194731,
+      "lng": 127.721352,
       "indoor": true,
       "desc_en": "Bowling, karaoke, billiards, darts and table tennis in Haebaru (Giga Crane Game Stadium). Official rate sheet on round1.co.jp; shoe rental ¥440.",
       "desc_ja": "南風原のボウリング・カラオケ・ビリヤード・ダーツ・卓球（ギガクレーンゲームスタジアム）。公式料金表あり。貸靴440円。",
@@ -19671,7 +19675,9 @@
         "includes_en": "Bowling, karaoke, billiards, darts, table tennis",
         "includes_ja": "ボウリング・カラオケ・ビリヤード・ダーツ・卓球",
         "includes_ko": "볼링·노래방·당구·다트·탁구"
-      }
+      },
+      "address_ja": "沖縄県島尻郡南風原町字兼城552番地",
+      "address_en": "552 Aza Kanagusuku, Haebaru, Okinawa"
     },
     {
       "etiquette": [],
@@ -35571,8 +35577,8 @@
       "locality_en": "Chatan",
       "locality_ja": "北谷",
       "locality_ko": "차탄",
-      "lat": 26.3617122,
-      "lng": 127.8217989,
+      "lat": 26.31834,
+      "lng": 127.759369,
       "english_menu": false,
       "indoor": true,
       "kids": {
@@ -35655,8 +35661,8 @@
       "locality_en": "Ishigaki",
       "locality_ja": "石垣",
       "locality_ko": "이시가키",
-      "lat": 26.3362675,
-      "lng": 127.8010981,
+      "lat": 24.343025,
+      "lng": 124.153458,
       "english_menu": false,
       "indoor": true,
       "kids": {
@@ -35858,8 +35864,8 @@
       "locality_en": "Naha",
       "locality_ja": "那覇",
       "locality_ko": "나하",
-      "lat": 26.3617122,
-      "lng": 127.8217989,
+      "lat": 26.21487,
+      "lng": 127.686958,
       "english_menu": false,
       "indoor": true,
       "kids": {
