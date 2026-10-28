@@ -18,6 +18,10 @@ CURRENT_VERSION = 13
 # season_*, includes_*, kids_ok, free_basis). Older apps ignore the unknown key; do NOT bump version for activity alone.
 # v0.17.0 keeps schema 13 and adds optional "viewpoint" (views[], sunset/sunrise/night, access drive_up|short_walk|hike,
 # walk_time_*, free_basis). Older apps ignore the unknown key; do NOT bump version for viewpoint alone.
+# v0.19.0 keeps schema 13 and adds optional "resident_discount" on places
+# ({text_en/ja/ko, proof_en/ja/ko, source}). Older apps ignore the unknown key; do NOT bump version.
+# Indoor / closed_days / beach season & jellyfish_net expanded where official; evacuation sites live in
+# evacuation.json (bundled asset, not content.json).
 # v0.13.0 (schema 12): parks & gardens — optional "park" object on places (kind = public / private; toilets / playground /
 # bbq / pets = true/false only when an official source says so; highlight_* text; free_basis). Missing key = not confirmed.
 # Every parks_gardens place must have Free or a fee. park.free_basis:
@@ -366,6 +370,25 @@ def validate(root, today=None):
         # v0.9.3 (schema 7)
         check_bool(p, w, "covered")
         if p.get("covered") and p.get("indoor"): warn(w, 'both "indoor" and "covered" — use "indoor" for a building, "covered" for an arcade / canopied street')
+        # v0.19.0: optional resident (県民) discount — only when an official source states it.
+        rd = p.get("resident_discount")
+        if rd is not None:
+            if not isinstance(rd, dict):
+                err(w, 'resident_discount must be an object {text_en/ja/ko, proof_en/ja/ko?, source?}')
+            else:
+                if not (rd.get("text_en") or rd.get("text_ja")):
+                    err(w, 'resident_discount needs text_en or text_ja')
+                for k in ("text", "proof"):
+                    for lang in ("en", "ja", "ko", "de"):
+                        key = f"{k}_{lang}"
+                        if key in rd and rd[key] is not None and not isinstance(rd[key], str):
+                            err(w, f'resident_discount.{key} must be text')
+                src = rd.get("source")
+                if src is not None and not (isinstance(src, str) and (src.startswith("https://") or src == "")):
+                    err(w, 'resident_discount.source must be an https URL')
+                known = {f"{a}_{b}" for a in ("text", "proof") for b in ("en", "ja", "ko", "de")} | {"source"}
+                for k in rd:
+                    if k not in known: warn(w, f'resident_discount: unknown key "{k}" (ignored)')
         cdates = p.get("closed_dates")
         if cdates is not None:
             if not isinstance(cdates, list) or not all(isinstance(x, str) and is_date(x) for x in cdates):

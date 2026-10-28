@@ -1,7 +1,7 @@
 {
   "schema": "nuchi-ping-content",
   "version": 13,
-  "updated": "2026-10-29T13:00:00+09:00",
+  "updated": "2026-10-29T22:00:00+09:00",
   "example_data": false,
   "notes": "EXAMPLE DATA shipped with ChuraBell (formerly Nuchi Ping) v0.8. Replace with your own. Events are illustrative; place hours/fees need verification. RESTAURANTS (v0.18.0): all listed restaurants are REAL, from official chain store locators / official shop pages and OCVB okinawastory.jp gourmet pages (docs/restaurants_research.md). Fictional restaurant examples removed. example_data remains true because bundled events (and a few other example items) are still illustrative. Featured (PR) flags are examples. Kukuru Kids Play Dome is a FICTIONAL place. BEACHES (v0.10.0, schema 9): all 80 beaches are REAL, from official sources (OCVB VISIT OKINAWA JAPAN beach information and okinawastory.jp, municipalities, tourism associations, operators) checked 2026-10-22 (docs/beaches_research.md). The `beach` box (toilets, lifeguard, showers, jellyfish net, swimming season) only holds facts an official source states — a missing key means not confirmed, not \"no\". Korean beach texts are own translations (review deferred). Coordinates from OCVB, checked against OpenStreetMap beach/coastline data. MEDICAL (v0.9.2): medical facilities, phone_lines and kids_rotation are REAL, checked against official sources on 2026-10-21 (docs/medical_research.md); re-check at least every 3 months. Korean (_ko) medical texts are own translations and NEED NATIVE REVIEW. Coordinates geocoded from the official addresses (GSI). Holidays: Cabinet Office list 2026–2027. Korean/German (_ko/_de) texts on a few items are a demo (own translations). All structured `parking` boxes (lots, fees, spaces, stops, walk times, shuttles, closures) are ILLUSTRATIVE EXAMPLES — check with the organiser/venue before publishing. Kadena Fall Fest dates (Nov 7–8) and Sunset Beach Fest are EXAMPLES. Entry & ID (`entry`) on Kadena Fall Fest and Flightline Fair is EXAMPLE data modelled on public notices for Kadena America Fest and the MCAS Futenma Flight Line Fair (see entry.sources) — both events are fictional examples; re-check the organiser's notice before publishing. ISLANDS (v0.9.4, schema 8): island clinics and the islands list are REAL, from official pages checked 2026-10-21 (docs/islands_medical_research.md); clinic English names are our translations; clinic addresses/coordinates left out (district-level only).",
   "notices": [
@@ -1583,6 +1583,15 @@
         "ages_ko": "유료 입장은 4세 이상 · 4세 미만 무료",
         "setting": "outdoor",
         "under_6": true
+      },
+      "resident_discount": {
+        "text_en": "Okinawa residents: half price (FY2026; some exclusions)",
+        "text_ja": "県民半額（2026年度・一部対象外あり）",
+        "text_ko": "오키나와 현민 반액 (2026년도·일부 제외)",
+        "proof_en": "ID showing Okinawa address",
+        "proof_ja": "沖縄県内住所が確認できる証明書",
+        "proof_ko": "오키나와 주소가 확인되는 증명서",
+        "source": "https://www.pineapplepark.jp/"
       }
     },
     {
@@ -2014,6 +2023,15 @@
         "includes_en": "Cave, Kingdom Village crafts, eisa shows",
         "includes_ja": "鍾乳洞・王国村工芸・エイサー",
         "includes_ko": "종유동·왕국촌 공예·에이사"
+      },
+      "resident_discount": {
+        "text_en": "Okinawa residents: ¥1,000 adults / ¥500 children (half price)",
+        "text_ja": "県民割引：大人¥1,000 / 小人¥500（半額）",
+        "text_ko": "오키나와 현민: 어른 ¥1,000 / 어린이 ¥500 (반액)",
+        "proof_en": "Driver's license or residence card showing Okinawa address",
+        "proof_ja": "沖縄県内住所が確認できる運転免許証または住民票など",
+        "proof_ko": "오키나와 주소가 확인되는 운전면허증 또는 거주 카드",
+        "source": "https://www.gyokusendo.co.jp/okinawaworld/ticket_kenmin/"
       }
     },
     {
@@ -2975,7 +2993,8 @@
       "hours_ja": "10:00〜20:00（各ショップの営業時間を確認）・不定休、元日・お盆は一部店舗休業",
       "hours_ko": "10:00–20:00 (점포별 확인) · 부정기 휴무, 설날·오봉에 일부 점포 휴무",
       "source": "Plaza House official site (access)",
-      "url": "https://plazahouse.net/"
+      "url": "https://plazahouse.net/",
+      "indoor": true
     },
     {
       "category": "shopping",
@@ -3052,7 +3071,8 @@
       "hours_ja": "9:00〜22:00（食品館は23:00まで・一部専門店は異なる）",
       "hours_ko": "9:00–22:00 (식품관 23:00까지, 일부 전문점 다름)",
       "source": "サンエー official site (具志川メインシティ)",
-      "url": "https://www.san-a.co.jp/gushikawamaincity/"
+      "url": "https://www.san-a.co.jp/gushikawamaincity/",
+      "indoor": true
     },
     {
       "category": "shopping",
@@ -3080,7 +3100,8 @@
       "parking_ja": "立体駐車場 約1,000台（料金は公式サイトに記載なし）。",
       "parking_ko": "입체 주차장 약 1,000대(요금은 공식 사이트에 기재 없음).",
       "source": "沖縄アウトレットモールあしびなー official site (hours, access, services)",
-      "url": "https://www.ashibinaa.com/"
+      "url": "https://www.ashibinaa.com/",
+      "indoor": true
     },
     {
       "category": "shopping",
@@ -3294,7 +3315,10 @@
       "parking_ja": "駐車場なし。徒歩3分の石垣市蔵元駐車場（1時間100円、2022年1月現在）。",
       "parking_ko": "주차장 없음. 도보 3분 이시가키시 구라모토 주차장(1시간 100엔, 2022년 1월 기준).",
       "source": "石垣市公設市場 official site (about, access)",
-      "url": "https://ishigaki-kousetsu-ichiba.com/"
+      "url": "https://ishigaki-kousetsu-ichiba.com/",
+      "closed_days": [
+        "sun"
+      ]
     },
     {
       "id": "beach-okuma",
@@ -10312,7 +10336,16 @@
         "https://www.bios-hill.co.jp/price/",
         "https://www.bios-hill.co.jp/15613/",
         "https://www.bios-hill.co.jp/15619/"
-      ]
+      ],
+      "resident_discount": {
+        "text_en": "Okinawa residents: ¥1,760 adults / ¥880 children",
+        "text_ja": "県民料金：大人¥1,760 / 小人¥880",
+        "text_ko": "오키나와 현민: 어른 ¥1,760 / 어린이 ¥880",
+        "proof_en": "ID showing Okinawa address (e.g. driver's license, residence card)",
+        "proof_ja": "沖縄県内住所が確認できる公的証明書",
+        "proof_ko": "오키나와 주소가 확인되는 공적 증명서",
+        "source": "https://www.bios-oka.co.jp/"
+      }
     },
     {
       "id": "park-shikinaen",
@@ -16043,6 +16076,15 @@
         "ages_ko": "어린이 요금은 4~12세",
         "setting": "outdoor",
         "under_6": true
+      },
+      "resident_discount": {
+        "text_en": "Northern Okinawa 12 municipalities: resident rate (see official site)",
+        "text_ja": "北部12市町村在住者割引（詳細は公式サイト）",
+        "text_ko": "북부 12시정촌 거주자 할인 (공식 사이트 확인)",
+        "proof_en": "ID showing residence in one of the northern 12 municipalities",
+        "proof_ja": "北部12市町村の住所が確認できる証明書",
+        "proof_ko": "북부 12시정촌 주소가 확인되는 증명서",
+        "source": "https://www.neopark.co.jp/"
       }
     },
     {
@@ -20105,7 +20147,10 @@
         "includes_en": "Climbing walls · shoe rental available",
         "includes_ja": "ボルダリングウォール・シューズレンタル可",
         "includes_ko": "볼더링 월 · 신발 대여 가능"
-      }
+      },
+      "closed_days": [
+        "wed"
+      ]
     },
     {
       "etiquette": [],
@@ -20158,7 +20203,10 @@
         "includes_en": "Bouldering · shoe rental available",
         "includes_ja": "ボルダリング・シューズレンタル可",
         "includes_ko": "볼더링 · 신발 대여 가능"
-      }
+      },
+      "closed_days": [
+        "fri"
+      ]
     },
     {
       "etiquette": [],
@@ -20843,6 +20891,15 @@
         "includes_en": "Village entry + eisa/folk shows · craft experiences extra",
         "includes_ja": "入村＋エイサー等公演・工芸体験は別料金",
         "includes_ko": "입장+에이사 등 공연 · 공예 체험은 별도 요금"
+      },
+      "resident_discount": {
+        "text_en": "Okinawa residents: resident rate at ticket window (ask on site)",
+        "text_ja": "県民料金あり（窓口でご確認ください）",
+        "text_ko": "현민 요금 있음 (창구에서 확인)",
+        "proof_en": "ID showing Okinawa address",
+        "proof_ja": "沖縄県内住所が確認できる証明書",
+        "proof_ko": "오키나와 주소가 확인되는 증명서",
+        "source": "https://www.ryukyumura.co.jp/"
       }
     },
     {
@@ -21476,7 +21533,10 @@
         "season_en": "Sea-horse course Jun–Oct fair weather only",
         "season_ja": "海うまコースは6〜10月・晴天時のみ",
         "season_ko": "바다 말 코스는 6~10월 맑은 날만"
-      }
+      },
+      "closed_days": [
+        "wed"
+      ]
     },
     {
       "etiquette": [],
