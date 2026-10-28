@@ -94,7 +94,7 @@ EVENT_CATEGORIES = {"festival", "market", "illumination", "base_event", "sports"
 KNOWN_TAGS = {"open_to_public", "id_required", "family_friendly", "base_event", "sacred_site"}
 # Same lists as the app (RestaurantParser.CUISINES, Payment).
 CUISINES = {"okinawa_soba", "okinawan", "taco_rice", "cafe", "burger", "japanese", "sushi", "ramen", "izakaya", "yakiniku",
-            "western", "italian", "international", "bakery", "sweets", "family", "other"}
+            "steak", "western", "italian", "international", "bakery", "sweets", "family", "other"}
 PAYMENTS = {"cash_only": "cash only", "card_ok": "cash and card", "card_only": "card / cashless only"}
 KIDS_KEYS = ("kids_friendly", "kids_menu", "high_chairs", "stroller_access", "play_corner", "nursing_changing")
 DAYS = {"mon", "tue", "wed", "thu", "fri", "sat", "sun"}
