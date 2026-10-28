@@ -12,6 +12,8 @@ CURRENT_VERSION = 13
 # v0.14.0 (schema 13): optional "family" object (ages_*, setting indoor|outdoor|both, nursing_room, diaper_changing,
 # stroller, under_6) and optional "also_in" (extra Explore tiles for the same place — multi-tile, one record).
 # Missing family keys = not confirmed (never "unknown"). Older apps reject schema 13 until they update.
+# v0.15.0 keeps schema 13 and adds optional "museum" (type, closed_*, last_entry_*, photography, guide_en, guide_ko,
+# audio_guide, visit_time_*, free_basis). Older 0.14 apps ignore the unknown key; do NOT bump version for museum alone.
 # v0.13.0 (schema 12): parks & gardens — optional "park" object on places (kind = public / private; toilets / playground /
 # bbq / pets = true/false only when an official source says so; highlight_* text; free_basis). Missing key = not confirmed.
 # Every parks_gardens place must have Free or a fee. park.free_basis:
@@ -544,9 +546,49 @@ def validate(root, today=None):
             if p.get("free") and cat == "kids" and not any(p.get(f"fee_{l}") for l in ("en", "ja")):
                 # free kids places (rare) — fee text optional when free; free_basis not required for kids category yet
                 pass
-        researched = cat in ("beaches", "castles") or (cat == "shrines_temples" and v11) or (cat == "parks_gardens" and v12) or (in_kids and v13)
+        
+        # v0.15.0 (schema 13 additive): museum facts
+        MUSEUM_TYPES = {"history", "peace", "art_craft", "nature_science"}
+        MUSEUM_FREE_BASES = {"official_free", "municipal_free", "permanent_free"}
+        MUSEUM_BOOLS = ("photography", "guide_en", "guide_ko", "audio_guide")
+        MUSEUM_TEXTS = ("closed", "last_entry", "visit_time")
+        if "museum" in p and p["museum"] is not None:
+            mo = p["museum"]
+            if not isinstance(mo, dict): err(w, 'museum must be an object like {"type": "history", "closed_en": "…"}')
+            else:
+                check_langs(mo, w + " museum")
+                if "type" in mo and mo["type"] not in MUSEUM_TYPES:
+                    err(w, f'museum.type must be one of {sorted(MUSEUM_TYPES)}')
+                for k in MUSEUM_BOOLS:
+                    if k in mo and not isinstance(mo[k], bool): err(w, f'museum.{k} must be true or false — leave it out when not confirmed (never "unknown")')
+                if "free_basis" in mo:
+                    fb = mo["free_basis"]
+                    if not isinstance(fb, str) or not fb.strip(): err(w, 'museum.free_basis must be a non-empty string')
+                    elif fb.strip().lower() not in MUSEUM_FREE_BASES:
+                        warn(w, f'museum.free_basis "{fb}" is not one of {sorted(MUSEUM_FREE_BASES)} — prefer those')
+                known = set(MUSEUM_BOOLS) | {"type", "free_basis"} | {f"{t}_{l}" for t in MUSEUM_TEXTS for l in ("en", "ja", "ko", "de")}
+                for k in mo:
+                    if k not in known: warn(w, f'museum: unknown key "{k}" (ignored)')
+                for tx in MUSEUM_TEXTS:
+                    if (mo.get(tx + "_ja") or mo.get(tx + "_ko")) and not mo.get(tx + "_en"): warn(w, f"museum.{tx}_en missing (English users see nothing)")
+                    if mo.get(tx + "_en") and not mo.get(tx + "_ja"): warn(w, f"museum.{tx}_ja missing")
+                if not any(k in mo for k in list(MUSEUM_BOOLS) + ["type", "free_basis"]) and not any(mo.get(f"{tx}_{l}") for tx in MUSEUM_TEXTS for l in ("en", "ja")):
+                    warn(w, "museum object is empty — leave it out")
+                if not v13: warn(w, f'"museum" needs "version" 13 (now {version}) — older apps ignore it')
+        in_museums = cat == "museums" or (isinstance(also, list) and "museums" in [str(x).strip().lower() for x in also])
+        if in_museums and v13 and not p.get("example"):
+            if not p.get("free") and not any(p.get(f"fee_{l}") for l in ("en", "ja")):
+                err(w, 'Museums places need a price: free: true (with museum.free_basis) or a confirmed fee_en / fee_ja — never guess')
+            if p.get("free"):
+                mo = p.get("museum") if isinstance(p.get("museum"), dict) else {}
+                if not (mo and mo.get("free_basis")) and not any(p.get(f"fee_{l}") for l in ("en", "ja")):
+                    err(w, 'free: true on a museum needs museum.free_basis (official_free / municipal_free / …) or a fee_* reason text — museums are NOT free by default')
+            if not isinstance(p.get("museum"), dict) or not p["museum"].get("type"):
+                err(w, 'museums need museum.type (history / peace / art_craft / nature_science)')
+
+        researched = cat in ("beaches", "castles") or (cat == "shrines_temples" and v11) or (cat == "parks_gardens" and v12) or (in_kids and v13) or (in_museums and v13)
         if researched and not p.get("example"):
-            kind = {"beaches": "beach", "castles": "castle", "parks_gardens": "park"}.get(cat, "shrine")
+            kind = {"beaches": "beach", "castles": "castle", "parks_gardens": "park", "museums": "museum", "kids": "family"}.get(cat, "shrine")
             if not p.get("source"): err(w, f"{cat} need a source (official pages)")
             if "last_checked" not in p: warn(w, f'no last_checked date ("YYYY-MM-DD") for this {kind}')
             if any(str(v).strip().lower() in ("unknown", "不明", "알 수 없음") for k, v in p.items() if re.fullmatch(r"(fee|parking|hours)_[a-z]+", k)):
