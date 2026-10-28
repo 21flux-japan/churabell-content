@@ -154,6 +154,7 @@ def validate(root, today=None):
         elif o["id"] in ids: err(where, f'duplicate id "{o["id"]}"')
         else: ids.add(o["id"])
 
+    # Offline sanity only. For GSI address/sea checks see tools/check_coords.py.
     def check_latlng(o, where):
         lat, lng = o.get("lat"), o.get("lng")
         if lat is None or lng is None: warn(where, "no lat/lng (no directions/distance/map)")
