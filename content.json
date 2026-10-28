@@ -1,7 +1,7 @@
 {
   "schema": "nuchi-ping-content",
   "version": 13,
-  "updated": "2026-10-28T17:30:00+09:00",
+  "updated": "2026-10-28T18:00:00+09:00",
   "example_data": true,
   "notes": "EXAMPLE DATA shipped with ChuraBell (formerly Nuchi Ping) v0.8. Replace with your own. Events are illustrative; place hours/fees need verification. All restaurants are FICTIONAL examples (names, menus, prices, phone numbers invented). Featured (PR) flags are examples. Kukuru Kids Play Dome is a FICTIONAL place. BEACHES (v0.10.0, schema 9): all 80 beaches are REAL, from official sources (OCVB VISIT OKINAWA JAPAN beach information and okinawastory.jp, municipalities, tourism associations, operators) checked 2026-10-22 (docs/beaches_research.md). The `beach` box (toilets, lifeguard, showers, jellyfish net, swimming season) only holds facts an official source states — a missing key means not confirmed, not \"no\". Korean beach texts are own translations (review deferred). Coordinates from OCVB, checked against OpenStreetMap beach/coastline data. MEDICAL (v0.9.2): medical facilities, phone_lines and kids_rotation are REAL, checked against official sources on 2026-10-21 (docs/medical_research.md); re-check at least every 3 months. Korean (_ko) medical texts are own translations and NEED NATIVE REVIEW. Coordinates geocoded from the official addresses (GSI). Holidays: Cabinet Office list 2026–2027. Korean/German (_ko/_de) texts on a few items are a demo (own translations). All structured `parking` boxes (lots, fees, spaces, stops, walk times, shuttles, closures) are ILLUSTRATIVE EXAMPLES — check with the organiser/venue before publishing. Kadena Fall Fest dates (Nov 7–8) and Sunset Beach Fest are EXAMPLES. Entry & ID (`entry`) on Kadena Fall Fest and Flightline Fair is EXAMPLE data modelled on public notices for Kadena America Fest and the MCAS Futenma Flight Line Fair (see entry.sources) — both events are fictional examples; re-check the organiser's notice before publishing. ISLANDS (v0.9.4, schema 8): island clinics and the islands list are REAL, from official pages checked 2026-10-21 (docs/islands_medical_research.md); clinic English names are our translations; clinic addresses/coordinates left out (district-level only).",
   "notices": [
@@ -9628,9 +9628,9 @@
       "island": "okinawa",
       "lat": 26.25043,
       "lng": 127.7286,
-      "desc_en": "Prefectural park below Urasoe Castle Ruins with forest walks, lawns, a large play area, and hill lookouts over Urasoe and Ginowan — listed as a Japan Night View Heritage site (car parks close around 21:00).",
-      "desc_ja": "浦添城跡のふもとの県営公園。森の散策路、芝生、大きな遊具に加え、浦添・宜野湾を望む展望所があります。日本夜景遺産に選ばれ、駐車場は21時頃閉鎖です。",
-      "desc_ko": "우라소에 성터 아래 현립 공원. 숲 산책로·잔디·큰 놀이기구와 함께 우라소에·기노완을 내려다보는 전망대가 있습니다. 일본 야경유산으로 선정됐으며 주차장은 21시경 폐쇄됩니다.",
+      "desc_en": "Prefectural park below Urasoe Castle Ruins with forest walks, lawns, a large play area, and hill lookouts over Urasoe and Ginowan — listed as a Japan Night View Heritage site (car parks close around 21:00) Best visited after dark for the Japan Night View Heritage city lights (car parks close around 21:00).",
+      "desc_ja": "浦添城跡のふもとの県営公園。森の散策路、芝生、大きな遊具に加え、浦添・宜野湾を望む展望所があります。日本夜景遺産に選ばれ、駐車場は21時頃閉鎖です。日本夜景遺産の街明かりは夜の訪問がおすすめ（駐車場は21時頃閉鎖）。",
+      "desc_ko": "우라소에 성터 아래 현립 공원. 숲 산책로·잔디·큰 놀이기구와 함께 우라소에·기노완을 내려다보는 전망대가 있습니다. 일본 야경유산으로 선정됐으며 주차장은 21시경 폐쇄됩니다. 일본 야경유산 야경은 밤에 방문하는 게 좋아요(주차장은 21시경 폐쇄).",
       "free": true,
       "parking_en": "Car parks at the South Entrance, C-1 and C-2",
       "parking_ja": "南口駐車場・C-1・C-2駐車場",
@@ -10231,9 +10231,9 @@
       "island": "ishigaki",
       "lat": 24.37778,
       "lng": 124.16437,
-      "desc_en": "Large prefectural forest park on Mt. Banna in the middle of Ishigaki, with lookouts over the town and nearby islands.",
-      "desc_ja": "石垣島の中央・バンナ岳にある大きな県営の森林公園。市街地や周りの島々を望む展望台があります。",
-      "desc_ko": "이시가키섬 중앙 반나다케에 있는 큰 현립 삼림공원입니다. 시가지와 주변 섬이 보이는 전망대가 있습니다.",
+      "desc_en": "Large prefectural forest park on Mt. Banna in the middle of Ishigaki, with lookouts over the town and nearby islands. Official FAQ: starry skies and night views from the observatory decks until gates close at 21:00 — the Emerald Sea observatory is a Japan Night View Heritage viewpoint (best after dark).",
+      "desc_ja": "石垣島の中央・バンナ岳にある大きな県営の森林公園。市街地や周りの島々を望む展望台があります。公式FAQでは展望台から星空・夜景を楽しめ、閉園は21:00。エメラルドの海が見える展望台は日本夜景遺産（夜の訪問がおすすめ）。",
+      "desc_ko": "이시가키섬 중앙 반나다케에 있는 큰 현립 삼림공원입니다. 시가지와 주변 섬이 보이는 전망대가 있습니다. 공식 FAQ: 전망대에서 별·야경을 즐길 수 있으며 폐원은 21:00. 에메랄드 바다 전망대는 일본 야경유산(밤에 방문하는 게 좋아요).",
       "fee_en": "Free entry and parking",
       "fee_ja": "入園料・駐車料金 無料",
       "fee_ko": "입장료·주차료 무료",
@@ -10264,7 +10264,8 @@
         "https://banna.jp/service-guide",
         "https://banna.jp/access",
         "https://banna.jp/map",
-        "https://www.pref.okinawa.jp/machizukuri/park/1012790/index.html"
+        "https://www.pref.okinawa.jp/machizukuri/park/1012790/index.html",
+        "https://www.yakei-isan.jp/spot/detail.php?id=209"
       ],
       "also_in": [
         "kids",
@@ -10288,7 +10289,8 @@
         "free_basis": "public_park",
         "walk_time_en": "Short walk from Zone car parks to the observatory decks",
         "walk_time_ja": "各ゾーン駐車場から展望台まで短い徒歩",
-        "walk_time_ko": "각 존 주차장에서 전망대까지 짧은 도보"
+        "walk_time_ko": "각 존 주차장에서 전망대까지 짧은 도보",
+        "night": true
       }
     },
     {
@@ -13497,13 +13499,13 @@
       "island": "okinawa",
       "lat": 26.25853,
       "lng": 127.73656,
-      "desc_en": "Park in Ginowan.",
-      "desc_ja": "宜野湾市の公園。",
-      "desc_ko": "기노완시의 공원입니다.",
+      "desc_en": "Hilltop park in Ginowan with a globe-shaped observatory over Futenma, Ginowan/Urasoe city lights, and the East China Sea. Designated a Japan Night View Heritage site — best visited after dark. Free; stairs to the deck (~124 steps).",
+      "desc_ja": "宜野湾市の高台公園。地球儀型展望台から普天間・宜野湾／浦添の街明かりと東シナ海を望めます。日本夜景遺産認定 — 夜の訪問がおすすめ。無料。展望台まで階段約124段。",
+      "desc_ko": "기노완시 언덕 공원. 지구본형 전망대에서 후텐마·기노완/우라소에 야경과 동중국해를 볼 수 있습니다. 일본 야경유산 — 밤에 방문하는 게 좋아요. 무료. 전망대까지 계단 약 124단.",
       "free": true,
-      "parking_en": "Parking for 18 cars",
-      "parking_ja": "駐車場 18台",
-      "parking_ko": "주차장 18대",
+      "parking_en": "Free car park at the entrance (hours commonly listed ~6:00–22:00)",
+      "parking_ja": "入口の無料駐車場（利用時間はおおむね6:00〜22:00）",
+      "parking_ko": "입구 무료 주차장(이용 시간 대략 6:00–22:00)",
       "park": {
         "kind": "public",
         "toilets": true,
@@ -13512,15 +13514,33 @@
       "etiquette": [],
       "tags": [],
       "needs_verification": false,
-      "source": "Ginowan City (park open data · park toilet open data)",
-      "url": "https://www.city.ginowan.lg.jp/opendata_top/Education_Culture_Sports_Life/20391.html",
+      "source": "Japan Night View Heritage · Ginowan City Tourism Association · designated manager Hagoromo PM Partners",
+      "url": "https://www.yakei-isan.jp/spot/detail.php?id=208",
       "image": null,
-      "last_checked": "2026-10-22",
+      "last_checked": "2026-10-28",
       "indoor": false,
       "sources": [
-        "https://www.city.ginowan.lg.jp/opendata_top/Education_Culture_Sports_Life/20391.html",
-        "https://www.city.ginowan.lg.jp/opendata_top/Education_Culture_Sports_Life/20392.html"
-      ]
+        "https://www.yakei-isan.jp/spot/detail.php?id=208",
+        "https://ginowan.info/2025/06/17/kakazu-park/"
+      ],
+      "also_in": [
+        "viewpoints"
+      ],
+      "fee_en": "Free entry and parking",
+      "fee_ja": "入場・駐車場 無料",
+      "fee_ko": "입장·주차 무료",
+      "viewpoint": {
+        "views": [
+          "city",
+          "sea"
+        ],
+        "night": true,
+        "access": "short_walk",
+        "free_basis": "public_park",
+        "walk_time_en": "About 124 steps from the entrance car park up to the observatory deck",
+        "walk_time_ja": "入口駐車場から展望台まで階段約124段",
+        "walk_time_ko": "입구 주차장에서 전망대까지 계단 약 124단"
+      }
     },
     {
       "id": "park-morikawa-ginowan",
@@ -22265,6 +22285,141 @@
         ],
         "access": "short_walk",
         "free_basis": "municipal_free"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "makiyama-observatory",
+      "title_en": "Makiyama Observatory",
+      "title_ja": "牧山展望台",
+      "title_kana": "まきやまてんぼうだい",
+      "title_ko": "마키야마 전망대",
+      "category": "viewpoints",
+      "area": "Miyakojima",
+      "island": "irabu",
+      "lat": 24.81786,
+      "lng": 125.21828,
+      "desc_en": "White, bird-shaped lookout on Irabu Island’s high ground with views over Miyako, Ikema, Kurima, and Irabu Bridge. Free; parking and toilets on site (Miyako Island Tourism Association).",
+      "desc_ja": "伊良部島の高台にあるサシバをかたどった白い展望台。宮古本島・池間島・来間島と伊良部大橋を一望。無料。駐車場・トイレあり（宮古島観光協会）。",
+      "desc_ko": "이라부섬 고지의 새 모양 흰 전망대. 미야코 본섬·이케마·구리마와 이라부 대교를 한눈에. 무료. 주차장·화장실 있음(미야코섬 관광협회).",
+      "free": true,
+      "fee_en": "Free entry and parking",
+      "fee_ja": "入場・駐車場 無料",
+      "fee_ko": "입장·주차 무료",
+      "parking_en": "Free parking near the observatory (short walk up)",
+      "parking_ja": "展望台近くの無料駐車場（短い上り徒歩）",
+      "parking_ko": "전망대 근처 무료 주차장(짧은 오르막 도보)",
+      "source": "Miyako Island Tourism Association",
+      "url": "https://miyako-island.net/beach_and_spot/beach_spot_017/",
+      "sources": [
+        "https://miyako-island.net/beach_and_spot/beach_spot_017/",
+        "https://www.city.miyakojima.lg.jp/kanko/annai/keisyouchi.html"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands",
+          "bridge"
+        ],
+        "access": "short_walk",
+        "free_basis": "municipal_free",
+        "walk_time_en": "A few minutes from the car park to the deck",
+        "walk_time_ja": "駐車場から展望台まで数分",
+        "walk_time_ko": "주차장에서 전망대까지 수 분"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "nishi-hennazaki-viewpoint",
+      "title_en": "Cape Nishi-Hennazaki",
+      "title_ja": "西平安名崎",
+      "title_kana": "にしへんなざき",
+      "title_ko": "니시헨나자키",
+      "category": "viewpoints",
+      "area": "Miyakojima",
+      "island": "miyako",
+      "lat": 24.8755,
+      "lng": 125.268,
+      "desc_en": "Miyako’s northwestern tip lookout toward Ikema Bridge, Ikema Island, and Irabu — listed on Miyakojima City’s scenic spots page. Free; parking, toilets, and vending (Miyako Island Tourism Association).",
+      "desc_ja": "宮古本島の北西端。池間大橋・池間島・伊良部方面を望む景勝地（宮古島市景勝地ページ掲載）。無料。駐車場・トイレ・自販機あり（宮古島観光協会）。",
+      "desc_ko": "미야코 본섬 북서쪽 끝. 이케마 대교·이케마섬·이라부 방면 전망(미야코지마시 경승지 페이지). 무료. 주차장·화장실·자판기 있음(미야코섬 관광협회).",
+      "free": true,
+      "fee_en": "Free entry and parking",
+      "fee_ja": "入場・駐車場 無料",
+      "fee_ko": "입장·주차 무료",
+      "parking_en": "Free parking at the cape (toilets and vending nearby)",
+      "parking_ja": "岬の無料駐車場（トイレ・自販機あり）",
+      "parking_ko": "곶 무료 주차장(화장실·자판기 있음)",
+      "source": "Miyakojima City · Miyako Island Tourism Association",
+      "url": "https://www.city.miyakojima.lg.jp/kanko/annai/keisyouchi.html",
+      "sources": [
+        "https://www.city.miyakojima.lg.jp/kanko/annai/keisyouchi.html",
+        "https://miyako-island.net/beach_and_spot/beach_spot_024/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands",
+          "bridge"
+        ],
+        "sunset": true,
+        "access": "drive_up",
+        "free_basis": "municipal_free"
+      },
+      "indoor": false,
+      "needs_verification": false,
+      "last_checked": "2026-10-28",
+      "etiquette": [],
+      "tags": [],
+      "image": null
+    },
+    {
+      "id": "ie-gusukuyama",
+      "title_en": "Ie Gusukuyama (Tacchu)",
+      "title_ja": "伊江島タッチュー（城山）",
+      "title_kana": "いえじまたっちゅー（ぐすくやま）",
+      "title_ko": "이에섬 탓추(구스쿠야마)",
+      "category": "viewpoints",
+      "area": "Ie",
+      "island": "ie",
+      "lat": 26.7133,
+      "lng": 127.8075,
+      "desc_en": "Ie Island’s 172 m cone (officially Gusukuyama) with a summit lookout over the island. Always open to visitors per Ie Island Tourism Association; hiking stairs from the south trailhead.",
+      "desc_ja": "標高172mの伊江島のシンボル岩山（正式名称：城山）。頂上展望から島を一望。伊江島観光協会によれば常時観覧可能。南登山口から階段の登山。",
+      "desc_ko": "해발 172m 이에섬의 상징 바위산(정식명: 구스쿠야마). 정상 전망대에서 섬을 한눈에. 이에섬 관광협회에 따르면 상시 관람 가능. 남쪽 등산로 계단 이용.",
+      "free": true,
+      "fee_en": "Free (hiking trail)",
+      "fee_ja": "無料（登山道）",
+      "fee_ko": "무료(등산로)",
+      "parking_en": "Trailhead parking near the south climb (village / tourism association guidance)",
+      "parking_ja": "南登山口付近の駐車場（村・観光協会案内）",
+      "parking_ko": "남쪽 등산로 입구 근처 주차장(마을·관광협회 안내)",
+      "source": "Ie Island Tourism Association · Ie Village",
+      "url": "https://iejima.okinawa/kankou/%e4%bc%8a%e6%b1%9f%e5%b3%b6%e3%82%bf%e3%83%83%e3%83%81%e3%83%a5%e3%83%bc/",
+      "sources": [
+        "https://iejima.okinawa/kankou/%e4%bc%8a%e6%b1%9f%e5%b3%b6%e3%82%bf%e3%83%83%e3%83%81%e3%83%a5%e3%83%bc/",
+        "https://www.iejima.org/document/2015011000046/"
+      ],
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands"
+        ],
+        "access": "hike",
+        "free_basis": "open_lookout",
+        "walk_time_en": "About 20 minutes up / 15 minutes down on the south stair trail (tourism materials)",
+        "walk_time_ja": "南登山口から上り約20分・下り約15分（観光案内）",
+        "walk_time_ko": "남쪽 등산로 기준 오르막 약 20분·내리막 약 15분(관광 안내)"
       },
       "indoor": false,
       "needs_verification": false,
