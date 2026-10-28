@@ -94,7 +94,7 @@ EVENT_CATEGORIES = {"festival", "market", "illumination", "base_event", "sports"
 KNOWN_TAGS = {"open_to_public", "id_required", "family_friendly", "base_event", "sacred_site"}
 # Same lists as the app (RestaurantParser.CUISINES, Payment).
 CUISINES = {"okinawa_soba", "okinawan", "taco_rice", "cafe", "burger", "japanese", "sushi", "ramen", "izakaya", "yakiniku",
-            "western", "italian", "international", "bakery", "sweets", "other"}
+            "western", "italian", "international", "bakery", "sweets", "family", "other"}
 PAYMENTS = {"cash_only": "cash only", "card_ok": "cash and card", "card_only": "card / cashless only"}
 KIDS_KEYS = ("kids_friendly", "kids_menu", "high_chairs", "stroller_access", "play_corner", "nursing_changing")
 DAYS = {"mon", "tue", "wed", "thu", "fri", "sat", "sun"}
@@ -716,8 +716,13 @@ def validate(root, today=None):
         if not r.get("name_ja"): warn(w, "no name_ja")
         if r.get("cuisine") not in CUISINES: err(w, f'cuisine must be one of {sorted(CUISINES)} (use "other" + cuisine_label_en/_ja for anything else)')
         pr = r.get("price_range")
-        if pr not in (1, 2, 3) or isinstance(pr, bool): err(w, "price_range must be 1 (~¥1,000), 2 (¥1,000–3,000) or 3 (¥3,000+) per person")
-        if r.get("payment") not in PAYMENTS: err(w, 'payment must be "cash_only", "card_ok" (cash and card) or "card_only" (cashless)')
+        # v0.18: omit price_range when official menu prices are not available (app treats missing/0 as unknown).
+        if pr is not None and (pr not in (1, 2, 3) or isinstance(pr, bool)):
+            err(w, "price_range must be 1 (~¥1,000), 2 (¥1,000–3,000) or 3 (¥3,000+) per person, or omitted when unknown")
+        pay = r.get("payment")
+        # v0.18: omit payment when the official source does not state how you can pay (app → UNKNOWN).
+        if pay is not None and pay not in PAYMENTS:
+            err(w, 'payment must be "cash_only", "card_ok" (cash and card) or "card_only" (cashless), or omitted when unknown')
         if not isinstance(r.get("english_menu"), bool): err(w, "english_menu must be true or false")
         k = r.get("kids")
         if not isinstance(k, dict): err(w, 'kids must be an object like {"kids_friendly": true, "kids_menu": false, ...}')
