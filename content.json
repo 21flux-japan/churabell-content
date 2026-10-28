@@ -1,7 +1,7 @@
 {
   "schema": "nuchi-ping-content",
-  "version": 12,
-  "updated": "2026-10-22T09:00:00+09:00",
+  "version": 13,
+  "updated": "2026-10-28T13:00:00+09:00",
   "example_data": true,
   "notes": "EXAMPLE DATA shipped with ChuraBell (formerly Nuchi Ping) v0.8. Replace with your own. Events are illustrative; place hours/fees need verification. All restaurants are FICTIONAL examples (names, menus, prices, phone numbers invented). Featured (PR) flags are examples. Kukuru Kids Play Dome is a FICTIONAL place. BEACHES (v0.10.0, schema 9): all 80 beaches are REAL, from official sources (OCVB VISIT OKINAWA JAPAN beach information and okinawastory.jp, municipalities, tourism associations, operators) checked 2026-10-22 (docs/beaches_research.md). The `beach` box (toilets, lifeguard, showers, jellyfish net, swimming season) only holds facts an official source states — a missing key means not confirmed, not \"no\". Korean beach texts are own translations (review deferred). Coordinates from OCVB, checked against OpenStreetMap beach/coastline data. MEDICAL (v0.9.2): medical facilities, phone_lines and kids_rotation are REAL, checked against official sources on 2026-10-21 (docs/medical_research.md); re-check at least every 3 months. Korean (_ko) medical texts are own translations and NEED NATIVE REVIEW. Coordinates geocoded from the official addresses (GSI). Holidays: Cabinet Office list 2026–2027. Korean/German (_ko/_de) texts on a few items are a demo (own translations). All structured `parking` boxes (lots, fees, spaces, stops, walk times, shuttles, closures) are ILLUSTRATIVE EXAMPLES — check with the organiser/venue before publishing. Kadena Fall Fest dates (Nov 7–8) and Sunset Beach Fest are EXAMPLES. Entry & ID (`entry`) on Kadena Fall Fest and Flightline Fair is EXAMPLE data modelled on public notices for Kadena America Fest and the MCAS Futenma Flight Line Fair (see entry.sources) — both events are fictional examples; re-check the organiser's notice before publishing. ISLANDS (v0.9.4, schema 8): island clinics and the islands list are REAL, from official pages checked 2026-10-21 (docs/islands_medical_research.md); clinic English names are our translations; clinic addresses/coordinates left out (district-level only).",
   "notices": [
@@ -1082,12 +1082,12 @@
       "area": "Motobu",
       "lat": 26.6943,
       "lng": 127.8779,
-      "desc_en": "World-famous aquarium in Ocean Expo Park with whale sharks and manta rays in the huge Kuroshio Sea tank.",
+      "desc_en": "World-famous aquarium in Ocean Expo Park with whale sharks and manta rays in the Kuroshio Sea tank.",
       "desc_ja": "海洋博公園内の水族館。巨大水槽「黒潮の海」でジンベエザメやマンタを見られます。",
-      "hours_en": "Approx. 8:30–18:30 (last entry 17:30)",
-      "hours_ja": "8:30〜18:30頃（入館は17:30まで）",
-      "fee_en": "Approx. ¥2,180 adults; discounts after 16:00",
-      "fee_ja": "大人2,180円程度・16時以降割引",
+      "hours_en": "Usually 8:30–18:30 (last entry 17:30); seasonal hours on the official site",
+      "hours_ja": "通常 8:30〜18:30（入館は17:30まで）・季節により変更あり（公式サイト）",
+      "fee_en": "Adults ¥2,180 · high school ¥1,440 · elementary/junior high ¥710 · under 6 free",
+      "fee_ja": "大人2,180円・高校生1,440円・小中学生710円・6歳未満無料",
       "free": false,
       "indoor": true,
       "parking_en": "Free parking in Ocean Expo Park",
@@ -1096,10 +1096,311 @@
       "tags": [
         "family_friendly"
       ],
-      "needs_verification": true,
-      "source": "ChuraBell example data — Hours/fees are approximate and need verification before you go.",
+      "needs_verification": false,
+      "source": "churaumi.okinawa (official fee / hours / for visitors with infants)",
       "url": "https://churaumi.okinawa/",
-      "image": null
+      "image": null,
+      "title_ko": "오키나와 추라우미 수족관",
+      "island": "okinawa",
+      "desc_ko": "해양박공원 안의 세계적 수족관. 거대수조 「구로시오의 바다」에서 고래상어와 만타를 볼 수 있습니다.",
+      "hours_ko": "보통 8:30~18:30 (입장 마감 17:30) · 계절에 따라 변경 (공식 사이트)",
+      "fee_ko": "어른 2,180엔 · 고등학생 1,440엔 · 초·중학생 710엔 · 6세 미만 무료",
+      "parking_ko": "해양박공원 무료 주차장",
+      "last_checked": "2026-10-28",
+      "sources": [
+        "https://churaumi.okinawa/en/guide/info/",
+        "https://churaumi.okinawa/guide/hour/",
+        "https://churaumi.okinawa/en/guide/baby/"
+      ],
+      "family": {
+        "ages_en": "All ages · under 6 free",
+        "ages_ja": "全年齢・6歳未満無料",
+        "ages_ko": "전 연령 · 6세 미만 무료",
+        "setting": "indoor",
+        "nursing_room": true,
+        "diaper_changing": true,
+        "stroller": true,
+        "under_6": true
+      }
+    },
+    {
+      "id": "dmm-kariyushi-aquarium",
+      "category": "kids",
+      "title_en": "DMM Kariyushi Aquarium",
+      "title_ja": "DMMかりゆし水族館",
+      "title_ko": "DMM 가리유시 수족관",
+      "title_kana": "でぃーえむえむかりゆしすいぞくかん",
+      "area": "Tomigusuku",
+      "island": "okinawa",
+      "lat": 26.1575,
+      "lng": 127.6514,
+      "desc_en": "Indoor digital aquarium inside iias Okinawa Toyosaki — coral, jellyfish and projection shows for rainy days.",
+      "desc_ja": "イーアス沖縄豊崎内の屋内水族館。サンゴやクラゲ、プロジェクション演出があり雨の日にもおすすめ。",
+      "desc_ko": "이아스 오키나와 도요사키 안의 실내 수족관. 산호·해파리·프로젝션 쇼가 있어 비 오는 날에도 좋습니다.",
+      "hours_en": "9:00–19:00 every day (last entry usually 60 minutes before closing)",
+      "hours_ja": "9:00〜19:00・年中無休（最終入館は閉館60分前が目安）",
+      "hours_ko": "9:00~19:00 · 연중무휴 (최종 입장은 보통 폐관 60분 전)",
+      "fee_en": "Value / Regular / Peak: adults (18+) ¥3,100–¥3,500 · ages 13–17 ¥2,500–¥2,900 · ages 4–12 ¥2,000–¥2,400 · under 4 free",
+      "fee_ja": "バリュー〜ピーク：大人（18歳以上）3,100〜3,500円・中人（13〜17歳）2,500〜2,900円・小人（4〜12歳）2,000〜2,400円・3歳以下無料",
+      "fee_ko": "밸류~피크: 어른(18세 이상) 3,100~3,500엔 · 중학생·고등(13~17세) 2,500~2,900엔 · 어린이(4~12세) 2,000~2,400엔 · 3세 이하 무료",
+      "free": false,
+      "indoor": true,
+      "parking_en": "Use iias Okinawa Toyosaki car park (about 3,000 spaces)",
+      "parking_ja": "イーアス沖縄豊崎の駐車場（約3,000台）",
+      "parking_ko": "이아스 오키나와 도요사키 주차장 (약 3,000대)",
+      "etiquette": [],
+      "tags": [
+        "family_friendly"
+      ],
+      "needs_verification": false,
+      "source": "kariyushi-aquarium.com (official fee / FAQ facility)",
+      "url": "https://kariyushi-aquarium.com/",
+      "image": null,
+      "last_checked": "2026-10-28",
+      "sources": [
+        "https://kariyushi-aquarium.com/fee-ticket/",
+        "https://kariyushi-aquarium.com/faq/facility/",
+        "https://kariyushi-aquarium.com/opening-hours/"
+      ],
+      "family": {
+        "ages_en": "Ages 4+ for paid entry · under 4 free",
+        "ages_ja": "有料入場は4歳以上・3歳以下無料",
+        "ages_ko": "유료 입장은 4세 이상 · 3세 이하 무료",
+        "setting": "indoor",
+        "nursing_room": true,
+        "diaper_changing": true,
+        "stroller": true,
+        "under_6": true
+      }
+    },
+    {
+      "id": "nago-pineapple-park",
+      "category": "kids",
+      "title_en": "Nago Pineapple Park",
+      "title_ja": "ナゴパイナップルパーク",
+      "title_ko": "나고 파인애플 파크",
+      "title_kana": "なごぱいなっぷるぱーく",
+      "area": "Nago",
+      "island": "okinawa",
+      "lat": 26.6294,
+      "lng": 127.986,
+      "desc_en": "Pineapple theme park in Nago with a cart ride through the plantation, tasting and pineapple soft serve.",
+      "desc_ja": "名護市のパイナップルテーマパーク。農園カートライドや試食、ソフトクリームが楽しめます。",
+      "desc_ko": "나고시의 파인애플 테마파크. 농원 카트 라이드·시식·소프트크림을 즐길 수 있습니다.",
+      "hours_en": "10:00–18:00 (last entry 17:30)",
+      "hours_ja": "10:00〜18:00（最終入園17:30）",
+      "hours_ko": "10:00~18:00 (최종 입장 17:30)",
+      "fee_en": "Adults (16+) ¥1,500 · children (4–15) ¥800 · under 4 free",
+      "fee_ja": "大人（16歳以上）1,500円・小人（4〜15歳）800円・4歳未満無料",
+      "fee_ko": "어른(16세 이상) 1,500엔 · 어린이(4~15세) 800엔 · 4세 미만 무료",
+      "free": false,
+      "indoor": false,
+      "parking_en": "Free parking (about 200 cars)",
+      "parking_ja": "無料駐車場（約200台）",
+      "parking_ko": "무료 주차장 (약 200대)",
+      "etiquette": [],
+      "tags": [
+        "family_friendly"
+      ],
+      "needs_verification": false,
+      "source": "nagopine.com (official access / fees)",
+      "url": "https://www.nagopine.com/",
+      "image": null,
+      "last_checked": "2026-10-28",
+      "sources": [
+        "https://www.nagopine.com/access.html"
+      ],
+      "family": {
+        "ages_en": "Ages 4+ for paid entry · under 4 free",
+        "ages_ja": "有料入場は4歳以上・4歳未満無料",
+        "ages_ko": "유료 입장은 4세 이상 · 4세 미만 무료",
+        "setting": "outdoor",
+        "under_6": true
+      }
+    },
+    {
+      "id": "okinawa-fruits-land",
+      "category": "kids",
+      "title_en": "Okinawa Fruits Land",
+      "title_ja": "OKINAWAフルーツらんど",
+      "title_ko": "오키나와 프루츠랜드",
+      "title_kana": "おきなわふるーつらんど",
+      "area": "Nago",
+      "island": "okinawa",
+      "lat": 26.6328,
+      "lng": 127.9972,
+      "desc_en": "Tropical fruit park in Nago with gardens, bird zone and fruit tasting — popular with families.",
+      "desc_ja": "名護市のトロピカルフルーツのテーマパーク。庭園・バードゾーン・フルーツ試食があり家族連れに人気です。",
+      "desc_ko": "나고시의 열대 과일 테마파크. 정원·버드존·과일 시식이 있어 가족 여행에 인기입니다.",
+      "hours_en": "10:00–18:00 (last entry 17:30)",
+      "hours_ja": "10:00〜18:00（最終入園17:30）",
+      "hours_ko": "10:00~18:00 (최종 입장 17:30)",
+      "fee_en": "Adults (high school+) ¥1,200 · children (4–junior high) ¥600 · under 4 free",
+      "fee_ja": "大人（高校生以上）1,200円・小人（4歳〜中学生）600円・4歳未満無料",
+      "fee_ko": "어른(고등학생 이상) 1,200엔 · 어린이(4세~중학생) 600엔 · 4세 미만 무료",
+      "free": false,
+      "indoor": false,
+      "parking_en": "Free parking (on site)",
+      "parking_ja": "無料駐車場（園内）",
+      "parking_ko": "무료 주차장 (원내)",
+      "etiquette": [],
+      "tags": [
+        "family_friendly"
+      ],
+      "needs_verification": false,
+      "source": "okinawa-fruitsland.jp (official basic info)",
+      "url": "https://www.okinawa-fruitsland.jp/",
+      "image": null,
+      "last_checked": "2026-10-28",
+      "sources": [
+        "https://en.okinawa-fruitsland.jp/%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1"
+      ],
+      "family": {
+        "ages_en": "Ages 4+ for paid entry · under 4 free",
+        "ages_ja": "有料入場は4歳以上・4歳未満無料",
+        "ages_ko": "유료 입장은 4세 이상 · 4세 미만 무료",
+        "setting": "outdoor",
+        "stroller": true,
+        "under_6": true
+      }
+    },
+    {
+      "id": "naminoue-wakuwaku-kids",
+      "category": "kids",
+      "title_en": "Naminoue Wakuwaku Kids Land",
+      "title_ja": "波の上わくわくキッズランド",
+      "title_ko": "나미노우에 와쿠와쿠 키즈랜드",
+      "title_kana": "なみのうえわくわくきっずらんど",
+      "area": "Naha",
+      "island": "okinawa",
+      "lat": 26.2178,
+      "lng": 127.6695,
+      "desc_en": "Indoor kids park in Naha (Espana 2F) for rainy days and hot weather — ball pools and play structures.",
+      "desc_ja": "那覇市辻・エスパーナ2階の屋内キッズパーク。雨の日や暑い日の遊び場です。",
+      "desc_ko": "나하시 쓰지·에스파냐 2층의 실내 키즈파크. 비 오는 날·더운 날 놀이터입니다.",
+      "hours_en": "Weekdays 10:00–19:00 · Sat/Sun/holidays 9:00–19:00 (last entry 18:00) · open every day",
+      "hours_ja": "平日 10:00〜19:00・土日祝 9:00〜19:00（最終受付18:00）・年中無休",
+      "hours_ko": "평일 10:00~19:00 · 토·일·공휴일 9:00~19:00 (최종 접수 18:00) · 연중무휴",
+      "fee_en": "Kids (6 months–12) ¥700/hour · guardian ¥600 (unlimited time) · under 6 months free",
+      "fee_ja": "キッズ（6か月〜12歳）1時間700円・保護者は時間無制限600円・生後6か月以下無料",
+      "fee_ko": "키즈(6개월~12세) 1시간 700엔 · 보호자 시간 무제한 600엔 · 생후 6개월 이하 무료",
+      "free": false,
+      "indoor": true,
+      "parking_en": "Espana car park (free while using the facility)",
+      "parking_ja": "エスパーナ施設内駐車場（施設利用時無料）",
+      "parking_ko": "에스파냐 시설 주차장 (시설 이용 시 무료)",
+      "etiquette": [],
+      "tags": [
+        "family_friendly"
+      ],
+      "needs_verification": false,
+      "source": "nami-kids.com (official information)",
+      "url": "https://www.nami-kids.com/",
+      "image": null,
+      "last_checked": "2026-10-28",
+      "sources": [
+        "https://www.nami-kids.com/information/",
+        "https://www.nami-kids.com/faq/"
+      ],
+      "family": {
+        "ages_en": "Ages 6 months–12 · under 6 months free",
+        "ages_ja": "6か月〜12歳・生後6か月以下無料",
+        "ages_ko": "6개월~12세 · 생후 6개월 이하 무료",
+        "setting": "indoor",
+        "nursing_room": true,
+        "diaper_changing": true,
+        "under_6": true
+      }
+    },
+    {
+      "id": "the-kids-palette-kumoji",
+      "category": "kids",
+      "title_en": "The Kids (Palette Kumoji)",
+      "title_ja": "ザキッズ（パレットくもじ）",
+      "title_ko": "더 키즈 (팔레트 구모지)",
+      "title_kana": "ざきっず",
+      "area": "Naha",
+      "island": "okinawa",
+      "lat": 26.2145,
+      "lng": 127.695,
+      "desc_en": "Indoor play park on the 7th floor of Palette Kumoji in Naha — jungle gym, trampoline and more for rainy days.",
+      "desc_ja": "那覇・パレットくもじ7階の屋内遊園地。巨大ジャングルジムやトランポリンなど雨の日の遊び場です。",
+      "desc_ko": "나하·팔레트 구모지 7층의 실내 놀이공원. 대형 정글짐·트램폴린 등 비 오는 날 놀이터입니다.",
+      "hours_en": "Weekdays 10:00–19:00 (last entry 18:30) · Sat/Sun/holidays 10:00–20:00 (last entry 19:30)",
+      "hours_ja": "平日 10:00〜19:00（最終受付18:30）・土日祝 10:00〜20:00（最終受付19:30）",
+      "hours_ko": "평일 10:00~19:00 (최종 접수 18:30) · 토·일·공휴일 10:00~20:00 (최종 접수 19:30)",
+      "fee_en": "Weekday child day pack ¥1,000 · weekend/holiday day pack ¥1,500 (3-hour ¥1,200) · guardian ¥500 · age 0 free",
+      "fee_ja": "平日・子ども1日1,000円／休日1日1,500円（3時間1,200円）・保護者500円・0歳無料",
+      "fee_ko": "평일 어린이 1일 1,000엔 · 휴일 1일 1,500엔(3시간 1,200엔) · 보호자 500엔 · 0세 무료",
+      "free": false,
+      "indoor": true,
+      "parking_en": "Palette Kumoji car park (mall parking)",
+      "parking_ja": "パレットくもじ駐車場",
+      "parking_ko": "팔레트 구모지 주차장",
+      "etiquette": [],
+      "tags": [
+        "family_friendly"
+      ],
+      "needs_verification": false,
+      "source": "thekids.co.jp (official shop page)",
+      "url": "https://thekids.co.jp/shop/okinawa-palette-kumoji/",
+      "image": null,
+      "last_checked": "2026-10-28",
+      "sources": [
+        "https://thekids.co.jp/shop/okinawa-palette-kumoji/"
+      ],
+      "family": {
+        "ages_en": "Children (age 0 free) with a guardian",
+        "ages_ja": "子ども（0歳無料）・保護者同伴",
+        "ages_ko": "어린이(0세 무료) · 보호자 동반",
+        "setting": "indoor",
+        "under_6": true
+      }
+    },
+    {
+      "id": "joy-planet-ginowan",
+      "category": "kids",
+      "title_en": "Joy Planet (Ginowan Convention City)",
+      "title_ja": "ジョイプラネット（宜野湾コンベンションシティ）",
+      "title_ko": "조이 플래닛 (기노완 컨벤션시티)",
+      "title_kana": "じょいぷらねっと",
+      "area": "Ginowan",
+      "island": "okinawa",
+      "lat": 26.2812,
+      "lng": 127.739,
+      "desc_en": "Indoor ball-pool and game play spot on the 2nd floor of San-A Ginowan Convention City — ages 0–12.",
+      "desc_ja": "サンエー宜野湾コンベンションシティ2階の屋内遊び場。ボールプールなど0〜12歳向け。",
+      "desc_ko": "산에이 기노완 컨벤션시티 2층의 실내 놀이터. 볼풀 등 0~12세 대상.",
+      "hours_en": "9:00–20:00 (last entry 19:30) · open every day",
+      "hours_ja": "9:00〜20:00（最終受付19:30）・年中無休",
+      "hours_ko": "9:00~20:00 (최종 접수 19:30) · 연중무휴",
+      "fee_en": "Child from ¥200/10 min (packs ¥500–¥1,200) · under 2 free · adult from ¥100/10 min",
+      "fee_ja": "子ども10分200円〜（パック500〜1,200円）・2歳未満無料・大人10分100円〜",
+      "fee_ko": "어린이 10분 200엔~ (팩 500~1,200엔) · 2세 미만 무료 · 어른 10분 100엔~",
+      "free": false,
+      "indoor": true,
+      "parking_en": "San-A Ginowan Convention City car park (about 1,100 spaces)",
+      "parking_ja": "サンエー宜野湾コンベンションシティ駐車場（約1,100台）",
+      "parking_ko": "산에이 기노완 컨벤션시티 주차장 (약 1,100대)",
+      "etiquette": [],
+      "tags": [
+        "family_friendly"
+      ],
+      "needs_verification": false,
+      "source": "joyplanet.jp/ginowan (official)",
+      "url": "https://joyplanet.jp/ginowan/",
+      "image": null,
+      "last_checked": "2026-10-28",
+      "sources": [
+        "https://joyplanet.jp/ginowan/"
+      ],
+      "family": {
+        "ages_en": "Ages 0–12 (guardian 18+ required)",
+        "ages_ja": "0〜12歳（保護者は18歳以上）",
+        "ages_ko": "0~12세 (보호자 18세 이상)",
+        "setting": "indoor",
+        "under_6": true
+      }
     },
     {
       "id": "cape-manzamo",
@@ -1159,31 +1460,49 @@
     },
     {
       "id": "gyokusendo",
-      "title_en": "Gyokusendo Cave (Okinawa World)",
-      "title_ja": "玉泉洞（おきなわワールド）",
-      "title_kana": "ぎょくせんどう",
-      "category": "activities",
+      "title_en": "Okinawa World",
+      "title_ja": "おきなわワールド",
+      "title_kana": "おきなわワールド",
+      "category": "kids",
       "area": "Nanjo",
       "lat": 26.1405,
       "lng": 127.7493,
-      "desc_en": "Huge limestone cave with walkways past countless stalactites, inside the Okinawa World theme park (eisa shows, crafts).",
-      "desc_ja": "おきなわワールド内の巨大な鍾乳洞。エイサーショーや工芸体験も。",
-      "hours_en": "Approx. 9:00–17:30",
-      "hours_ja": "9:00〜17:30頃",
-      "fee_en": "Approx. ¥2,000 adults (cave + park)",
-      "fee_ja": "大人2,000円程度（鍾乳洞＋王国村）",
+      "desc_en": "Theme park in Nanjo with Gyokusendo Cave, Kingdom Village crafts, eisa shows and a habu mongoose show.",
+      "desc_ja": "南城市のテーマパーク。玉泉洞、王国村の工芸体験、エイサーショー、ハブとマングースのショーがあります。",
+      "hours_en": "9:00–17:30 (last entry 16:00)",
+      "hours_ja": "9:00〜17:30（最終受付16:00）",
+      "fee_en": "Adults (15+) ¥2,000 · children (4–14) ¥1,000 · under 4 free",
+      "fee_ja": "大人（15歳以上）2,000円・小人（4〜14歳）1,000円・3歳以下無料",
       "free": false,
-      "indoor": true,
+      "indoor": false,
       "parking_en": "Free parking",
       "parking_ja": "無料駐車場",
       "etiquette": [],
       "tags": [
         "family_friendly"
       ],
-      "needs_verification": true,
-      "source": "ChuraBell example data — Hours/fees are approximate and need verification before you go.",
+      "needs_verification": false,
+      "source": "gyokusendo.co.jp/okinawaworld (official fee & hours)",
       "url": "https://www.gyokusendo.co.jp/okinawaworld/",
-      "image": null
+      "image": null,
+      "title_ko": "오키나와 월드",
+      "island": "okinawa",
+      "desc_ko": "난조시의 테마파크. 교쿠센도 동굴, 왕국촌 공예 체험, 에이사 쇼, 하부와 몽구스 쇼가 있습니다.",
+      "hours_ko": "9:00~17:30 (최종 접수 16:00)",
+      "fee_ko": "어른(15세 이상) 2,000엔 · 어린이(4~14세) 1,000엔 · 3세 이하 무료",
+      "parking_ko": "무료 주차장",
+      "last_checked": "2026-10-28",
+      "sources": [
+        "https://www.gyokusendo.co.jp/okinawaworld/fee/"
+      ],
+      "family": {
+        "ages_en": "Ages 4+ recommended for paid entry · under 4 free",
+        "ages_ja": "有料入場は4歳以上・3歳以下無料",
+        "ages_ko": "유료 입장은 4세 이상 · 3세 이하 무료",
+        "setting": "both",
+        "stroller": true,
+        "under_6": true
+      }
     },
     {
       "id": "okinawa-pref-museum",
@@ -1194,59 +1513,47 @@
       "area": "Naha",
       "lat": 26.2273,
       "lng": 127.6942,
-      "desc_en": "Okinawa's history, nature and art under one roof in Naha Shintoshin — a good rainy-day option.",
-      "desc_ja": "沖縄の歴史・自然・美術を紹介する博物館。雨の日にもおすすめ。",
-      "hours_en": "Approx. 9:00–18:00 (to 20:00 Fri/Sat); closed Mondays",
-      "hours_ja": "9:00〜18:00頃（金土は20:00頃まで）・月曜休館",
-      "fee_en": "Museum approx. ¥530 adults",
-      "fee_ja": "博物館 大人530円程度",
+      "desc_en": "Okinawa's history, nature and art in Naha Shintoshin — indoor rainy-day option with a children's experience room.",
+      "desc_ja": "那覇新都心の博物館・美術館。雨の日にもおすすめ。ふれあい体験室もあります。",
+      "hours_en": "Tue–Thu & Sun 9:00–18:00 (last entry 17:30) · Fri–Sat 9:00–20:00 (last entry 19:30) · closed Mondays",
+      "hours_ja": "火〜木・日 9:00〜18:00（入館17:30）・金土 9:00〜20:00（入館19:30）・月曜休館",
+      "fee_en": "Museum permanent: adults ¥530 · HS/uni ¥270 · outside-prefecture elem/JH ¥150 · Okinawa elem/JH, preschool and 70+ free",
+      "fee_ja": "博物館常設：一般530円・高大生270円・県外小中150円・県内小中・未就学・70歳以上無料",
       "free": false,
       "indoor": true,
       "closed_days": [
         "mon"
       ],
-      "parking_en": "Paid parking",
-      "parking_ja": "有料駐車場",
+      "parking_en": "Paid parking at the museum",
+      "parking_ja": "館内有料駐車場",
       "etiquette": [],
       "tags": [
         "family_friendly"
       ],
-      "needs_verification": true,
-      "source": "ChuraBell example data — Hours/fees are approximate and need verification before you go.",
+      "needs_verification": false,
+      "source": "okimu.jp (official hours & fees during site maintenance notice)",
       "url": "https://okimu.jp/",
-      "image": null
-    },
-    {
-      "id": "kukuru-kids-dome",
-      "title_en": "Kukuru Kids Play Dome",
-      "title_ja": "くくるキッズドーム",
-      "title_kana": "くくるきっずどーむ",
-      "category": "kids",
-      "area": "Urasoe",
-      "lat": 26.26,
-      "lng": 127.73,
-      "desc_en": "FICTIONAL example of an indoor play space (not a real place) — shows how an indoor kids' venue looks in the app.",
-      "desc_ja": "架空の屋内遊び場の例（実在しません）。アプリでの表示例です。",
-      "hours_en": "10:00–18:00",
-      "hours_ja": "10:00〜18:00",
-      "closed_days": [
-        "tue"
+      "image": null,
+      "title_ko": "오키나와현립 박물관·미술관",
+      "island": "okinawa",
+      "desc_ko": "나하 신토심의 박물관·미술관. 비 오는 날에도 좋습니다. 체험실도 있습니다.",
+      "hours_ko": "화~목·일 9:00~18:00 (입장 17:30) · 금·토 9:00~20:00 (입장 19:30) · 월요일 휴관",
+      "fee_ko": "박물관 상설: 일반 530엔 · 고등·대학 270엔 · 현외 초·중 150엔 · 현내 초·중·미취학·70세 이상 무료",
+      "parking_ko": "관내 유료 주차장",
+      "last_checked": "2026-10-28",
+      "sources": [
+        "https://okimu.jp/"
       ],
-      "fee_en": "¥800 per child (example)",
-      "fee_ja": "子ども1人800円（例）",
-      "free": false,
-      "indoor": true,
-      "parking_en": "",
-      "parking_ja": "",
-      "etiquette": [],
-      "tags": [
-        "family_friendly"
+      "also_in": [
+        "kids"
       ],
-      "needs_verification": true,
-      "example": true,
-      "source": "Fictional example",
-      "url": "",
-      "image": null
+      "family": {
+        "ages_en": "All ages · preschool free",
+        "ages_ja": "全年齢・未就学児無料",
+        "ages_ko": "전 연령 · 미취학 아동 무료",
+        "setting": "indoor",
+        "under_6": true
+      }
     },
     {
       "category": "shopping",
@@ -8336,7 +8643,17 @@
         "https://oki-park.jp/kaiyohaku/info/32",
         "https://oki-park.jp/kaiyohaku/info/34",
         "https://oki-park.jp/kaiyohaku/acc/88"
-      ]
+      ],
+      "also_in": [
+        "kids"
+      ],
+      "family": {
+        "ages_en": "All ages (park free; aquarium and some attractions paid)",
+        "ages_ja": "全年齢（公園無料・水族館などは有料）",
+        "ages_ko": "전 연령 (공원 무료 · 수족관 등은 유료)",
+        "setting": "outdoor",
+        "under_6": true
+      }
     },
     {
       "id": "park-yaedake",
@@ -8434,7 +8751,16 @@
         "https://okinawa-kenso.com/?page_id=101",
         "https://okinawa-kenso.com/?page_id=10",
         "https://okinawa-kenso.com/?page_id=306"
-      ]
+      ],
+      "also_in": [
+        "kids"
+      ],
+      "family": {
+        "ages_en": "Large play structure ages 6–12 (free)",
+        "ages_ja": "大型遊具は6〜12歳向け（無料）",
+        "ages_ko": "대형 놀이기구는 6~12세용 (무료)",
+        "setting": "outdoor"
+      }
     },
     {
       "id": "park-nakagusuku",
@@ -8476,7 +8802,17 @@
         "https://www.pref.okinawa.jp/machizukuri/park/1012802.html",
         "https://www.nakagusukupark-osi.jp/",
         "https://www.nakagusukupark-osi.jp/contact.php"
-      ]
+      ],
+      "also_in": [
+        "kids"
+      ],
+      "family": {
+        "ages_en": "Destination park with playground",
+        "ages_ja": "遊具のある大型公園",
+        "ages_ko": "놀이기구가 있는 대형 공원",
+        "setting": "outdoor",
+        "under_6": true
+      }
     },
     {
       "id": "park-urasoe-daikoen",
@@ -8516,7 +8852,17 @@
       "sources": [
         "https://www.urasoedaipark-osi.jp/",
         "https://www.urasoedaipark-osi.jp/contact.php"
-      ]
+      ],
+      "also_in": [
+        "kids"
+      ],
+      "family": {
+        "ages_en": "Destination park with playground",
+        "ages_ja": "遊具のある大型公園",
+        "ages_ko": "놀이기구가 있는 대형 공원",
+        "setting": "outdoor",
+        "under_6": true
+      }
     },
     {
       "id": "park-ginowan-seaside",
@@ -8555,7 +8901,17 @@
         "https://ginowankaihinkouen.jp/facility/square/",
         "https://www.city.ginowan.lg.jp/soshiki/kikaku/4/2/1/5_5/15759.html",
         "https://www.city.ginowan.lg.jp/opendata_top/Education_Culture_Sports_Life/20392.html"
-      ]
+      ],
+      "also_in": [
+        "kids"
+      ],
+      "family": {
+        "ages_en": "Destination park with playground",
+        "ages_ja": "遊具のある大型公園",
+        "ages_ko": "놀이기구가 있는 대형 공원",
+        "setting": "outdoor",
+        "under_6": true
+      }
     },
     {
       "id": "park-zanpa",
@@ -8709,7 +9065,17 @@
       "sources": [
         "https://www.southeast-botanical.jp/information/",
         "https://www.southeast-botanical.jp/access/"
-      ]
+      ],
+      "also_in": [
+        "kids"
+      ],
+      "family": {
+        "ages_en": "Child ticket ages 4–14",
+        "ages_ja": "小人料金は4〜14歳",
+        "ages_ko": "어린이 요금은 4~14세",
+        "setting": "outdoor",
+        "under_6": true
+      }
     },
     {
       "id": "park-bios",
@@ -8887,7 +9253,17 @@
       "sources": [
         "https://www.ounoyama.jp/park-summary/ounoyama-park/",
         "https://www.ounoyama.jp/toilet-and-aed-map/"
-      ]
+      ],
+      "also_in": [
+        "kids"
+      ],
+      "family": {
+        "ages_en": "Destination park with playground",
+        "ages_ja": "遊具のある大型公園",
+        "ages_ko": "놀이기구가 있는 대형 공원",
+        "setting": "outdoor",
+        "under_6": true
+      }
     },
     {
       "id": "park-shintoshin",
@@ -9050,7 +9426,17 @@
         "https://banna.jp/access",
         "https://banna.jp/map",
         "https://www.pref.okinawa.jp/machizukuri/park/1012790/index.html"
-      ]
+      ],
+      "also_in": [
+        "kids"
+      ],
+      "family": {
+        "ages_en": "Destination park with playground",
+        "ages_ja": "遊具のある大型公園",
+        "ages_ko": "놀이기구가 있는 대형 공원",
+        "setting": "outdoor",
+        "under_6": true
+      }
     },
     {
       "id": "park-miyako-botanical",
@@ -14337,7 +14723,20 @@
         "https://www.okzm.jp/fee/",
         "https://www.okzm.jp/information-en/",
         "https://www.city.okinawa.okinawa.jp/k037-003/chiikikankyou/kouen/sougoukouen/3666.html"
-      ]
+      ],
+      "also_in": [
+        "kids"
+      ],
+      "family": {
+        "ages_en": "All ages · 15 and under free entry",
+        "ages_ja": "全年齢・15歳以下入園無料",
+        "ages_ko": "전 연령 · 15세 이하 입장 무료",
+        "setting": "both",
+        "nursing_room": true,
+        "diaper_changing": true,
+        "stroller": true,
+        "under_6": true
+      }
     },
     {
       "id": "park-neo-park-okinawa",
@@ -14374,7 +14773,17 @@
       "sources": [
         "https://www.neopark.co.jp/contact/",
         "https://www.neopark.co.jp/"
-      ]
+      ],
+      "also_in": [
+        "kids"
+      ],
+      "family": {
+        "ages_en": "Ages 4+ for child ticket · under 4 typically with guardian",
+        "ages_ja": "小人料金は4〜12歳",
+        "ages_ko": "어린이 요금은 4~12세",
+        "setting": "outdoor",
+        "under_6": true
+      }
     },
     {
       "id": "park-uebaru-naha",

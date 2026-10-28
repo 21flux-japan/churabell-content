@@ -8,7 +8,10 @@ No extra packages needed (Python 3.8+). Tests: python3 -m unittest test_validate
 import json, re, sys
 from datetime import date, datetime
 
-CURRENT_VERSION = 12
+CURRENT_VERSION = 13
+# v0.14.0 (schema 13): optional "family" object (ages_*, setting indoor|outdoor|both, nursing_room, diaper_changing,
+# stroller, under_6) and optional "also_in" (extra Explore tiles for the same place — multi-tile, one record).
+# Missing family keys = not confirmed (never "unknown"). Older apps reject schema 13 until they update.
 # v0.13.0 (schema 12): parks & gardens — optional "park" object on places (kind = public / private; toilets / playground /
 # bbq / pets = true/false only when an official source says so; highlight_* text; free_basis). Missing key = not confirmed.
 # Every parks_gardens place must have Free or a fee. park.free_basis:
@@ -496,7 +499,52 @@ def validate(root, today=None):
                 if not p.get("free"): warn(w, f"{ok}.free_basis is set but free is not true")
             if p.get("free") and fb is None and not has_fee:
                 err(w, f'free: true on a {ok} needs a confirmed fee_* text or {ok}.free_basis — never guess')
-        researched = cat in ("beaches", "castles") or (cat == "shrines_temples" and v11) or (cat == "parks_gardens" and v12)
+        # v0.14.0 (schema 13): family facts + multi-tile also_in
+        v13 = isinstance(version, int) and version >= 13
+        FAMILY_BOOLS = ("nursing_room", "diaper_changing", "stroller", "under_6")
+        FAMILY_SETTINGS = {"indoor", "outdoor", "both"}
+        FAMILY_TEXTS = ("ages",)
+        if "family" in p and p["family"] is not None:
+            fo = p["family"]
+            if not isinstance(fo, dict): err(w, 'family must be an object like {"ages_en": "…", "setting": "indoor", "under_6": true}')
+            else:
+                check_langs(fo, w + " family")
+                for k in FAMILY_BOOLS:
+                    if k in fo and not isinstance(fo[k], bool): err(w, f'family.{k} must be true or false — leave it out when not confirmed (never "unknown")')
+                if "setting" in fo and fo["setting"] not in FAMILY_SETTINGS:
+                    err(w, f'family.setting must be one of {sorted(FAMILY_SETTINGS)}')
+                known = set(FAMILY_BOOLS) | {"setting"} | {f"{t}_{l}" for t in FAMILY_TEXTS for l in ("en", "ja", "ko", "de")}
+                for k in fo:
+                    if k not in known: warn(w, f'family: unknown key "{k}" (ignored)')
+                for t in FAMILY_TEXTS:
+                    if (fo.get(t + "_ja") or fo.get(t + "_ko")) and not fo.get(t + "_en"): warn(w, f"family.{t}_en missing (English users see nothing)")
+                    if fo.get(t + "_en") and not fo.get(t + "_ja"): warn(w, f"family.{t}_ja missing")
+                if not any(k in fo for k in FAMILY_BOOLS) and "setting" not in fo and not any(fo.get(f"{t}_{l}") for t in FAMILY_TEXTS for l in ("en", "ja")):
+                    warn(w, "family object is empty — leave it out")
+                if not v13: warn(w, f'"family" needs "version" 13 (now {version}) — older apps ignore it')
+        also = p.get("also_in")
+        if also is not None:
+            if not isinstance(also, list): err(w, 'also_in must be a list of category keys (extra Explore tiles)')
+            else:
+                seen = set()
+                for a in also:
+                    if not isinstance(a, str) or not a.strip(): err(w, 'also_in entries must be non-empty category strings'); continue
+                    k = a.strip().lower()
+                    if k in LEGACY_CATEGORIES: k = LEGACY_CATEGORIES[k]
+                    if k not in CATEGORIES: err(w, f'also_in category "{a}" not in {sorted(CATEGORIES)}')
+                    elif k == cat: err(w, f'also_in "{k}" duplicates the primary category')
+                    elif k in seen: warn(w, f'also_in "{k}" listed twice')
+                    else: seen.add(k)
+                if not v13: warn(w, f'"also_in" needs "version" 13 (now {version}) — older apps ignore it')
+        # Kids tile (primary or also_in): every non-example place needs Free (with a reason elsewhere) or a fee — same rule as other researched tiles
+        in_kids = cat == "kids" or (isinstance(also, list) and "kids" in [str(x).strip().lower() for x in also])
+        if in_kids and v13 and not p.get("example"):
+            if not p.get("free") and not any(p.get(f"fee_{l}") for l in ("en", "ja")):
+                err(w, 'Kids & family places need a price: free: true or a confirmed fee_en / fee_ja — never guess')
+            if p.get("free") and cat == "kids" and not any(p.get(f"fee_{l}") for l in ("en", "ja")):
+                # free kids places (rare) — fee text optional when free; free_basis not required for kids category yet
+                pass
+        researched = cat in ("beaches", "castles") or (cat == "shrines_temples" and v11) or (cat == "parks_gardens" and v12) or (in_kids and v13)
         if researched and not p.get("example"):
             kind = {"beaches": "beach", "castles": "castle", "parks_gardens": "park"}.get(cat, "shrine")
             if not p.get("source"): err(w, f"{cat} need a source (official pages)")
