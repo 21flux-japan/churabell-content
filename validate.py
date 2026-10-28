@@ -14,6 +14,8 @@ CURRENT_VERSION = 13
 # Missing family keys = not confirmed (never "unknown"). Older apps reject schema 13 until they update.
 # v0.15.0 keeps schema 13 and adds optional "museum" (type, closed_*, last_entry_*, photography, guide_en, guide_ko,
 # audio_guide, visit_time_*, free_basis). Older 0.14 apps ignore the unknown key; do NOT bump version for museum alone.
+# v0.16.0 keeps schema 13 and adds optional "activity" (setting, water, booking, age/height_limit_*, duration_*,
+# season_*, includes_*, kids_ok, free_basis). Older apps ignore the unknown key; do NOT bump version for activity alone.
 # v0.13.0 (schema 12): parks & gardens — optional "park" object on places (kind = public / private; toilets / playground /
 # bbq / pets = true/false only when an official source says so; highlight_* text; free_basis). Missing key = not confirmed.
 # Every parks_gardens place must have Free or a fee. park.free_basis:
@@ -586,9 +588,52 @@ def validate(root, today=None):
             if not isinstance(p.get("museum"), dict) or not p["museum"].get("type"):
                 err(w, 'museums need museum.type (history / peace / art_craft / nature_science)')
 
-        researched = cat in ("beaches", "castles") or (cat == "shrines_temples" and v11) or (cat == "parks_gardens" and v12) or (in_kids and v13) or (in_museums and v13)
+
+        # v0.16.0 (schema 13 additive): activity facts
+        ACTIVITY_SETTINGS = {"indoor", "outdoor", "both"}
+        ACTIVITY_BOOKINGS = {"yes", "recommended", "walk_in"}
+        ACTIVITY_FREE_BASES = {"official_free", "municipal_free", "permanent_free"}
+        ACTIVITY_BOOLS = ("water", "kids_ok")
+        ACTIVITY_TEXTS = ("age_limit", "height_limit", "duration", "season", "includes")
+        if "activity" in p and p["activity"] is not None:
+            ao = p["activity"]
+            if not isinstance(ao, dict): err(w, 'activity must be an object like {"setting": "indoor", "water": true}')
+            else:
+                check_langs(ao, w + " activity")
+                if "setting" in ao and ao["setting"] not in ACTIVITY_SETTINGS:
+                    err(w, f'activity.setting must be one of {sorted(ACTIVITY_SETTINGS)}')
+                if "booking" in ao and ao["booking"] not in ACTIVITY_BOOKINGS:
+                    err(w, f'activity.booking must be one of {sorted(ACTIVITY_BOOKINGS)}')
+                for k in ACTIVITY_BOOLS:
+                    if k in ao and not isinstance(ao[k], bool): err(w, f'activity.{k} must be true or false — leave it out when not confirmed (never "unknown")')
+                if "free_basis" in ao:
+                    fb = ao["free_basis"]
+                    if not isinstance(fb, str) or not fb.strip(): err(w, 'activity.free_basis must be a non-empty string')
+                    elif fb.strip().lower() not in ACTIVITY_FREE_BASES:
+                        warn(w, f'activity.free_basis "{fb}" is not one of {sorted(ACTIVITY_FREE_BASES)} — prefer those')
+                known = set(ACTIVITY_BOOLS) | {"setting", "booking", "free_basis"} | {f"{t}_{l}" for t in ACTIVITY_TEXTS for l in ("en", "ja", "ko", "de")}
+                for k in ao:
+                    if k not in known: warn(w, f'activity: unknown key "{k}" (ignored)')
+                for tx in ACTIVITY_TEXTS:
+                    if (ao.get(tx + "_ja") or ao.get(tx + "_ko")) and not ao.get(tx + "_en"): warn(w, f"activity.{tx}_en missing (English users see nothing)")
+                    if ao.get(tx + "_en") and not ao.get(tx + "_ja"): warn(w, f"activity.{tx}_ja missing")
+                if not any(k in ao for k in list(ACTIVITY_BOOLS) + ["setting", "booking", "free_basis"]) and not any(ao.get(f"{tx}_{l}") for tx in ACTIVITY_TEXTS for l in ("en", "ja")):
+                    warn(w, "activity object is empty — leave it out")
+                if not v13: warn(w, f'"activity" needs "version" 13 (now {version}) — older apps ignore it')
+        in_activities = cat == "activities" or (isinstance(also, list) and "activities" in [str(x).strip().lower() for x in also])
+        if in_activities and v13 and not p.get("example"):
+            if not p.get("free") and not any(p.get(f"fee_{l}") for l in ("en", "ja")):
+                err(w, 'Activities places need a price: free: true (with activity.free_basis) or a confirmed fee_en / fee_ja — never guess')
+            if p.get("free"):
+                ao = p.get("activity") if isinstance(p.get("activity"), dict) else {}
+                if not (ao and ao.get("free_basis")) and not any(p.get(f"fee_{l}") for l in ("en", "ja")):
+                    err(w, 'free: true on an activity needs activity.free_basis (official_free / municipal_free / …) or a fee_* reason text — activities are NOT free by default')
+            if not isinstance(p.get("activity"), dict) or not p["activity"].get("setting"):
+                err(w, 'activities need activity.setting (indoor / outdoor / both)')
+
+        researched = cat in ("beaches", "castles") or (cat == "shrines_temples" and v11) or (cat == "parks_gardens" and v12) or (in_kids and v13) or (in_museums and v13) or (in_activities and v13)
         if researched and not p.get("example"):
-            kind = {"beaches": "beach", "castles": "castle", "parks_gardens": "park", "museums": "museum", "kids": "family"}.get(cat, "shrine")
+            kind = {"beaches": "beach", "castles": "castle", "parks_gardens": "park", "museums": "museum", "kids": "family", "activities": "activity"}.get(cat, "shrine")
             if not p.get("source"): err(w, f"{cat} need a source (official pages)")
             if "last_checked" not in p: warn(w, f'no last_checked date ("YYYY-MM-DD") for this {kind}')
             if any(str(v).strip().lower() in ("unknown", "不明", "알 수 없음") for k, v in p.items() if re.fullmatch(r"(fee|parking|hours)_[a-z]+", k)):
