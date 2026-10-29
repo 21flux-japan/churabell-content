@@ -1,7 +1,7 @@
 {
   "schema": "nuchi-ping-content",
   "version": 13,
-  "updated": "2026-10-30T12:00:00+09:00",
+  "updated": "2026-10-30T13:00:00+09:00",
   "example_data": false,
   "notes": "EXAMPLE DATA shipped with ChuraBell (formerly Nuchi Ping) v0.8. Replace with your own. Events are illustrative; place hours/fees need verification. RESTAURANTS (v0.18.0): all listed restaurants are REAL, from official chain store locators / official shop pages and OCVB okinawastory.jp gourmet pages (docs/restaurants_research.md). Fictional restaurant examples removed. example_data remains true because bundled events (and a few other example items) are still illustrative. Featured (PR) flags are examples. Kukuru Kids Play Dome is a FICTIONAL place. BEACHES (v0.10.0, schema 9): all 80 beaches are REAL, from official sources (OCVB VISIT OKINAWA JAPAN beach information and okinawastory.jp, municipalities, tourism associations, operators) checked 2026-10-22 (docs/beaches_research.md). The `beach` box (toilets, lifeguard, showers, jellyfish net, swimming season) only holds facts an official source states — a missing key means not confirmed, not \"no\". Korean beach texts are own translations (review deferred). Coordinates from OCVB, checked against OpenStreetMap beach/coastline data. MEDICAL (v0.9.2): medical facilities, phone_lines and kids_rotation are REAL, checked against official sources on 2026-10-21 (docs/medical_research.md); re-check at least every 3 months. Korean (_ko) medical texts are own translations and NEED NATIVE REVIEW. Coordinates geocoded from the official addresses (GSI). Holidays: Cabinet Office list 2026–2027. Korean/German (_ko/_de) texts on a few items are a demo (own translations). All structured `parking` boxes (lots, fees, spaces, stops, walk times, shuttles, closures) are ILLUSTRATIVE EXAMPLES — check with the organiser/venue before publishing. Kadena Fall Fest dates (Nov 7–8) and Sunset Beach Fest are EXAMPLES. Entry & ID (`entry`) on Kadena Fall Fest and Flightline Fair is EXAMPLE data modelled on public notices for Kadena America Fest and the MCAS Futenma Flight Line Fair (see entry.sources) — both events are fictional examples; re-check the organiser's notice before publishing. ISLANDS (v0.9.4, schema 8): island clinics and the islands list are REAL, from official pages checked 2026-10-21 (docs/islands_medical_research.md); clinic English names are our translations; clinic addresses/coordinates left out (district-level only).",
   "notices": [
@@ -1499,8 +1499,8 @@
       "title_kana": "でぃーえむえむかりゆしすいぞくかん",
       "area": "Tomigusuku",
       "island": "okinawa",
-      "lat": 26.1575,
-      "lng": 127.6514,
+      "lat": 26.1561258,
+      "lng": 127.6506626,
       "desc_en": "Indoor digital aquarium inside iias Okinawa Toyosaki — coral, jellyfish and projection shows for rainy days.",
       "desc_ja": "イーアス沖縄豊崎内の屋内水族館。サンゴやクラゲ、プロジェクション演出があり雨の日にもおすすめ。",
       "desc_ko": "이아스 오키나와 도요사키 안의 실내 수족관. 산호·해파리·프로젝션 쇼가 있어 비 오는 날에도 좋습니다.",
@@ -1538,7 +1538,9 @@
         "diaper_changing": true,
         "stroller": true,
         "under_6": true
-      }
+      },
+      "coord_source": "osm",
+      "osm": "way/1025453072"
     },
     {
       "id": "nago-pineapple-park",
@@ -1867,8 +1869,8 @@
       "category": "viewpoints",
       "area": "Onna",
       "island": "okinawa",
-      "lat": 26.5045,
-      "lng": 127.8503,
+      "lat": 26.5053825,
+      "lng": 127.8503534,
       "desc_en": "Elephant-trunk limestone cliff about 20 m high with a grassy plain on top. Classic Onna lookout; the official site notes beautiful sunsets over the East China Sea. Viewing area open until sunset.",
       "desc_ja": "高さ約20mの象の鼻形の石灰岩の断崖と、その上に広がる草原。恩納村の代表的な展望地で、公式でも東シナ海に沈む夕日が美しいと案内。観覧は日没まで。",
       "desc_ko": "높이 약 20m의 코끼리 코 모양 석회암 절벽과 그 위 초원. 온나촌의 대표 전망지로, 공식 안내에서도 동중국해 일몰이 아름답다고 합니다. 관람은 일몰까지.",
@@ -1904,7 +1906,9 @@
       "last_checked": "2026-10-28",
       "etiquette": [],
       "tags": [],
-      "image": null
+      "image": null,
+      "coord_source": "osm",
+      "osm": "node/2004524873"
     },
     {
       "id": "busena-marine-park",
@@ -2044,7 +2048,9 @@
         "proof_ja": "沖縄県内住所が確認できる運転免許証または住民票など",
         "proof_ko": "오키나와 주소가 확인되는 운전면허증 또는 거주 카드",
         "source": "https://www.gyokusendo.co.jp/okinawaworld/ticket_kenmin/"
-      }
+      },
+      "coord_source": "osm",
+      "osm": "node/1068014185"
     },
     {
       "id": "okinawa-pref-museum",
@@ -2998,8 +3004,8 @@
       "title_ko": "플라자 하우스 쇼핑센터",
       "title_kana": "ぷらざはうすしょっぴんぐせんたー",
       "area": "Okinawa City",
-      "lat": 26.319742,
-      "lng": 127.793175,
+      "lat": 26.3188145,
+      "lng": 127.7938265,
       "desc_en": "Long-established shopping center in Okinawa City with fashion shops, services and restaurants.",
       "desc_ja": "沖縄市の老舗ショッピングセンター。ファッション、サービス、レストラン。",
       "desc_ko": "오키나와시의 오래된 쇼핑센터. 패션·서비스·레스토랑이 있습니다.",
@@ -3008,7 +3014,9 @@
       "hours_ko": "10:00–20:00 (점포별 확인) · 부정기 휴무, 설날·오봉에 일부 점포 휴무",
       "source": "Plaza House official site (access)",
       "url": "https://plazahouse.net/",
-      "indoor": true
+      "indoor": true,
+      "coord_source": "osm",
+      "osm": "node/2444567953"
     },
     {
       "category": "shopping",
@@ -3076,8 +3084,8 @@
       "title_ko": "산에이 구시카와 메인시티",
       "title_kana": "さんえーぐしかわめいんしてぃ",
       "area": "Uruma",
-      "lat": 26.352568,
-      "lng": 127.826202,
+      "lat": 26.3525947,
+      "lng": 127.8253333,
       "desc_en": "San-A shopping center in Uruma with a food hall and specialty shops.",
       "desc_ja": "うるま市のサンエーのショッピングセンター。食品館と専門店。",
       "desc_ko": "우루마시의 산에이 쇼핑센터. 식품관과 전문점이 있습니다.",
@@ -3086,7 +3094,9 @@
       "hours_ko": "9:00–22:00 (식품관 23:00까지, 일부 전문점 다름)",
       "source": "サンエー official site (具志川メインシティ)",
       "url": "https://www.san-a.co.jp/gushikawamaincity/",
-      "indoor": true
+      "indoor": true,
+      "coord_source": "osm",
+      "osm": "node/2763043924"
     },
     {
       "category": "shopping",
@@ -3102,8 +3112,8 @@
       "title_ko": "오키나와 아웃렛몰 아시비나",
       "title_kana": "おきなわあうとれっともーるあしびなー",
       "area": "Tomigusuku",
-      "lat": 26.158119,
-      "lng": 127.655182,
+      "lat": 26.1586274,
+      "lng": 127.6573969,
       "desc_en": "Outlet mall in Toyosaki, Tomigusuku, with Japanese and international brands.",
       "desc_ja": "豊見城市豊崎のアウトレットモール。国内外のブランドが入っています。",
       "desc_ko": "도미구스쿠시 도요사키의 아웃렛 몰. 국내외 브랜드가 입점해 있습니다.",
@@ -3115,7 +3125,9 @@
       "parking_ko": "입체 주차장 약 1,000대(요금은 공식 사이트에 기재 없음).",
       "source": "沖縄アウトレットモールあしびなー official site (hours, access, services)",
       "url": "https://www.ashibinaa.com/",
-      "indoor": true
+      "indoor": true,
+      "coord_source": "osm",
+      "osm": "node/2168814488"
     },
     {
       "category": "shopping",
@@ -3194,8 +3206,8 @@
       "title_ko": "나고 시영시장",
       "title_kana": "なごしえいいちば",
       "area": "Nago",
-      "lat": 26.589357,
-      "lng": 127.984261,
+      "lat": 26.5894579,
+      "lng": 127.9839796,
       "desc_en": "Municipal market in central Nago with food shops, small stores and eateries.",
       "desc_ja": "名護市中心部の市営市場。食料品店・小売店・食堂があります。",
       "desc_ko": "나고시 중심부의 시영 시장. 식료품점·소매점·식당이 있습니다.",
@@ -3203,7 +3215,9 @@
       "hours_ja": "毎日営業（店舗により異なる）",
       "hours_ko": "매일 영업(점포마다 다름)",
       "source": "名護市営市場 official site; OCVB おきなわ物語 (2023)",
-      "url": "https://nago-ichiba.com/"
+      "url": "https://nago-ichiba.com/",
+      "coord_source": "osm",
+      "osm": "way/1133494205"
     },
     {
       "category": "shopping",
@@ -3434,8 +3448,8 @@
       "title_kana": "かぬちゃびーち",
       "area": "Nago",
       "island": "okinawa",
-      "lat": 26.54681,
-      "lng": 128.07686,
+      "lat": 26.5462008,
+      "lng": 128.0772276,
       "desc_en": "Resort beach on the east coast of Nago (Abu). Day visitors pay a facility fee.",
       "desc_ja": "名護市安部、東海岸のリゾートビーチ。外来者は施設利用料が必要です。",
       "desc_ko": "나고시 아부, 동해안의 리조트 해변입니다. 외부 방문객은 시설 이용료가 필요합니다.",
@@ -3464,7 +3478,9 @@
       "indoor": false,
       "sources": [
         "https://www.okinawastory.jp/spot/1122"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "node/5885062641"
     },
     {
       "id": "beach-kise",
@@ -3517,8 +3533,8 @@
       "title_kana": "かりゆしびーち",
       "area": "Nago",
       "island": "okinawa",
-      "lat": 26.53191,
-      "lng": 127.92937,
+      "lat": 26.5328591,
+      "lng": 127.9298071,
       "desc_en": "Resort beach in Kise, Nago. No parking at the beach: park at the resort's Ocean Spa and take the free shuttle.",
       "desc_ja": "名護市喜瀬のリゾートビーチ。ビーチに駐車場はなく、オーシャンスパに駐車して無料シャトルバスで移動します。",
       "desc_ko": "나고시 키세의 리조트 해변입니다. 해변에는 주차장이 없어 오션 스파에 주차한 뒤 무료 셔틀버스로 이동합니다.",
@@ -3554,7 +3570,9 @@
       "indoor": false,
       "sources": [
         "https://www.okinawastory.jp/spot/1106"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "node/1994649525"
     },
     {
       "id": "beach-busena",
@@ -3786,8 +3804,8 @@
       "title_kana": "こうりびーち",
       "area": "Nakijin",
       "island": "okinawa",
-      "lat": 26.69465,
-      "lng": 128.0214,
+      "lat": 26.694441,
+      "lng": 128.0207147,
       "desc_en": "Beach on Kouri Island, reached by the Kouri Bridge. Do not swim when no lifeguard is on duty.",
       "desc_ja": "古宇利大橋でつながる古宇利島のビーチ。監視員のいない期間の遊泳は控えてください。",
       "desc_ko": "코우리 대교로 연결된 코우리섬의 해변입니다. 안전요원이 없는 기간에는 수영을 삼가세요.",
@@ -3818,7 +3836,9 @@
       "sources": [
         "https://visitokinawajapan.com/discover/beach-information/kouri-beach/",
         "https://www.okinawastory.jp/spot/600011642"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/188840519"
     },
     {
       "id": "beach-emerald",
@@ -3865,7 +3885,9 @@
         "https://visitokinawajapan.com/discover/beach-information/emerald-beach-ocean-expo-park/",
         "https://www.okinawastory.jp/spot/1111",
         "https://oki-park.jp/kaiyohaku/inst/75"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "node/4918629222"
     },
     {
       "id": "beach-sesoko",
@@ -3986,8 +4008,8 @@
       "title_kana": "いえびーち",
       "area": "Ie",
       "island": "ie",
-      "lat": 26.7099,
-      "lng": 127.825,
+      "lat": 26.7092514,
+      "lng": 127.8247128,
       "desc_en": "Village-run beach on Ie Island with a campsite. Swimming is not allowed outside the season (no lifeguards). Snorkelling is not allowed.",
       "desc_ja": "伊江島の村営ビーチ。キャンプ場あり。期間外は監視員がいないため遊泳できません。シュノーケルは禁止です。",
       "desc_ko": "이에섬의 촌영 해변으로 캠프장이 있습니다. 기간 외에는 안전요원이 없어 수영할 수 없으며 스노클링은 금지입니다.",
@@ -4021,7 +4043,9 @@
       "sources": [
         "https://visitokinawajapan.com/discover/beach-information/ie-beach/",
         "https://www.okinawastory.jp/spot/1096"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "node/5885009907"
     },
     {
       "id": "beach-izena",
@@ -4498,8 +4522,8 @@
       "title_kana": "むーんびーち",
       "area": "Onna",
       "island": "okinawa",
-      "lat": 26.45112,
-      "lng": 127.80302,
+      "lat": 26.4508674,
+      "lng": 127.8019195,
       "desc_en": "Resort beach in Maekaneku, Onna. Day visitors pay an entry fee.",
       "desc_ja": "恩納村前兼久のリゾートビーチ。外来者は有料です。",
       "desc_ko": "온나촌 마에카네쿠의 리조트 해변입니다. 외부 방문객은 유료입니다.",
@@ -4537,7 +4561,9 @@
       "sources": [
         "https://visitokinawajapan.com/discover/beach-information/moon-beach/",
         "https://www.okinawastory.jp/spot/600006131"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/397191208"
     },
     {
       "id": "beach-renaissance",
@@ -4548,8 +4574,8 @@
       "title_kana": "るねっさんすびーち",
       "area": "Onna",
       "island": "okinawa",
-      "lat": 26.43525,
-      "lng": 127.78885,
+      "lat": 26.4359295,
+      "lng": 127.7885341,
       "desc_en": "Beach of the Renaissance Okinawa Resort in Onna. Non-guests pay a facility fee; own sun shades, cool boxes and chairs not allowed.",
       "desc_ja": "恩納村・ルネッサンス リゾート オキナワのビーチ。宿泊者以外は施設利用料が必要。レジャーシート・クーラーボックス・パラソル・チェアの持ち込み不可。",
       "desc_ko": "온나촌 르네상스 리조트 오키나와의 해변입니다. 투숙객 외에는 시설 이용료가 필요하며, 돗자리·아이스박스·파라솔·의자 반입은 불가합니다.",
@@ -4583,7 +4609,9 @@
       "indoor": false,
       "sources": [
         "https://www.okinawastory.jp/spot/1117"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "node/1994649532"
     },
     {
       "id": "beach-ishikawa",
@@ -4594,8 +4622,8 @@
       "title_kana": "いしかわびーち",
       "area": "Uruma",
       "island": "okinawa",
-      "lat": 26.42395,
-      "lng": 127.8269,
+      "lat": 26.4228087,
+      "lng": 127.8266478,
       "desc_en": "Beach in Ishikawa, Uruma. No managing body: swimming at your own risk.",
       "desc_ja": "うるま市石川のビーチ。管理団体がないため、遊泳は自己責任です。",
       "desc_ko": "우루마시 이시카와의 해변입니다. 관리 단체가 없어 수영은 본인 책임입니다.",
@@ -4616,7 +4644,9 @@
       "indoor": false,
       "sources": [
         "https://www.okinawastory.jp/spot/600006184"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "node/5885062663"
     },
     {
       "id": "beach-uken",
@@ -4801,7 +4831,9 @@
       "indoor": false,
       "sources": [
         "https://www.okinawastory.jp/spot/600010290"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "node/5885062994"
     },
     {
       "id": "beach-zanpa",
@@ -5403,7 +5435,9 @@
       "indoor": false,
       "sources": [
         "https://www.okinawastory.jp/spot/1120"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "node/5885062948"
     },
     {
       "id": "beach-azama",
@@ -5637,7 +5671,9 @@
       "sources": [
         "https://visitokinawajapan.com/discover/beach-information/ama-beach/",
         "https://www.okinawastory.jp/spot/600006150"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "node/4873078521"
     },
     {
       "id": "beach-nishibama",
@@ -5816,8 +5852,8 @@
       "title_kana": "すなやまびーち",
       "area": "Miyakojima",
       "island": "miyako",
-      "lat": 24.83953,
-      "lng": 125.28069,
+      "lat": 24.839256,
+      "lng": 125.2806077,
       "desc_en": "Beach reached over a sand dune in Hirara, Miyako Island, known for its coral-rock cave. Deep drop-offs offshore.",
       "desc_ja": "宮古島平良、砂山を越えた先のビーチ。隆起サンゴ礁の洞穴で知られます。沖には急な深みがあります。",
       "desc_ko": "미야코섬 히라라, 모래 언덕을 넘어가는 해변으로 융기 산호초 동굴로 알려져 있습니다. 앞바다에 갑자기 깊어지는 곳이 있습니다.",
@@ -5841,7 +5877,9 @@
       "sources": [
         "https://www.okinawastory.jp/spot/1081",
         "https://miyako-island.net/beach_and_spot/beach_spot_001/"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/496244201"
     },
     {
       "id": "beach-painagama",
@@ -6074,8 +6112,8 @@
       "title_kana": "しぎらびーち",
       "area": "Miyakojima",
       "island": "miyako",
-      "lat": 24.7197,
-      "lng": 125.34163,
+      "lat": 24.7200274,
+      "lng": 125.3406992,
       "desc_en": "Resort beach at Shigira Resort, Ueno, Miyako. Free to enter; facility use costs extra for non-guests.",
       "desc_ja": "宮古島上野、シギラリゾートのビーチ。入場無料、宿泊者以外の施設利用は有料です。",
       "desc_ko": "미야코섬 우에노, 시기라 리조트의 해변입니다. 입장은 무료이며 투숙객 외 시설 이용은 유료입니다.",
@@ -6101,7 +6139,9 @@
       "sources": [
         "https://www.okinawastory.jp/spot/1138",
         "https://miyako-island.net/beach_and_spot/beach_spot_009/"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/1253904213"
     },
     {
       "id": "beach-toguchi-irabu",
@@ -6611,7 +6651,9 @@
       "indoor": false,
       "sources": [
         "https://www.okinawastory.jp/spot/600011740"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "node/6373647187"
     },
     {
       "id": "beach-nama",
@@ -6784,7 +6826,9 @@
         "walk_time_en": "Short walk from paid car parks / monorail Shuri Station into the park lookouts (Nishi-no-Azana area)",
         "walk_time_ja": "有料駐車場・ゆいレール首里駅から園内展望所（西のアザナ周辺）まで短い徒歩",
         "walk_time_ko": "유료 주차장·유리레일 슈리역에서 공원 내 전망 지점(니시노아자나 일대)까지 짧은 도보"
-      }
+      },
+      "coord_source": "osm",
+      "osm": "node/1068043305"
     },
     {
       "id": "castle-nakijin",
@@ -8893,7 +8937,9 @@
         "https://sefa.okinawa/news/wp-content/uploads/2026/05/ccbf45374a7d979159aa6eac216ebbcc.pdf",
         "https://www.city.nanjo.okinawa.jp/topics/1773360304/",
         "https://kunishitei.bunka.go.jp/heritage/detail/401/3029"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "node/2005581139"
     },
     {
       "id": "miyako-jinja",
@@ -10080,7 +10126,9 @@
         "walk_time_en": "Short walk from the South / C-1 / C-2 car parks to the hill lookouts",
         "walk_time_ja": "南口・C-1・C-2駐車場から展望所まで短い徒歩",
         "walk_time_ko": "남문·C-1·C-2 주차장에서 전망대까지 짧은 도보"
-      }
+      },
+      "coord_source": "osm",
+      "osm": "node/4252247589"
     },
     {
       "id": "park-ginowan-seaside",
@@ -12008,8 +12056,8 @@
       "title_kana": "みどりこうえん",
       "area": "Uruma",
       "island": "okinawa",
-      "lat": 26.38202,
-      "lng": 127.85516,
+      "lat": 26.3821142,
+      "lng": 127.8554997,
       "desc_en": "Park in Uruma with a playground and an open field.",
       "desc_ja": "うるま市の公園。遊具・広場があります。",
       "desc_ko": "우루마시의 공원입니다. 놀이기구, 광장이 있습니다.",
@@ -12031,7 +12079,9 @@
       "sources": [
         "https://www.city.uruma.lg.jp/shisetsu/kouen/toshikouen/index.html",
         "https://www.city.uruma.lg.jp/"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/625207830"
     },
     {
       "id": "park-wanpaku-uruma",
@@ -12855,8 +12905,8 @@
       "title_kana": "よなしろこうえん",
       "area": "Uruma",
       "island": "okinawa",
-      "lat": 26.32602,
-      "lng": 127.89121,
+      "lat": 26.3262021,
+      "lng": 127.8909551,
       "desc_en": "Park in Uruma with a playground and an open field.",
       "desc_ja": "うるま市の公園。遊具・広場があります。",
       "desc_ko": "우루마시의 공원입니다. 놀이기구, 광장이 있습니다.",
@@ -12878,7 +12928,9 @@
       "sources": [
         "https://www.city.uruma.lg.jp/shisetsu/kouen/toshikouen/index.html",
         "https://www.city.uruma.lg.jp/"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/550542417"
     },
     {
       "id": "park-yakenahigashi-uruma",
@@ -14604,8 +14656,8 @@
       "title_kana": "やぶしんすいこうえん",
       "area": "Nago",
       "island": "okinawa",
-      "lat": 26.59929,
-      "lng": 127.95037,
+      "lat": 26.6004144,
+      "lng": 127.9517868,
       "desc_en": "Park in Nago.",
       "desc_ja": "名護市の公園。",
       "desc_ko": "나고시의 공원입니다.",
@@ -14626,7 +14678,9 @@
       "sources": [
         "https://www.city.nago.okinawa.jp/kurashi/2018071800168/",
         "https://data.bodik.jp/api/3/action/datastore_search?resource_id=4aa40701-f819-4e96-a33c-d0ebd47fcb46"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/907026365"
     },
     {
       "id": "park-midori-no-network-plaza-nago",
@@ -14811,8 +14865,8 @@
       "title_kana": "うがんぬめーこうえん",
       "area": "Haebaru",
       "island": "okinawa",
-      "lat": 26.19786,
-      "lng": 127.73688,
+      "lat": 26.1982214,
+      "lng": 127.7370499,
       "desc_en": "Park in Haebaru with a playground, an open field, an open-air stage, walking paths and a basketball court.",
       "desc_ja": "南風原町の公園。遊具・広場・野外ステージ・遊歩道・バスケットコートがあります。",
       "desc_ko": "하에바루초의 공원입니다. 놀이기구, 광장, 야외 무대, 산책로, 농구 코트가 있습니다.",
@@ -14837,7 +14891,9 @@
       "sources": [
         "https://www.town.haebaru.lg.jp/site/kankou/2696.html",
         "https://data.bodik.jp/api/3/action/datastore_search?resource_id=1cd708e8-3992-4b46-91a2-7dcf577efb4f"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/674457047"
     },
     {
       "id": "park-koganemori-haebaru",
@@ -15070,8 +15126,8 @@
       "title_kana": "まつやまこうえん",
       "area": "Naha",
       "island": "okinawa",
-      "lat": 26.2188,
-      "lng": 127.67709,
+      "lat": 26.2186394,
+      "lng": 127.6748144,
       "desc_en": "Park in Naha with tennis courts.",
       "desc_ja": "那覇市の公園。テニスコートがあります。",
       "desc_ko": "나하시의 공원입니다. 테니스 코트가 있습니다.",
@@ -15099,7 +15155,9 @@
         "https://www.city.naha.okinawa.jp/shisetsu/sports/1007498/1002599.html",
         "https://www.city.naha.okinawa.jp/kurasitetuduki/matidukuri/1002572/1002636.html",
         "https://data.bodik.jp/api/3/action/datastore_search?resource_id=3510a697-7d21-4"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/552607211"
     },
     {
       "id": "park-makabi-central-naha",
@@ -15110,8 +15168,8 @@
       "title_kana": "まかびちゅうおうこうえん",
       "area": "Naha",
       "island": "okinawa",
-      "lat": 26.2239,
-      "lng": 127.70456,
+      "lat": 26.2239512,
+      "lng": 127.704242,
       "desc_en": "Park in Naha.",
       "desc_ja": "那覇市の公園。",
       "desc_ko": "나하시의 공원입니다.",
@@ -15138,7 +15196,9 @@
       "sources": [
         "https://www.city.naha.okinawa.jp/kurasitetuduki/matidukuri/1002572/1002636.html",
         "https://data.bodik.jp/api/3/action/datastore_search?resource_id=3510a697-7d21-4"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/538577679"
     },
     {
       "id": "park-yogi-naha",
@@ -15213,8 +15273,8 @@
       "title_kana": "ようばるこうえん",
       "area": "Yonabaru",
       "island": "okinawa",
-      "lat": 26.20717,
-      "lng": 127.75507,
+      "lat": 26.2074945,
+      "lng": 127.7545047,
       "desc_en": "Neighbourhood park in Yonabaru.",
       "desc_ja": "与那原町の近隣公園。",
       "desc_ko": "요나바루초의 근린공원입니다.",
@@ -15234,7 +15294,9 @@
       "sources": [
         "https://www.town.yonabaru.okinawa.jp/soshiki/13/139.html",
         "https://data.bodik.jp/api/3/action/datastore_search?resource_id=98360910-7e36-40ba-84"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/1018274066"
     },
     {
       "id": "park-yonakohama-yonabaru",
@@ -16043,7 +16105,9 @@
         "last_entry_en": "Weekdays 16:30 · weekends/holidays 20:00 (park entry)",
         "last_entry_ja": "平日入園16:30・土日祝入園20:00（園の入園締切）",
         "last_entry_ko": "평일 입장 16:30 · 주말·공휴일 입장 20:00 (공원 입장 마감)"
-      }
+      },
+      "coord_source": "osm",
+      "osm": "node/2484725838"
     },
     {
       "id": "park-neo-park-okinawa",
@@ -16334,8 +16398,8 @@
       "title_kana": "たかまえはらこうえん",
       "area": "Naha",
       "island": "okinawa",
-      "lat": 26.18552,
-      "lng": 127.66422,
+      "lat": 26.1854445,
+      "lng": 127.6638912,
       "desc_en": "Neighbourhood park in Naha. About 1.1 ha.",
       "desc_ja": "那覇市の近隣公園。面積は約1.1ヘクタールです。",
       "desc_ko": "나하시의 근린공원입니다. 면적은 약 1.1헥타르입니다.",
@@ -16355,7 +16419,9 @@
       "sources": [
         "https://www.city.naha.okinawa.jp/kurasitetuduki/matidukuri/1002572/index.html",
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/569208978"
     },
     {
       "id": "park-tabaru-naha",
@@ -16430,8 +16496,8 @@
       "title_kana": "まつおこうえん",
       "area": "Naha",
       "island": "okinawa",
-      "lat": 26.21232,
-      "lng": 127.68623,
+      "lat": 26.2132595,
+      "lng": 127.686269,
       "desc_en": "Neighbourhood park in Naha. About 1.1 ha.",
       "desc_ja": "那覇市の近隣公園。面積は約1.1ヘクタールです。",
       "desc_ko": "나하시의 근린공원입니다. 면적은 약 1.1헥타르입니다.",
@@ -16451,7 +16517,9 @@
       "sources": [
         "https://www.city.naha.okinawa.jp/kurasitetuduki/matidukuri/1002572/index.html",
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/552615821"
     },
     {
       "id": "park-moriguchi-naha",
@@ -16936,8 +17004,8 @@
       "title_kana": "うがんやまこうえん",
       "area": "Urasoe",
       "island": "okinawa",
-      "lat": 26.2502,
-      "lng": 127.74939,
+      "lat": 26.2506715,
+      "lng": 127.7491143,
       "desc_en": "Local park in Urasoe.",
       "desc_ja": "浦添市の街区公園。",
       "desc_ko": "우라소에시의 가구공원입니다.",
@@ -16958,7 +17026,9 @@
       "sources": [
         "https://www.city.urasoe.lg.jp/doc/609e83a43d59ae2434bffaee/",
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/1033363662"
     },
     {
       "id": "park-uchimahigashi-urasoe",
@@ -16969,8 +17039,8 @@
       "title_kana": "うちまひがしこうえん",
       "area": "Urasoe",
       "island": "okinawa",
-      "lat": 26.23557,
-      "lng": 127.70492,
+      "lat": 26.2355002,
+      "lng": 127.7045532,
       "desc_en": "Local park in Urasoe.",
       "desc_ja": "浦添市の街区公園。",
       "desc_ko": "우라소에시의 가구공원입니다.",
@@ -16991,7 +17061,9 @@
       "sources": [
         "https://www.city.urasoe.lg.jp/doc/609e83a43d59ae2434bffaee/",
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/608402312"
     },
     {
       "id": "park-nishibaru-urasoe",
@@ -17605,8 +17677,8 @@
       "title_kana": "まかべこうえん",
       "area": "Itoman",
       "island": "okinawa",
-      "lat": 26.10984,
-      "lng": 127.6936,
+      "lat": 26.1092137,
+      "lng": 127.6930385,
       "desc_en": "Green space in Itoman. About 3 ha.",
       "desc_ja": "糸満市の都市緑地。面積は約3ヘクタールです。",
       "desc_ko": "이토만시의 도시녹지입니다. 면적은 약 3헥타르입니다.",
@@ -17626,7 +17698,9 @@
       "sources": [
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html",
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/521198175"
     },
     {
       "id": "park-kariyushi-okinawa-city",
@@ -17735,8 +17809,8 @@
       "title_kana": "せせらぎこうえん",
       "area": "Tomigusuku",
       "island": "okinawa",
-      "lat": 26.171,
-      "lng": 127.69163,
+      "lat": 26.1703385,
+      "lng": 127.6919407,
       "desc_en": "Green space in Tomigusuku.",
       "desc_ja": "豊見城市の都市緑地。",
       "desc_ko": "도미구스쿠시의 도시녹지입니다.",
@@ -17756,7 +17830,9 @@
       "sources": [
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html",
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/570402601"
     },
     {
       "id": "park-toyosaki-green-space-tomigusuku",
@@ -18134,8 +18210,8 @@
       "title_kana": "たんちゃこうえん",
       "area": "Motobu",
       "island": "okinawa",
-      "lat": 26.65907,
-      "lng": 127.88835,
+      "lat": 26.6593551,
+      "lng": 127.8869462,
       "desc_en": "Neighbourhood park in Motobu. About 1.7 ha.",
       "desc_ja": "本部町の近隣公園。面積は約1.7ヘクタールです。",
       "desc_ko": "모토부초의 근린공원입니다. 면적은 약 1.7헥타르입니다.",
@@ -18155,7 +18231,9 @@
       "sources": [
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html",
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/189192563"
     },
     {
       "id": "park-kannondo-yomitan",
@@ -18624,8 +18702,8 @@
       "title_kana": "やぎばるちゅうおうこうえん",
       "area": "Yaese",
       "island": "okinawa",
-      "lat": 26.16259,
-      "lng": 127.72549,
+      "lat": 26.1621676,
+      "lng": 127.7262724,
       "desc_en": "Local park in Yaese.",
       "desc_ja": "八重瀬町の街区公園。",
       "desc_ko": "야에세초의 가구공원입니다.",
@@ -18645,7 +18723,9 @@
       "sources": [
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html",
         "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html"
-      ]
+      ],
+      "coord_source": "osm",
+      "osm": "way/490114907"
     },
     {
       "id": "park-kochinda-sports-yaese",
@@ -22099,8 +22179,8 @@
       "category": "viewpoints",
       "area": "Kunigami",
       "island": "okinawa",
-      "lat": 26.8725,
-      "lng": 128.2647,
+      "lat": 26.8719708,
+      "lng": 128.2656383,
       "desc_en": "Northernmost tip of Okinawa Island — rocky headland and open sea toward Amami. The Cape Hedo tourism plaza has a terrace lookout, café and visitor info.",
       "desc_ja": "沖縄本島最北端の岬。岩場と奄美方面の大海原。辺戸岬観光案内所には展望テラス、カフェ、案内窓口があります。",
       "desc_ko": "오키나와 본섬 최북단 곶. 암반과 아마미 방향의 넓은 바다. 헤도곶 관광안내소에 전망 테라스·카페·안내 창구가 있습니다.",
@@ -22133,7 +22213,9 @@
       "last_checked": "2026-10-28",
       "etiquette": [],
       "tags": [],
-      "image": null
+      "image": null,
+      "coord_source": "osm",
+      "osm": "node/1094958091"
     },
     {
       "id": "cape-maeda",
@@ -22320,8 +22402,8 @@
       "category": "viewpoints",
       "area": "Kunigami",
       "island": "okinawa",
-      "lat": 26.7167,
-      "lng": 128.2167,
+      "lat": 26.7170815,
+      "lng": 128.2186617,
       "desc_en": "Highest peak on Okinawa Island (about 503 m) inside Yanbaru National Park — forest ridge hiking with island-wide views on clear days.",
       "desc_ja": "沖縄本島最高峰（標高約503m）。やんばる国立公園内の尾根歩きで、晴れた日は島全体の眺めがあります。",
       "desc_ko": "오키나와 본섬 최고봉(해발 약 503m). 얀바루 국립공원 능선 하이킹으로, 맑은 날 섬 전체 전망이 있습니다.",
@@ -22352,7 +22434,9 @@
       "last_checked": "2026-10-28",
       "etiquette": [],
       "tags": [],
-      "image": null
+      "image": null,
+      "coord_source": "osm",
+      "osm": "node/3283340583"
     },
     {
       "id": "tamatorizaki-observatory",
@@ -23325,8 +23409,8 @@
       "locality_en": "Uruma",
       "locality_ja": "うるま",
       "locality_ko": "우루마",
-      "lat": 26.3427195,
-      "lng": 127.8531032,
+      "lat": 26.3422616,
+      "lng": 127.8528992,
       "price_range": 1,
       "hours_en": "11:00–23:00",
       "hours_ja": "11:00〜23:00",
@@ -23369,7 +23453,9 @@
       },
       "parking_en": "618 spaces, free",
       "parking_ja": "618台・無料",
-      "parking_ko": "618대, 무료"
+      "parking_ko": "618대, 무료",
+      "coord_source": "osm",
+      "osm": "way/769108809"
     },
     {
       "id": "kura-473",
@@ -23437,8 +23523,8 @@
       "locality_en": "Nago",
       "locality_ja": "名護",
       "locality_ko": "나고",
-      "lat": 26.6088212,
-      "lng": 127.987255,
+      "lat": 26.6085204,
+      "lng": 127.988113,
       "price_range": 1,
       "hours_en": "11:00–23:00",
       "hours_ja": "11:00〜23:00",
@@ -23481,7 +23567,9 @@
       },
       "parking_en": "254 spaces, free",
       "parking_ja": "254台・無料",
-      "parking_ko": "254대, 무료"
+      "parking_ko": "254대, 무료",
+      "coord_source": "osm",
+      "osm": "node/5885031422"
     },
     {
       "id": "kura-425",
@@ -23549,8 +23637,8 @@
       "locality_en": "Tomigusuku",
       "locality_ja": "豊見城",
       "locality_ko": "도미구스쿠",
-      "lat": 26.1588291,
-      "lng": 127.6602022,
+      "lat": 26.1593604,
+      "lng": 127.6600812,
       "price_range": 1,
       "hours_en": "11:00–23:00",
       "hours_ja": "11:00〜23:00",
@@ -23593,7 +23681,9 @@
       },
       "parking_en": "820 spaces, free",
       "parking_ja": "820台・無料",
-      "parking_ko": "820대, 무료"
+      "parking_ko": "820대, 무료",
+      "coord_source": "osm",
+      "osm": "node/5885062605"
     },
     {
       "id": "kura-416",
@@ -24213,8 +24303,8 @@
       "locality_en": "Yonabaru",
       "locality_ja": "与那原",
       "locality_ko": "요나바루",
-      "lat": 26.20557528343729,
-      "lng": 127.7608173150301,
+      "lat": 26.2055599,
+      "lng": 127.7628114,
       "price_range": 1,
       "hours_en": "9:00–24:00 · 8:00–24:00",
       "hours_ja": "9:00〜24:00／8:00〜24:00",
@@ -24256,7 +24346,9 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "coord_source": "osm",
+      "osm": "node/5885029904"
     },
     {
       "id": "aw-aw-plus-cafe-plazahouse",
@@ -24543,8 +24635,8 @@
       "locality_en": "Itoman",
       "locality_ja": "糸満",
       "locality_ko": "이토만",
-      "lat": 26.152706383460753,
-      "lng": 127.66995711502902,
+      "lat": 26.1526991,
+      "lng": 127.6720574,
       "price_range": 1,
       "hours_en": "9:00–24:00 · 8:00–24:00",
       "hours_ja": "9:00〜24:00／8:00〜24:00",
@@ -24586,7 +24678,9 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "coord_source": "osm",
+      "osm": "way/1097476210"
     },
     {
       "id": "aw-kokusai_matsuo",
@@ -24598,8 +24692,8 @@
       "locality_en": "Naha",
       "locality_ja": "那覇",
       "locality_ko": "나하",
-      "lat": 26.213631283433646,
-      "lng": 127.67857271503031,
+      "lat": 26.2136142,
+      "lng": 127.6807939,
       "price_range": 1,
       "hours_en": "9:00〜21:00 · 224:00〜21:00 · 2floor seating only",
       "hours_ja": "9:00〜21:00／224:00〜21:00は2階席のみ",
@@ -24641,7 +24735,9 @@
       },
       "parking_en": "No parking",
       "parking_ja": "駐車場なし",
-      "parking_ko": "주차 없음"
+      "parking_ko": "주차 없음",
+      "coord_source": "osm",
+      "osm": "node/5215011032"
     },
     {
       "id": "aw-makiminato",
@@ -24708,8 +24804,8 @@
       "locality_en": "Nago",
       "locality_ja": "名護",
       "locality_ko": "나고",
-      "lat": 26.608455,
-      "lng": 127.9676253,
+      "lat": 26.6078663,
+      "lng": 127.9697514,
       "price_range": 1,
       "hours_en": "9:00–24:00",
       "hours_ja": "9:00〜24:00",
@@ -24751,7 +24847,9 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "coord_source": "osm",
+      "osm": "node/5885015885"
     },
     {
       "id": "aw-mihama",
@@ -24763,8 +24861,8 @@
       "locality_en": "Chatan",
       "locality_ja": "北谷",
       "locality_ko": "차탄",
-      "lat": 26.318315983387325,
-      "lng": 127.75722441524397,
+      "lat": 26.3183196,
+      "lng": 127.7594079,
       "price_range": 1,
       "hours_en": "9:00–24:00 · 8:00–24:00",
       "hours_ja": "9:00〜24:00／8:00〜24:00",
@@ -24806,7 +24904,9 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "coord_source": "osm",
+      "osm": "node/5884951587"
     },
     {
       "id": "aw-misato",
@@ -24818,8 +24918,8 @@
       "locality_en": "Okinawa City",
       "locality_ja": "沖縄市",
       "locality_ko": "오키나와시",
-      "lat": 26.348280583373935,
-      "lng": 127.82255571543584,
+      "lat": 26.3482299,
+      "lng": 127.8247876,
       "price_range": 1,
       "hours_en": "00:00–24:00",
       "hours_ja": "00:00〜24:00",
@@ -24861,7 +24961,9 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "coord_source": "osm",
+      "osm": "node/5884951586"
     },
     {
       "id": "aw-miyakoairport",
@@ -25124,8 +25226,8 @@
       "locality_en": "Naha",
       "locality_ja": "那覇",
       "locality_ko": "나하",
-      "lat": 26.227443983427463,
-      "lng": 127.69854691503056,
+      "lat": 26.227465,
+      "lng": 127.7007613,
       "price_range": 1,
       "hours_en": "8:30–24:30",
       "hours_ja": "8:30〜24:30",
@@ -25167,7 +25269,9 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "coord_source": "osm",
+      "osm": "node/1584590708"
     },
     {
       "id": "aw-rycom",
@@ -25289,8 +25393,8 @@
       "locality_en": "Urasoe",
       "locality_ja": "浦添",
       "locality_ko": "우라소에",
-      "lat": 26.237728795055336,
-      "lng": 127.72098085054037,
+      "lat": 26.2375162,
+      "lng": 127.723036,
       "price_range": 1,
       "hours_en": "9:00–22:00",
       "hours_ja": "9:00〜22:00",
@@ -25332,7 +25436,9 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "coord_source": "osm",
+      "osm": "node/5884951589"
     },
     {
       "id": "aw-tokusyukai",
@@ -25399,8 +25505,8 @@
       "locality_en": "Uruma",
       "locality_ja": "うるま",
       "locality_ko": "우루마",
-      "lat": 26.374320383362434,
-      "lng": 127.85361031503346,
+      "lat": 26.3743046,
+      "lng": 127.8558274,
       "price_range": 1,
       "hours_en": "9:00–24:00 · 8:00–24:00",
       "hours_ja": "9:00〜24:00／8:00〜24:00",
@@ -25442,7 +25548,9 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "coord_source": "osm",
+      "osm": "node/5885009899"
     },
     {
       "id": "mcd-47005",
@@ -26070,8 +26178,8 @@
       "locality_en": "Tomigusuku",
       "locality_ja": "豊見城",
       "locality_ko": "도미구스쿠",
-      "lat": 26.175126497025694,
-      "lng": 127.68807455242133,
+      "lat": 26.1751097,
+      "lng": 127.6888329,
       "price_range": 1,
       "hours_en": "9:00–21:00",
       "hours_ja": "9:00〜21:00",
@@ -26114,7 +26222,9 @@
       },
       "parking_en": "700 spaces, free",
       "parking_ja": "700台・無料",
-      "parking_ko": "700대, 무료"
+      "parking_ko": "700대, 무료",
+      "coord_source": "osm",
+      "osm": "node/5885064157"
     },
     {
       "id": "mcd-47512",
@@ -26126,8 +26236,8 @@
       "locality_en": "Uruma",
       "locality_ja": "うるま",
       "locality_ko": "우루마",
-      "lat": 26.345789429194213,
-      "lng": 127.8707874188394,
+      "lat": 26.3447388,
+      "lng": 127.8717433,
       "price_range": 1,
       "hours_en": "9:00–21:30",
       "hours_ja": "9:00〜21:30",
@@ -26170,7 +26280,9 @@
       },
       "parking_en": "480 spaces, free",
       "parking_ja": "480台・無料",
-      "parking_ko": "480대, 무료"
+      "parking_ko": "480대, 무료",
+      "coord_source": "osm",
+      "osm": "node/5885063044"
     },
     {
       "id": "mcd-47517",
@@ -26517,8 +26629,8 @@
       "locality_en": "Uruma",
       "locality_ja": "うるま",
       "locality_ko": "우루마",
-      "lat": 26.338178492272178,
-      "lng": 127.84534750873864,
+      "lat": 26.3384045,
+      "lng": 127.8450595,
       "price_range": 1,
       "hours_en": "10:00–22:00",
       "hours_ja": "10:00〜22:00",
@@ -26561,7 +26673,9 @@
       },
       "parking_en": "2000 spaces, free",
       "parking_ja": "2000台・無料",
-      "parking_ko": "2000대, 무료"
+      "parking_ko": "2000대, 무료",
+      "coord_source": "osm",
+      "osm": "node/5885063046"
     },
     {
       "id": "mcd-47526",
@@ -27245,8 +27359,8 @@
       "locality_en": "Nakagusuku",
       "locality_ja": "中城",
       "locality_ko": "나카구스쿠",
-      "lat": 26.314351433316272,
-      "lng": 127.79615852018597,
+      "lat": 26.3145247,
+      "lng": 127.7969337,
       "price_range": 1,
       "hours_en": "10:00–21:30",
       "hours_ja": "10:00〜21:30",
@@ -27289,7 +27403,9 @@
       },
       "parking_en": "4000 spaces, free",
       "parking_ja": "4000台・無料",
-      "parking_ko": "4000대, 무료"
+      "parking_ko": "4000대, 무료",
+      "coord_source": "osm",
+      "osm": "node/5885064156"
     },
     {
       "id": "mcd-47540",
@@ -27692,8 +27808,8 @@
       "locality_en": "Naha",
       "locality_ja": "那覇",
       "locality_ko": "나하",
-      "lat": 26.217711877068258,
-      "lng": 127.66897697541566,
+      "lat": 26.2177239,
+      "lng": 127.671555,
       "price_range": 2,
       "hours_en": "11:00〜2:00(1:00 L.O.) · Takeout 11:00〜1:00 L.O. · Delivery 11:00〜1:00 L.O.",
       "hours_ja": "11:00〜2:00（1:00 L.O.）／テイクアウト 11:00〜1:00 L.O.／デリバリー 11:00〜1:00 L.O.",
@@ -27723,7 +27839,9 @@
       "desc_en": "Long-established Okinawa steakhouse. Hours from the official shop page.",
       "desc_ja": "沖縄の老舗ステーキハウス。公式店舗ページの営業時間。",
       "desc_ko": "오키나와의 오래된 스테이크하우스. 공식 매장 페이지의 영업시간.",
-      "example": false
+      "example": false,
+      "coord_source": "osm",
+      "osm": "node/4330721291"
     },
     {
       "id": "s88-kokusaidori",
@@ -27864,8 +27982,8 @@
       "locality_en": "Motobu",
       "locality_ja": "本部",
       "locality_ko": "모토부",
-      "lat": 26.676198276652883,
-      "lng": 127.88880351538322,
+      "lat": 26.67619,
+      "lng": 127.89099,
       "price_range": 2,
       "hours_en": "Jul–Sep 11:00〜23:00(22:00L.O.) · Oct–Jun 11:00〜22:00(21:00 L.O.)",
       "hours_ja": "７月〜９月 11:00〜23:00（22:00L.O.）／１０月〜６月 11:00〜22:00（21:00 L.O.）",
@@ -27895,7 +28013,9 @@
       "desc_en": "Long-established Okinawa steakhouse. Hours from the official shop page.",
       "desc_ja": "沖縄の老舗ステーキハウス。公式店舗ページの営業時間。",
       "desc_ko": "오키나와의 오래된 스테이크하우스. 공식 매장 페이지의 영업시간.",
-      "example": false
+      "example": false,
+      "coord_source": "osm",
+      "osm": "node/4330747291"
     },
     {
       "id": "s88-chatan",
@@ -29141,8 +29261,8 @@
       "locality_en": "Chatan",
       "locality_ja": "北谷",
       "locality_ko": "차탄",
-      "lat": 26.313107,
-      "lng": 127.761292,
+      "lat": 26.3137062,
+      "lng": 127.7611825,
       "english_menu": false,
       "indoor": true,
       "kids": {
@@ -29161,7 +29281,9 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "coord_source": "osm",
+      "osm": "node/1998430085"
     },
     {
       "id": "blueseal-depotisland",
@@ -29173,8 +29295,8 @@
       "locality_en": "Chatan",
       "locality_ja": "北谷",
       "locality_ko": "차탄",
-      "lat": 26.315735,
-      "lng": 127.754196,
+      "lat": 26.3160054,
+      "lng": 127.7549222,
       "english_menu": false,
       "indoor": true,
       "kids": {
@@ -29193,7 +29315,9 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "coord_source": "osm",
+      "osm": "node/5128776922"
     },
     {
       "id": "blueseal-depotisland_seaside",
@@ -29461,8 +29585,8 @@
       "locality_en": "Urasoe",
       "locality_ja": "浦添",
       "locality_ko": "우라소에",
-      "lat": 26.266909,
-      "lng": 127.721458,
+      "lat": 26.2673597,
+      "lng": 127.7214033,
       "english_menu": false,
       "indoor": true,
       "kids": {
@@ -29481,7 +29605,9 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "coord_source": "osm",
+      "osm": "node/12049809235"
     },
     {
       "id": "blueseal-miyako_island",
@@ -29621,8 +29747,8 @@
       "locality_en": "Naha",
       "locality_ja": "那覇",
       "locality_ko": "나하",
-      "lat": 26.213209,
-      "lng": 127.678604,
+      "lat": 26.2135408,
+      "lng": 127.6794792,
       "english_menu": false,
       "indoor": true,
       "kids": {
@@ -29641,7 +29767,9 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "coord_source": "osm",
+      "osm": "node/2449050332"
     },
     {
       "id": "blueseal-toyosaki",
@@ -30185,8 +30313,8 @@
       "locality_en": "Okinawa City",
       "locality_ja": "沖縄市",
       "locality_ko": "오키나와시",
-      "lat": 26.321686,
-      "lng": 127.831158,
+      "lat": 26.321418,
+      "lng": 127.8309707,
       "english_menu": false,
       "indoor": true,
       "kids": {
@@ -30209,7 +30337,9 @@
       "hours_ko": "평일 07:00-23:00 · 토 07:00-23:00 · 일·공휴일 07:00-23:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "coord_source": "osm",
+      "osm": "node/5885062616"
     },
     {
       "id": "mos-05199",
@@ -30856,8 +30986,8 @@
       "locality_en": "Nishihara",
       "locality_ja": "西原",
       "locality_ko": "니시하라",
-      "lat": 26.2243907,
-      "lng": 127.7646642,
+      "lat": 26.2247939,
+      "lng": 127.7647614,
       "english_menu": false,
       "indoor": true,
       "kids": {
@@ -30883,7 +31013,9 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "coord_source": "osm",
+      "osm": "node/5885018549"
     },
     {
       "id": "kfc-3180",
@@ -30935,8 +31067,8 @@
       "locality_en": "Nishihara",
       "locality_ja": "西原",
       "locality_ko": "니시하라",
-      "lat": 26.239005,
-      "lng": 127.746824,
+      "lat": 26.2399272,
+      "lng": 127.7475571,
       "english_menu": false,
       "indoor": true,
       "kids": {
@@ -30963,7 +31095,9 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "coord_source": "osm",
+      "osm": "way/1305167637"
     },
     {
       "id": "kfc-3128",
@@ -31365,8 +31499,8 @@
       "locality_en": "Nago",
       "locality_ja": "名護",
       "locality_ko": "나고",
-      "lat": 26.6076832,
-      "lng": 127.9814037,
+      "lat": 26.6074525,
+      "lng": 127.9811416,
       "english_menu": false,
       "indoor": true,
       "kids": {
@@ -31393,7 +31527,9 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "coord_source": "osm",
+      "osm": "node/1993313815"
     },
     {
       "id": "starbucks-1000",
@@ -31580,8 +31716,8 @@
       "locality_en": "Motobu",
       "locality_ja": "本部",
       "locality_ko": "모토부",
-      "lat": 26.6821418549,
-      "lng": 127.88321989,
+      "lat": 26.6819018,
+      "lng": 127.8835865,
       "english_menu": true,
       "indoor": true,
       "kids": {
@@ -31603,7 +31739,9 @@
       "hours_ko": "07:00–22:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "coord_source": "osm",
+      "osm": "node/10872818762"
     },
     {
       "id": "starbucks-1630",
@@ -32665,8 +32803,8 @@
       "locality_en": "Chatan",
       "locality_ja": "北谷",
       "locality_ko": "차탄",
-      "lat": 26.3283421778,
-      "lng": 127.770772464,
+      "lat": 26.3282232,
+      "lng": 127.7704698,
       "english_menu": true,
       "indoor": true,
       "kids": {
@@ -32688,7 +32826,9 @@
       "hours_ko": "월–금 06:00-23:00 · 토–일 07:00-23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "coord_source": "osm",
+      "osm": "node/13762403249"
     },
     {
       "id": "coco-1815",
@@ -36028,8 +36168,8 @@
       "locality_en": "Chatan",
       "locality_ja": "北谷",
       "locality_ko": "차탄",
-      "lat": 26.31834,
-      "lng": 127.759369,
+      "lat": 26.3193793,
+      "lng": 127.759075,
       "english_menu": false,
       "indoor": true,
       "kids": {
@@ -36058,7 +36198,9 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "coord_source": "osm",
+      "osm": "way/1372085685"
     },
     {
       "id": "yappari-2b802c73",
@@ -37704,8 +37846,8 @@
       "locality_en": "Tomigusuku",
       "locality_ja": "豊見城",
       "locality_ko": "도미구스쿠",
-      "lat": 26.158782,
-      "lng": 127.658606,
+      "lat": 26.1590702,
+      "lng": 127.6583723,
       "price_range": 2,
       "hours_en": "9:00–00:00 (LO 23:30); morning 9:00–11:00; lunch 10:00–17:00",
       "hours_ja": "9:00〜深夜0:00（LO 23:30）；モーニング9:00〜11:00；ランチ10:00〜17:00",
@@ -37760,7 +37902,9 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "coord_source": "osm",
+      "osm": "way/643434399"
     },
     {
       "id": "donkey-2234",
@@ -38657,8 +38801,8 @@
       "locality_en": "Uruma",
       "locality_ja": "うるま",
       "locality_ko": "우루마",
-      "lat": 26.430901,
-      "lng": 127.824645,
+      "lat": 26.4312098,
+      "lng": 127.82512,
       "price_range": 2,
       "hours_en": "Daily 16:00–23:00 (LO 30 min before close)",
       "hours_ja": "毎日 16:00〜23:00（LOは閉店30分前）",
@@ -38713,7 +38857,9 @@
       },
       "parking_en": "Parking available",
       "parking_ja": "駐車場あり",
-      "parking_ko": "주차 가능"
+      "parking_ko": "주차 가능",
+      "coord_source": "osm",
+      "osm": "node/5885031402"
     }
   ],
   "medical": [
@@ -38818,8 +38964,8 @@
       "address_ja": "沖縄県那覇市古波蔵4丁目10番55号",
       "address_en": "4-10-55 Kohagura, Naha, Okinawa",
       "area": "Naha",
-      "lat": 26.196432,
-      "lng": 127.689613,
+      "lat": 26.1958927,
+      "lng": 127.6902299,
       "phone": "098-853-1200",
       "notes_en": "Prefecture list: English in emergency, internal medicine, neurosurgery, urology. Children at night: not confirmed.",
       "notes_ja": "県リスト：救急科・内科・脳神経外科・泌尿器科で英語対応。小児の夜間対応は未確認。",
@@ -38827,7 +38973,9 @@
       "source": "沖縄県 救急病院一覧（令和7年1月1日現在） + 沖縄県 外国人患者受入れ医療機関リスト (2026-06-30)",
       "url": "https://oki-kyo.jp/",
       "er_24h": true,
-      "island": "okinawa"
+      "island": "okinawa",
+      "coord_source": "osm",
+      "osm": "way/230830793"
     },
     {
       "languages": [],
@@ -38952,8 +39100,8 @@
       "address_ja": "沖縄県島尻郡八重瀬町字外間171番地1",
       "address_en": "171-1 Hokama, Yaese, Okinawa",
       "area": "Yaese",
-      "lat": 26.178463,
-      "lng": 127.716553,
+      "lat": 26.178486,
+      "lng": 127.7155484,
       "phone": "098-998-3221",
       "notes_en": "Staff EN/ZH Mon–Fri 8:30–17:00, Sat 8:30–12:30; remote interpreter 24 h (prefecture list). Children at night: not confirmed.",
       "notes_ja": "英語・中国語 月〜金8:30〜17:00、土8:30〜12:30。遠隔通訳24時間（県リスト）。小児の夜間対応は未確認。",
@@ -38961,7 +39109,9 @@
       "source": "南部徳洲会病院 website (救急診療科) + 沖縄県 救急病院一覧（令和7年1月1日現在） + 沖縄県 外国人患者受入れ医療機関リスト (2026-06-30)",
       "url": "https://nantoku.org/section/emergency/",
       "er_24h": true,
-      "island": "okinawa"
+      "island": "okinawa",
+      "coord_source": "osm",
+      "osm": "way/843174434"
     },
     {
       "languages": [
@@ -39030,8 +39180,8 @@
       "address_ja": "沖縄県沖縄市字登川610番地",
       "address_en": "610 Noborikawa, Okinawa City, Okinawa",
       "area": "Okinawa City",
-      "lat": 26.364939,
-      "lng": 127.825775,
+      "lat": 26.3665319,
+      "lng": 127.8259156,
       "phone": "098-939-1300",
       "kids_note_en": "Pediatric ER: Mon–Sat 18:00–22:00; Sun & holidays 9:00–12:00 and 18:00–22:00. Not after 22:00.",
       "kids_note_ja": "小児科救急：月〜土 18:00〜22:00、日祝 9:00〜12:00・18:00〜22:00。22時以降は不可。",
@@ -39062,7 +39212,9 @@
         "sun": "9:00-12:00, 18:00-22:00",
         "holiday": "9:00-12:00, 18:00-22:00"
       },
-      "island": "okinawa"
+      "island": "okinawa",
+      "coord_source": "osm",
+      "osm": "node/4577315694"
     },
     {
       "languages": [
@@ -39088,8 +39240,8 @@
       "address_ja": "沖縄県中頭郡北中城村字比嘉801番地",
       "address_en": "801 Higa, Kitanakagusuku, Okinawa",
       "area": "Kitanakagusuku",
-      "lat": 26.317026,
-      "lng": 127.797516,
+      "lat": 26.3169429,
+      "lng": 127.7970112,
       "phone": "098-932-1110",
       "kids_note_en": "Children 19:00–07:00 are seen by the ER doctor; pediatrician on call 24 h for emergencies/severe cases.",
       "kids_note_ja": "夜間（19:00〜翌7:00）の小児は救急担当医が診療。救急・重症は24時間オンコールの小児科医が対応。",
@@ -39101,7 +39253,9 @@
       "url": "https://cyutoku.or.jp/depts/100/gairai.html",
       "er_24h": true,
       "kids_night": true,
-      "island": "okinawa"
+      "island": "okinawa",
+      "coord_source": "osm",
+      "osm": "node/5047586876"
     },
     {
       "languages": [],
@@ -39122,8 +39276,8 @@
       "address_ja": "沖縄県名護市大中2丁目12番3号",
       "address_en": "2-12-3 Onaka, Nago, Okinawa",
       "area": "Nago",
-      "lat": 26.593466,
-      "lng": 127.986893,
+      "lat": 26.5923151,
+      "lng": 127.9861649,
       "phone": "0980-52-2719",
       "kids_note_en": "ER takes all ages incl. pediatric emergencies (hospital ER page).",
       "kids_note_ja": "救急は小児救急を含め年齢を問わず対応（病院救急科ページ）。",
@@ -39135,7 +39289,9 @@
       "url": "https://hokubuweb.hosp.pref.okinawa.jp/section/specialty/er/",
       "er_24h": true,
       "kids_night": true,
-      "island": "okinawa"
+      "island": "okinawa",
+      "coord_source": "osm",
+      "osm": "way/449776106"
     },
     {
       "languages": [
@@ -39159,8 +39315,8 @@
       "address_ja": "沖縄県名護市字宇茂佐1712-3",
       "address_en": "1712-3 Umusa, Nago, Okinawa",
       "area": "Nago",
-      "lat": 26.607536,
-      "lng": 127.966431,
+      "lat": 26.6077853,
+      "lng": 127.9657822,
       "phone": "0980-54-1111",
       "kids_note_en": "No emergency visits for children (up to junior-high age) — call #8000 or go to Hokubu Prefectural Hospital.",
       "kids_note_ja": "小児（中学生まで）の救急受診は行っていません。#8000に相談を。",
@@ -39171,7 +39327,9 @@
       "source": "北部地区医師会病院 website (救急外来) + 沖縄県 救急病院一覧（令和7年1月1日現在） + 沖縄県 外国人患者受入れ医療機関リスト (2026-06-30)",
       "url": "https://hokubuishikai.com/visitor/gairai/%e6%95%91%e6%80%a5%e5%a4%96%e6%9d%a5/",
       "er_24h": true,
-      "island": "okinawa"
+      "island": "okinawa",
+      "coord_source": "osm",
+      "osm": "way/449818118"
     },
     {
       "languages": [],
@@ -39192,8 +39350,8 @@
       "address_ja": "沖縄県宮古島市平良字下里427-1",
       "address_en": "427-1 Shimozato, Hirara, Miyakojima, Okinawa",
       "area": "Miyakojima",
-      "lat": 24.800188,
-      "lng": 125.276047,
+      "lat": 24.7993361,
+      "lng": 125.2763354,
       "phone": "0980-72-3151",
       "kids_note_en": "One pediatrician covers nights/holidays (also wards) — for urgent cases.",
       "kids_note_ja": "夜間休日の小児救急は小児科医1名で対応（病棟業務も兼務）。緊急性のある場合に。",
@@ -39205,7 +39363,9 @@
       "url": "https://miyakoweb.hosp.pref.okinawa.jp/nonconsultation/medical-office/pediatric/how-to-get-a-pediatric-emergency/",
       "er_24h": true,
       "kids_night": true,
-      "island": "miyako"
+      "island": "miyako",
+      "coord_source": "osm",
+      "osm": "node/5885017090"
     },
     {
       "languages": [],
