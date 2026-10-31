@@ -1,7 +1,7 @@
 {
   "schema": "nuchi-ping-content",
   "version": 13,
-  "updated": "2026-10-30T13:00:00+09:00",
+  "updated": "2026-10-31T12:45:00+09:00",
   "example_data": false,
   "notes": "EXAMPLE DATA shipped with ChuraBell (formerly Nuchi Ping) v0.8. Replace with your own. Events are illustrative; place hours/fees need verification. RESTAURANTS (v0.18.0): all listed restaurants are REAL, from official chain store locators / official shop pages and OCVB okinawastory.jp gourmet pages (docs/restaurants_research.md). Fictional restaurant examples removed. example_data remains true because bundled events (and a few other example items) are still illustrative. Featured (PR) flags are examples. Kukuru Kids Play Dome is a FICTIONAL place. BEACHES (v0.10.0, schema 9): all 80 beaches are REAL, from official sources (OCVB VISIT OKINAWA JAPAN beach information and okinawastory.jp, municipalities, tourism associations, operators) checked 2026-10-22 (docs/beaches_research.md). The `beach` box (toilets, lifeguard, showers, jellyfish net, swimming season) only holds facts an official source states — a missing key means not confirmed, not \"no\". Korean beach texts are own translations (review deferred). Coordinates from OCVB, checked against OpenStreetMap beach/coastline data. MEDICAL (v0.9.2): medical facilities, phone_lines and kids_rotation are REAL, checked against official sources on 2026-10-21 (docs/medical_research.md); re-check at least every 3 months. Korean (_ko) medical texts are own translations and NEED NATIVE REVIEW. Coordinates geocoded from the official addresses (GSI). Holidays: Cabinet Office list 2026–2027. Korean/German (_ko/_de) texts on a few items are a demo (own translations). All structured `parking` boxes (lots, fees, spaces, stops, walk times, shuttles, closures) are ILLUSTRATIVE EXAMPLES — check with the organiser/venue before publishing. Kadena Fall Fest dates (Nov 7–8) and Sunset Beach Fest are EXAMPLES. Entry & ID (`entry`) on Kadena Fall Fest and Flightline Fair is EXAMPLE data modelled on public notices for Kadena America Fest and the MCAS Futenma Flight Line Fair (see entry.sources) — both events are fictional examples; re-check the organiser's notice before publishing. ISLANDS (v0.9.4, schema 8): island clinics and the islands list are REAL, from official pages checked 2026-10-21 (docs/islands_medical_research.md); clinic English names are our translations; clinic addresses/coordinates left out (district-level only).",
   "notices": [
@@ -22956,6 +22956,516 @@
       "etiquette": [],
       "tags": [],
       "image": null
+    },
+    {
+      "id": "kouri-ocean-tower",
+      "title_en": "Kouri Ocean Tower",
+      "title_ja": "古宇利オーシャンタワー",
+      "title_kana": "こうりおーしゃんたわー",
+      "title_ko": "코우리 오션 타워",
+      "category": "viewpoints",
+      "also_in": [
+        "activities",
+        "kids"
+      ],
+      "area": "Nakijin",
+      "island": "okinawa",
+      "lat": 26.7001292,
+      "lng": 128.0241612,
+      "coord_source": "osm",
+      "osm": "node/4592400200",
+      "desc_en": "White observation tower about 82 m above sea level on Kouri Island with cart ride through gardens, shell museum, cafés and views over Kouri Bridge and the emerald shallows.",
+      "desc_ja": "古宇利島の海抜約82mの白い展望塔。庭園をカートで巡り、貝の展示やカフェとともに古宇利大橋とエメラルドグリーンの海を一望。",
+      "desc_ko": "코우리섬 해발 약 82m의 하얀 전망탑. 정원 카트, 조개 전시, 카페와 함께 코우리 대교와 에메랄드빛 바다를 한눈에.",
+      "hours_en": "10:00–18:00 (last entry 17:30) · open every day (may close in typhoons / severe weather)",
+      "hours_ja": "10:00〜18:00（最終入園17:30）・年中無休（台風等荒天時は臨時休園の場合あり）",
+      "hours_ko": "10:00~18:00(최종 입장 17:30) · 연중무휴(태풍 등 악천후 시 임시 휴원 가능)",
+      "fee_en": "Adult (16+) ¥1,000 · child (6–15) ¥500 · under 6 free",
+      "fee_ja": "大人（16歳以上）1,000円・小人（6〜15歳）500円・6歳未満無料",
+      "fee_ko": "성인(16세 이상) 1,000엔 · 어린이(6~15세) 500엔 · 6세 미만 무료",
+      "free": false,
+      "parking_en": "Free parking about 200 cars (lots 1–3) · bus spaces available",
+      "parking_ja": "無料駐車場 約200台（第1〜第3）・バス専用あり",
+      "parking_ko": "무료 주차장 약 200대(제1~제3) · 버스 전용 있음",
+      "indoor": false,
+      "etiquette": [],
+      "tags": [
+        "family_friendly"
+      ],
+      "needs_verification": false,
+      "source": "kouri-oceantower.com official facility page",
+      "url": "https://www.kouri-oceantower.com/",
+      "sources": [
+        "https://www.kouri-oceantower.com/facility.html",
+        "https://www.kouri-oceantower.com/"
+      ],
+      "last_checked": "2026-10-31",
+      "image": null,
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands",
+          "bridge"
+        ],
+        "access": "drive_up",
+        "sunset": true
+      },
+      "activity": {
+        "setting": "both",
+        "booking": "walk_in",
+        "kids_ok": true,
+        "water": false
+      }
+    },
+    {
+      "id": "pinaisara-falls",
+      "title_en": "Pinaisara Falls (Hinai River)",
+      "title_ja": "ピナイサーラの滝（ヒナイ川）",
+      "title_kana": "ぴないさーらのたき（ひないがわ）",
+      "title_ko": "피나이사라 폭포(히나이강)",
+      "category": "activities",
+      "also_in": [
+        "viewpoints"
+      ],
+      "area": "Iriomote",
+      "island": "iriomote",
+      "lat": 24.38188889,
+      "lng": 123.82038889,
+      "coord_source": "wikipedia+osm_access",
+      "desc_en": "Okinawa’s tallest waterfall (~55 m) on Iriomote’s Hinai River. Not a walk-up trail: Taketomi Town lists it as a restricted field — registered guide and advance entry approval required (daily cap). Reach the basin by canoe + trek; a harder route reaches the top lookout.",
+      "desc_ja": "西表島・ヒナイ川にある県内最大級の落差（約55m）の滝。遊歩道で自由に入れる場所ではなく、竹富町の立入制限フィールド。登録引率ガイド同行と事前の立入承認が必要（1日上限あり）。カヌーとトレッキングで滝つぼへ。滝上は別ルートのハードな行程。",
+      "desc_ko": "이리오모테 히나이강의 현내 최대급 낙차(약 55m) 폭포. 자유 산책로가 아니라 다케토미정의 출입 제한 필드. 등록 가이드 동행과 사전 출입 승인이 필요(일일 상한). 카누+트레킹으로 폭포물. 폭포 위는 별도 하드 코스.",
+      "fee_en": "Guided tour only — operator rates vary; Taketomi Town entry permit required (not a free walk-in site)",
+      "fee_ja": "ガイドツアーのみ（事業者料金は各社）・竹富町の立入承認が必要（自由見学不可）",
+      "fee_ko": "가이드 투어만 가능(사업자 요금은 업체별) · 다케토미정 출입 승인 필요(자유 관람 불가)",
+      "free": false,
+      "indoor": false,
+      "etiquette": [],
+      "tags": [],
+      "needs_verification": false,
+      "source": "Iriomote Ecotourism (Taketomi Town) · Ministry of the Environment",
+      "url": "https://iriomote-ecotourism.jp/field/%E3%83%92%E3%83%8A%E3%82%A4%E5%B7%9D%EF%BC%9C%E3%83%94%E3%83%8A%E3%82%A4%E3%82%B5%E3%83%BC%E3%83%A9%E3%81%AE%E6%BB%9D%EF%BC%9E/",
+      "sources": [
+        "https://iriomote-ecotourism.jp/field/%E3%83%92%E3%83%8A%E3%82%A4%E5%B7%9D%EF%BC%9C%E3%83%94%E3%83%8A%E3%82%A4%E3%82%B5%E3%83%BC%E3%83%A9%E3%81%AE%E6%BB%9D%EF%BC%9E/",
+        "https://iriomote-ecotourism.jp/tokutei-entry-flow/",
+        "https://www.env.go.jp/nature/nationalparks/try/all/act1291.html"
+      ],
+      "last_checked": "2026-10-31",
+      "image": null,
+      "activity": {
+        "setting": "outdoor",
+        "booking": "yes",
+        "water": true,
+        "kids_ok": false
+      },
+      "viewpoint": {
+        "views": [
+          "forest",
+          "sea",
+          "islands"
+        ],
+        "access": "hike"
+      }
+    },
+    {
+      "id": "yonaguni-iseki-point",
+      "title_en": "Yonaguni Underwater Monument (Iseki Point)",
+      "title_ja": "与那国海底遺跡（遺跡ポイント）",
+      "title_kana": "よなぐにかいていせき（いせきぽいんと）",
+      "title_ko": "요나구니 해저 유적(이세키 포인트)",
+      "category": "activities",
+      "area": "Yonaguni",
+      "island": "yonaguni",
+      "lat": 24.437043,
+      "lng": 123.010992,
+      "coord_source": "osm",
+      "osm": "node/6629431239",
+      "desc_en": "Stepped underwater rock formation off Cape Arakawabana (Iseki Point), about 100 m south of the cape in roughly 25 m of water. There is no shore walk-in or underwater museum building — view only by scuba dive, snorkel, or glass-bottom / semi-submersible boat (e.g. from Kubura Port). Sea state often cancels summer runs.",
+      "desc_ja": "新川鼻沖の遺跡ポイント（岬の南約100m・水深約25m前後）の階段状の海底地形。徒歩や陸上施設では見学できません。ダイビング・シュノーケル、または久部良港発のグラスボート／半潜水艇でのみ。南風や潮流で欠航が多いです。",
+      "desc_ko": "아라카와바나곶 앞바다 이세키 포인트(곶 남쪽 약 100m·수심 약 25m)의 계단형 해저 지형. 도보·육상 시설로는 볼 수 없습니다. 다이빙·스노클 또는 구부라항 출발 글라스보트/반잠수정으로만. 남풍·조류로 결항이 잦습니다.",
+      "fee_en": "Glass boat (SAWES Jack’s Dolphin): adult ¥7,000 / child (3+) ¥4,000 · dive packages separate (operator rates)",
+      "fee_ja": "グラスボート（サーウェス・ジャックスドルフィン号）大人7,000円／子供（3歳以上）4,000円・ダイビングは別料金（各社）",
+      "fee_ko": "글라스보트(SAWES 잭스 돌핀호) 성인 7,000엔 / 어린이(3세 이상) 4,000엔 · 다이빙은 별도(업체별)",
+      "free": false,
+      "indoor": false,
+      "etiquette": [],
+      "tags": [],
+      "needs_verification": false,
+      "source": "SAWES Yonaguni (Irifune Enterprise) official iseki & ship pages",
+      "url": "https://www.yonaguni.jp/iseki/",
+      "sources": [
+        "https://www.yonaguni.jp/iseki/",
+        "https://www.yonaguni.jp/ship/",
+        "https://www.yonaguni.jp/dive/"
+      ],
+      "last_checked": "2026-10-31",
+      "image": null,
+      "activity": {
+        "setting": "outdoor",
+        "booking": "recommended",
+        "water": true,
+        "kids_ok": true
+      }
+    },
+    {
+      "id": "daisekirinzan-asmui",
+      "title_en": "ASMUI Spiritual Hikes (formerly Daisekirinzan)",
+      "title_ja": "アスムイハイクス（旧・大石林山）",
+      "title_kana": "あすむいはいくす（きゅう・だいせきりんざん）",
+      "title_ko": "아스무이 하이크스(구 다이세키린잔)",
+      "category": "activities",
+      "also_in": [
+        "viewpoints",
+        "parks_gardens"
+      ],
+      "area": "Kunigami",
+      "island": "okinawa",
+      "lat": 26.8614093,
+      "lng": 128.254436,
+      "coord_source": "osm",
+      "osm": "node/4553989118",
+      "desc_en": "Limestone peak trails in Yanbaru National Park at Kunigami’s Ginama area. Rebranded ASMUI Spiritual Hikes (Dec 2024). Ticket includes shuttle, audio guide and lounge; courses about 90–150 minutes.",
+      "desc_ja": "国頭村宜名真のやんばる国立公園内の石灰岩の山歩き。2024年12月に「アスムイハイクス」へリニューアル。チケットにシャトル・音声ガイド・ラウンジ込み。所要約90〜150分。",
+      "desc_ko": "구니가미촌 기나마의 얀바루 국립공원 석회암 산길. 2024년 12월 ASMUI Spiritual Hikes로 리뉴얼. 티켓에 셔틀·음성 가이드·라운지 포함. 소요 약 90~150분.",
+      "hours_en": "9:30–17:30 (last admission 16:00) · open every day (may close in severe weather)",
+      "hours_ja": "9:30〜17:30（最終受付16:00）・年中無休（悪天候で閉園の場合あり）",
+      "hours_ko": "9:30~17:30(최종 접수 16:00) · 연중무휴(악천후 시 휴원 가능)",
+      "fee_en": "Adult (15+) ¥2,500 · child (6–14) ¥1,000 (incl. shuttle, audio guide, lounge)",
+      "fee_ja": "大人（15歳以上）2,500円・小人（6〜14歳）1,000円（入場・シャトル・音声ガイド・ラウンジ込）",
+      "fee_ko": "성인(15세 이상) 2,500엔 · 어린이(6~14세) 1,000엔(입장·셔틀·음성 가이드·라운지 포함)",
+      "free": false,
+      "parking_en": "Free parking on site",
+      "parking_ja": "無料駐車場あり",
+      "parking_ko": "무료 주차장 있음",
+      "indoor": false,
+      "etiquette": [],
+      "tags": [],
+      "needs_verification": false,
+      "source": "asmui.jp official usage-fee / basic-information pages",
+      "url": "https://www.asmui.jp/",
+      "sources": [
+        "https://www.asmui.jp/usagefee",
+        "https://asmui.com/basic-information/",
+        "https://www.asmui.jp/"
+      ],
+      "last_checked": "2026-10-31",
+      "image": null,
+      "activity": {
+        "setting": "outdoor",
+        "booking": "walk_in",
+        "kids_ok": true,
+        "water": false
+      },
+      "viewpoint": {
+        "views": [
+          "forest",
+          "sea",
+          "cliffs"
+        ],
+        "access": "hike"
+      }
+    },
+    {
+      "id": "hiji-falls",
+      "title_en": "Hiji Falls (currently closed)",
+      "title_ja": "比地大滝（現在閉鎖中）",
+      "title_kana": "ひじおおたき（げんざいへいさちゅう）",
+      "title_ko": "히지 폭포(현재 폐쇄 중)",
+      "category": "activities",
+      "also_in": [
+        "parks_gardens"
+      ],
+      "area": "Kunigami",
+      "island": "okinawa",
+      "lat": 26.7109576,
+      "lng": 128.1854562,
+      "coord_source": "osm",
+      "osm": "node/4407560190",
+      "desc_en": "Mainland Okinawa’s tallest waterfall (25.7 m) with an about 40-minute boardwalk through Yanbaru forest. Kunigami Village Tourism Association and the village state the trail, campground and parking have been fully closed since the Nov 2024 heavy rains — do not visit until reopening is announced.",
+      "desc_ja": "本島最大級の落差25.7mの滝。遊歩道で約40分。国頭村観光協会・村の公式発表では、2024年11月の集中豪雨以降、遊歩道・キャンプ場・駐車場を含む施設全体が閉鎖中。再開の公式発表があるまで立ち入らないでください。",
+      "desc_ko": "본섬 최대급 낙차 25.7m 폭포. 산책로 약 40분. 구니가미촌 관광협회·촌 공식 발표에 따르면 2024년 11월 집중호우 이후 산책로·캠프장·주차장 포함 시설 전체가 폐쇄 중. 재개 공지가 있을 때까지 들어가지 마세요.",
+      "hours_en": "CLOSED (facility-wide since Nov 2024 floods) — check Kunigami Village Tourism Association before any visit",
+      "hours_ja": "閉鎖中（2024年11月豪雨以降・施設全体）— 訪問前に国頭村観光協会で確認",
+      "hours_ko": "폐쇄 중(2024년 11월 호우 이후·시설 전체) — 방문 전 구니가미촌 관광협회 확인",
+      "fee_en": "When open (village ordinance): non-resident adult ¥500 / child ¥300 · resident adult ¥100 / child ¥50",
+      "fee_ja": "開場時（村条例）：村外住所 大人500円／子供300円・村内住所 大人100円／子供50円",
+      "fee_ko": "개장 시(촌 조례): 촌외 성인 500엔/어린이 300엔 · 촌내 성인 100엔/어린이 50엔",
+      "free": false,
+      "parking_en": "Free parking when open (currently closed with the facility)",
+      "parking_ja": "開場時は無料駐車場（現在は施設とともに閉鎖）",
+      "parking_ko": "개장 시 무료 주차장(현재는 시설과 함께 폐쇄)",
+      "indoor": false,
+      "etiquette": [],
+      "tags": [],
+      "needs_verification": false,
+      "source": "Kunigami Village Tourism Association · Kunigami Village · campground official",
+      "url": "https://kunigami-kanko.com/sightseeing-spots/%e6%af%94%e5%9c%b0%e5%a4%a7%e6%bb%9d/",
+      "sources": [
+        "https://kunigami-kanko.com/sightseeing-spots/%e6%af%94%e5%9c%b0%e5%a4%a7%e6%bb%9d/",
+        "https://www.vill.kunigami.okinawa.jp/k_keizai/%e6%af%94%e5%9c%b0%e5%a4%a7%e6%bb%9d%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%97%e5%a0%b4%e3%81%ae%e9%96%89%e9%8e%96%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
+        "https://hiji.yuiyui-k.jp/"
+      ],
+      "last_checked": "2026-10-31",
+      "image": null,
+      "activity": {
+        "setting": "outdoor",
+        "booking": "walk_in",
+        "kids_ok": true,
+        "water": true
+      }
+    },
+    {
+      "id": "nakama-river-mangroves",
+      "title_en": "Nakama River Mangrove Cruise",
+      "title_ja": "仲間川マングローブクルーズ",
+      "title_kana": "なかまがわまんぐろーぶくるーず",
+      "title_ko": "나카마강 맹그로브 크루즈",
+      "category": "activities",
+      "also_in": [
+        "kids"
+      ],
+      "area": "Iriomote",
+      "island": "iriomote",
+      "lat": 24.2718391,
+      "lng": 123.8827993,
+      "coord_source": "osm",
+      "osm": "node/12329676478",
+      "desc_en": "Boat cruise on Iriomote’s Nakama River through one of Japan’s largest mangrove forests (national natural monument / park protections). Departs Ohara Port in front of Shop Dugong — walk-in when seats remain; web booking for groups of 10+.",
+      "desc_ja": "西表島・仲間川の日本最大級マングローブ林を遊覧船で巡る（天然記念物等の保護区域）。大原港・ショップじゅごん前出発。残席あれば予約なし可、10名以上はWEB予約必須。",
+      "desc_ko": "이리오모테 나카마강의 일본 최대급 맹그로브 숲을 유람선으로(천연기념물 등 보호구역). 오하라항 숍 주공 앞에서 출발. 잔여석 있으면 예약 없이 가능, 10명 이상은 웹 예약 필수.",
+      "hours_en": "Typical mangrove course departures around 10:00 / 11:25 / 15:00 (confirm same-day status on iriomote.com)",
+      "hours_ja": "マングローブコース目安 10:00／11:25／15:00（当日運航はiriomote.comで確認）",
+      "hours_ko": "맹그로브 코스 대략 10:00/11:25/15:00(당일 운항은 iriomote.com에서 확인)",
+      "fee_en": "Mangrove course adult ¥3,500 / child ¥1,750 (about 50–60 min)",
+      "fee_ja": "マングローブコース 大人3,500円／子供1,750円（所要約50〜60分）",
+      "fee_ko": "맹그로브 코스 성인 3,500엔 / 어린이 1,750엔(소요 약 50~60분)",
+      "free": false,
+      "indoor": false,
+      "etiquette": [],
+      "tags": [
+        "family_friendly"
+      ],
+      "needs_verification": false,
+      "source": "Iriomote Kotsu (Iriomote Transport) official cruise page",
+      "url": "https://iriomote.com/cruise/",
+      "sources": [
+        "https://iriomote.com/cruise/",
+        "https://iriomote.com/nakama/"
+      ],
+      "last_checked": "2026-10-31",
+      "image": null,
+      "activity": {
+        "setting": "outdoor",
+        "booking": "recommended",
+        "kids_ok": true,
+        "water": true
+      }
+    },
+    {
+      "id": "bankoku-shinryokan",
+      "title_en": "Bankoku Shinryokan",
+      "title_ja": "万国津梁館",
+      "title_kana": "ばんこくしんりょうかん",
+      "title_ko": "반코쿠 신료칸",
+      "category": "viewpoints",
+      "area": "Nago",
+      "island": "okinawa",
+      "lat": 26.54280556,
+      "lng": 127.93386111,
+      "coord_source": "wikipedia",
+      "desc_en": "Okinawa Prefecture’s seaside MICE / summit venue on Busena Cape, Nago. Exterior grounds viewing only for the public, fully by advance phone reservation (no same-day; closed on event days). Interior viewing needs staff escort.",
+      "desc_ja": "名護・ブセナ岬にある沖縄県のリゾート型MICE施設。一般は外観見学のみ・完全事前予約制（当日不可・催事日は見学不可）。館内見学は職員立会いが必要。",
+      "desc_ko": "나고·부세나곶의 오키나와현 리조트형 MICE 시설. 일반은 외관 견학만·완전 사전 예약제(당일 불가·행사일 견학 불가). 실내 견학은 직원 동행 필요.",
+      "hours_en": "Exterior viewing slots 10:00–12:00 and 13:00–16:00 (last entry) · 1 group per hour · book by phone 14 days to 1 day ahead (by 17:00)",
+      "hours_ja": "外観見学 10:00〜12:00・13:00〜16:00（最終入場）毎時1組・希望日の14日前〜前日17:00までに電話予約",
+      "hours_ko": "외관 견학 10:00~12:00·13:00~16:00(최종 입장) 매시 1조 · 희망일 14일 전~전날 17:00까지 전화 예약",
+      "fee_en": "Exterior viewing — no admission fee stated on the official notice (reservation required)",
+      "fee_ja": "外観見学 — 公式案内に入場料の記載なし（要予約）",
+      "fee_ko": "외관 견학 — 공식 안내에 입장료 표기 없음(예약 필수)",
+      "free": true,
+      "indoor": false,
+      "etiquette": [],
+      "tags": [],
+      "needs_verification": false,
+      "source": "shinryokan.com official exterior-viewing notice & access",
+      "url": "https://www.shinryokan.com/",
+      "sources": [
+        "https://www.shinryokan.com/sp/detail.jsp?editMode=&funcid=2&id=103434&select=&type=TopicsTopPage",
+        "https://www.shinryokan.com/sp/detail.jsp?funcid=1&id=22210&menuid=6580"
+      ],
+      "last_checked": "2026-10-31",
+      "image": null,
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands"
+        ],
+        "access": "drive_up",
+        "free_basis": "official_free"
+      }
+    },
+    {
+      "id": "beach-hoshizuna",
+      "title_en": "Hoshizuna Beach (Star Sand Beach)",
+      "title_ja": "星砂の浜",
+      "title_kana": "ほしすなのはま",
+      "title_ko": "호시스나 해변(별모래 해변)",
+      "category": "beaches",
+      "area": "Iriomote",
+      "island": "iriomote",
+      "lat": 24.4364648,
+      "lng": 123.7770468,
+      "coord_source": "osm",
+      "osm": "way/448697944",
+      "desc_en": "Natural west-Iriomote beach known for star-shaped sand grains. Taketomi Town Tourism Association notes swimming and snorkelling are possible; no lifeguards — follow town swim rules (go with others, check weather/current/hazards).",
+      "desc_ja": "西表島西部の星形の砂で知られる自然の浜。竹富町観光協会は海水浴・シュノーケル可と案内。監視員なし。町の遊泳注意（複数人・天候潮流・危険生物の確認）を守ってください。",
+      "desc_ko": "이리오모테 서부의 별 모양 모래로 유명한 자연 해변. 다케토미정 관광협회는 해수욕·스노클 가능하다고 안내. 안전요원 없음. 정의 수영 주의(여러 명·날씨·조류·위험 생물 확인)를 지키세요.",
+      "fee_en": "Free",
+      "fee_ja": "無料",
+      "fee_ko": "무료",
+      "free": true,
+      "beach": {
+        "lifeguard": false
+      },
+      "etiquette": [],
+      "tags": [],
+      "needs_verification": false,
+      "source": "Taketomi Town Tourism Association · Iriomote Kotsu",
+      "url": "https://painusima.com/859/",
+      "sources": [
+        "https://painusima.com/859/",
+        "https://iriomote.com/hoshisuna/",
+        "https://www.town.taketomi.lg.jp/bousai/yuei/"
+      ],
+      "last_checked": "2026-10-31",
+      "image": null,
+      "indoor": false
+    },
+    {
+      "id": "irabu-bridge",
+      "title_en": "Irabu Bridge",
+      "title_ja": "伊良部大橋",
+      "title_kana": "いらぶおおはし",
+      "title_ko": "이라부 대교",
+      "category": "viewpoints",
+      "area": "Miyakojima",
+      "island": "miyako",
+      "lat": 24.8034117,
+      "lng": 125.2272624,
+      "coord_source": "osm",
+      "osm": "way/1556044330",
+      "desc_en": "3,540 m bridge linking Miyako Island and Irabu Island (opened Jan 2015). Miyako Island Tourism Association notes it as Japan’s longest free-to-cross bridge. For a full view of the span, use Makiyama Observatory on Irabu.",
+      "desc_ja": "宮古島と伊良部島を結ぶ全長3,540mの橋（2015年1月開通）。宮古島観光協会は無料で渡れる橋として日本一の長さと案内。橋全体を望むなら伊良部島の牧山展望台が定番。",
+      "desc_ko": "미야코섬과 이라부섬을 잇는 전장 3,540m 다리(2015년 1월 개통). 미야코섬 관광협회는 무료로 건널 수 있는 다리 중 일본 최장이라고 안내. 다리 전경은 이라부섬 마키야마 전망대가 정석.",
+      "fee_en": "Free to cross (no toll)",
+      "fee_ja": "通行無料（通行料なし）",
+      "fee_ko": "통행 무료(통행료 없음)",
+      "free": true,
+      "indoor": false,
+      "etiquette": [],
+      "tags": [],
+      "needs_verification": false,
+      "source": "Miyako Island Tourism Association",
+      "url": "https://miyako-island.net/beach_and_spot/beach_spot_008/",
+      "sources": [
+        "https://miyako-island.net/beach_and_spot/beach_spot_008/",
+        "https://miyako-guide.net/spots/spots-840/",
+        "https://miyako-island.net/beach_and_spot/beach_spot_017/"
+      ],
+      "last_checked": "2026-10-31",
+      "image": null,
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands",
+          "bridge"
+        ],
+        "access": "drive_up",
+        "free_basis": "open_lookout"
+      }
+    },
+    {
+      "id": "aguni-mahana",
+      "title_en": "Mahana (Cape Fudensaki) Viewpoint — Aguni",
+      "title_ja": "マハナ（筆ん崎）展望 — 粟国島",
+      "title_kana": "まはな（ふでんざき）てんぼう — あぐにじま",
+      "title_ko": "마하나(후덴자키) 전망 — 아구니섬",
+      "category": "viewpoints",
+      "area": "Aguni",
+      "island": "aguni",
+      "lat": 26.5756287,
+      "lng": 127.208409,
+      "coord_source": "osm",
+      "osm": "node/4513643804",
+      "desc_en": "Southwest Aguni lookout about 90 m above the sea at Cape Fudensaki (Mahana plaza). Aguni Village Tourism Association lists views toward Kume, Kerama, Tonaki, Okinawa Island and Ie — also recommended for sunsets.",
+      "desc_ja": "粟国島南西・筆ん崎の海抜約90mの広場「マハナ」。粟国村観光協会は久米島・慶良間・渡名喜・沖縄本島・伊江島方面の眺望と夕日スポットとして案内。",
+      "desc_ko": "아구니섬 남서·후덴자키 해발 약 90m 광장 '마하나'. 아구니촌 관광협회는 구메·케라마·도나키·오키나와 본섬·이에섬 방면 조망과 일몰 스폿으로 안내.",
+      "fee_en": "Free (open lookout)",
+      "fee_ja": "無料（展望は自由）",
+      "fee_ko": "무료(전망은 자유)",
+      "free": true,
+      "indoor": false,
+      "etiquette": [],
+      "tags": [],
+      "needs_verification": false,
+      "source": "Aguni Village Tourism Association",
+      "url": "https://agunikankou.wixsite.com/aguni/sightseeing",
+      "sources": [
+        "https://agunikankou.wixsite.com/aguni/sightseeing"
+      ],
+      "last_checked": "2026-10-31",
+      "image": null,
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands",
+          "cliffs"
+        ],
+        "access": "drive_up",
+        "sunset": true,
+        "free_basis": "open_lookout"
+      }
+    },
+    {
+      "id": "tonaki-ufunda-observatory",
+      "title_en": "Ufunda Observatory (Tonaki)",
+      "title_ja": "大本田展望台（渡名喜島）",
+      "title_kana": "うふんだてんぼうだい（となきじま）",
+      "title_ko": "우푼다 전망대(도나키섬)",
+      "category": "viewpoints",
+      "area": "Tonaki",
+      "island": "tonaki",
+      "lat": 26.355828,
+      "lng": 127.148483,
+      "coord_source": "osm",
+      "osm": "node/13433057442",
+      "desc_en": "360° lookout on Tonaki Island with views of Kume, Aguni and the Kerama islands. Tonaki Village Tourism Association notes it was once a beacon relay site; dress warmer in winter winds.",
+      "desc_ja": "渡名喜島を360度見渡せる展望台。渡名喜村観光協会は久米島・粟国島・慶良間諸島の眺望と、かつて烽火台だった立地を案内。冬は強風のため防寒を。",
+      "desc_ko": "도나키섬을 360도 내려다보는 전망대. 도나키촌 관광협회는 구메·아구니·케라마 조망과 옛 봉화대 입지를 안내. 겨울에는 강풍에 대비한 방한.",
+      "fee_en": "Free (open lookout)",
+      "fee_ja": "無料（展望は自由）",
+      "fee_ko": "무료(전망은 자유)",
+      "free": true,
+      "indoor": false,
+      "etiquette": [],
+      "tags": [],
+      "needs_verification": false,
+      "source": "Tonaki Village Tourism Association",
+      "url": "https://www.tonaki-kanko.com/singe_tourism.php?cms_item_group_id=2495",
+      "sources": [
+        "https://www.tonaki-kanko.com/singe_tourism.php?cms_item_group_id=2495",
+        "https://www.tonaki-kanko.com/tourism.php"
+      ],
+      "last_checked": "2026-10-31",
+      "image": null,
+      "viewpoint": {
+        "views": [
+          "sea",
+          "islands"
+        ],
+        "access": "short_walk",
+        "free_basis": "open_lookout"
+      }
     }
   ],
   "restaurants": [
