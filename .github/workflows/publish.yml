@@ -22,7 +22,8 @@ jobs:
         with:
           python-version: "3.x"
       - run: python3 validate.py content.json
-      - run: mkdir site && cp content.json site/
+      # content.json + derived files (places-index.json, safety.json) + traffic.json
+      - run: python3 scripts/build_derived.py site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
