@@ -1,7 +1,7 @@
 {
   "schema": "nuchi-ping-content",
   "version": 13,
-  "updated": "2026-11-04T10:30:00+09:00",
+  "updated": "2026-11-10T07:52:53+09:00",
   "example_data": false,
   "notes": "EXAMPLE DATA shipped with ChuraBell (formerly Nuchi Ping) v0.8. Replace with your own. Events are illustrative; place hours/fees need verification. RESTAURANTS (v0.18.0): all listed restaurants are REAL, from official chain store locators / official shop pages and OCVB okinawastory.jp gourmet pages (docs/restaurants_research.md). Fictional restaurant examples removed. example_data remains true because bundled events (and a few other example items) are still illustrative. Featured (PR) flags are examples. Kukuru Kids Play Dome is a FICTIONAL place. BEACHES (v0.10.0, schema 9): all 80 beaches are REAL, from official sources (OCVB VISIT OKINAWA JAPAN beach information and okinawastory.jp, municipalities, tourism associations, operators) checked 2026-10-22 (docs/beaches_research.md). The `beach` box (toilets, lifeguard, showers, jellyfish net, swimming season) only holds facts an official source states — a missing key means not confirmed, not \"no\". Korean beach texts are own translations (review deferred). Coordinates from OCVB, checked against OpenStreetMap beach/coastline data. MEDICAL (v0.9.2): medical facilities, phone_lines and kids_rotation are REAL, checked against official sources on 2026-10-21 (docs/medical_research.md); re-check at least every 3 months. Korean (_ko) medical texts are own translations and NEED NATIVE REVIEW. Coordinates geocoded from the official addresses (GSI). Holidays: Cabinet Office list 2026–2027. Korean/German (_ko/_de) texts on a few items are a demo (own translations). All structured `parking` boxes (lots, fees, spaces, stops, walk times, shuttles, closures) are ILLUSTRATIVE EXAMPLES — check with the organiser/venue before publishing. Kadena Fall Fest dates (Nov 7–8) and Sunset Beach Fest are EXAMPLES. Entry & ID (`entry`) on Kadena Fall Fest and Flightline Fair is EXAMPLE data modelled on public notices for Kadena America Fest and the MCAS Futenma Flight Line Fair (see entry.sources) — both events are fictional examples; re-check the organiser's notice before publishing. ISLANDS (v0.9.4, schema 8): island clinics and the islands list are REAL, from official pages checked 2026-10-21 (docs/islands_medical_research.md); clinic English names are our translations; clinic addresses/coordinates left out (district-level only).",
   "notices": [
@@ -23522,7 +23522,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.akindo-sushiro.co.jp/takeout/order.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sushiro-2191",
@@ -23577,7 +23581,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.akindo-sushiro.co.jp/takeout/order.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sushiro-2205",
@@ -23632,7 +23640,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.akindo-sushiro.co.jp/takeout/order.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sushiro-2275",
@@ -23687,7 +23699,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.akindo-sushiro.co.jp/takeout/order.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sushiro-357",
@@ -23742,7 +23758,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.akindo-sushiro.co.jp/takeout/order.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sushiro-438",
@@ -23797,7 +23817,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.akindo-sushiro.co.jp/takeout/order.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sushiro-444",
@@ -23852,7 +23876,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.akindo-sushiro.co.jp/takeout/order.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sushiro-451",
@@ -23907,7 +23935,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.akindo-sushiro.co.jp/takeout/order.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kura-487",
@@ -23965,7 +23997,11 @@
       "parking_ja": "618台・無料",
       "parking_ko": "618대, 무료",
       "coord_source": "osm",
-      "osm": "way/769108809"
+      "osm": "way/769108809",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kurasushi.co.jp/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kura-473",
@@ -24021,7 +24057,11 @@
       },
       "parking_en": "250 spaces, free",
       "parking_ja": "250台・無料",
-      "parking_ko": "250대, 무료"
+      "parking_ko": "250대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kurasushi.co.jp/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kura-440",
@@ -24079,7 +24119,11 @@
       "parking_ja": "254台・無料",
       "parking_ko": "254대, 무료",
       "coord_source": "osm",
-      "osm": "node/5885031422"
+      "osm": "node/5885031422",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kurasushi.co.jp/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kura-425",
@@ -24135,7 +24179,11 @@
       },
       "parking_en": "69 spaces, free",
       "parking_ja": "69台・無料",
-      "parking_ko": "69대, 무료"
+      "parking_ko": "69대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kurasushi.co.jp/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kura-422",
@@ -24193,7 +24241,11 @@
       "parking_ja": "820台・無料",
       "parking_ko": "820대, 무료",
       "coord_source": "osm",
-      "osm": "node/5885062605"
+      "osm": "node/5885062605",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kurasushi.co.jp/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kura-416",
@@ -24249,7 +24301,11 @@
       },
       "parking_en": "820 spaces, free",
       "parking_ja": "820台・無料",
-      "parking_ko": "820대, 무료"
+      "parking_ko": "820대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kurasushi.co.jp/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kura-588",
@@ -24305,7 +24361,11 @@
       },
       "parking_en": "1860 spaces, free",
       "parking_ja": "1860台・無料",
-      "parking_ko": "1860대, 무료"
+      "parking_ko": "1860대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kurasushi.co.jp/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kura-596",
@@ -24361,7 +24421,11 @@
       },
       "parking_en": "1850 spaces, free",
       "parking_ja": "1850台・無料",
-      "parking_ko": "1850대, 무료"
+      "parking_ko": "1850대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kurasushi.co.jp/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "hama-6212",
@@ -24416,7 +24480,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.hama-sushi.co.jp/topics/2026/1030000878.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "hama-4329",
@@ -24471,7 +24539,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.hama-sushi.co.jp/topics/2026/1030000878.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "hama-4313",
@@ -24526,7 +24598,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.hama-sushi.co.jp/topics/2026/1030000878.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "hama-4462",
@@ -24581,7 +24657,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.hama-sushi.co.jp/topics/2026/1030000878.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "hama-4514",
@@ -24636,7 +24716,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.hama-sushi.co.jp/topics/2026/1030000878.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "hama-6520",
@@ -24691,7 +24775,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.hama-sushi.co.jp/topics/2026/1030000878.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "hama-4439",
@@ -24746,7 +24834,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.hama-sushi.co.jp/topics/2026/1030000878.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "hama-5276",
@@ -24801,7 +24893,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.hama-sushi.co.jp/topics/2026/1030000878.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-agarihama",
@@ -24858,7 +24954,11 @@
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
       "coord_source": "osm",
-      "osm": "node/5885029904"
+      "osm": "node/5885029904",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-aw-plus-cafe-plazahouse",
@@ -24913,7 +25013,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-awase",
@@ -24968,7 +25072,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-chatan",
@@ -25023,7 +25131,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-iiasokinawa",
@@ -25078,7 +25190,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-ishigaki",
@@ -25133,7 +25249,11 @@
       },
       "parking_en": "No parking",
       "parking_ja": "駐車場なし",
-      "parking_ko": "주차 없음"
+      "parking_ko": "주차 없음",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-itoman",
@@ -25190,7 +25310,11 @@
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
       "coord_source": "osm",
-      "osm": "way/1097476210"
+      "osm": "way/1097476210",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-kokusai_matsuo",
@@ -25247,7 +25371,11 @@
       "parking_ja": "駐車場なし",
       "parking_ko": "주차 없음",
       "coord_source": "osm",
-      "osm": "node/5215011032"
+      "osm": "node/5215011032",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-makiminato",
@@ -25302,7 +25430,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-meiou",
@@ -25359,7 +25491,11 @@
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
       "coord_source": "osm",
-      "osm": "node/5885015885"
+      "osm": "node/5885015885",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-mihama",
@@ -25416,7 +25552,11 @@
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
       "coord_source": "osm",
-      "osm": "node/5884951587"
+      "osm": "node/5884951587",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-misato",
@@ -25473,7 +25613,11 @@
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
       "coord_source": "osm",
-      "osm": "node/5884951586"
+      "osm": "node/5884951586",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-miyakoairport",
@@ -25516,7 +25660,11 @@
       "desc_en": "Okinawa-rooted burger chain. Hours from the official shop page. Drive-thru. Airport store — kids sets not listed for this location.",
       "desc_ja": "沖縄発祥のハンバーガーチェーン。公式店舗ページの営業時間。 ドライブスルーあり。 空港店舗のためキッズセット対象外。",
       "desc_ko": "오키나와 발상 버거 체인. 공식 매장 페이지의 영업시간. 드라이브스루. 공항점은 키즈 세트 대상 외.",
-      "example": false
+      "example": false,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-miyakoshimosato",
@@ -25571,7 +25719,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-nago",
@@ -25626,7 +25778,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-naha-kanagusuku",
@@ -25681,7 +25837,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-nahaairport",
@@ -25724,7 +25884,11 @@
       "desc_en": "Okinawa-rooted burger chain. Hours from the official shop page. Drive-thru. Airport store — kids sets not listed for this location.",
       "desc_ja": "沖縄発祥のハンバーガーチェーン。公式店舗ページの営業時間。 ドライブスルーあり。 空港店舗のためキッズセット対象外。",
       "desc_ko": "오키나와 발상 버거 체인. 공식 매장 페이지의 영업시간. 드라이브스루. 공항점은 키즈 세트 대상 외.",
-      "example": false
+      "example": false,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-omoro",
@@ -25781,7 +25945,11 @@
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
       "coord_source": "osm",
-      "osm": "node/1584590708"
+      "osm": "node/1584590708",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-rycom",
@@ -25836,7 +26004,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-san-aurasoeparcocity",
@@ -25891,7 +26063,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-saneekyoudsuka",
@@ -25948,7 +26124,11 @@
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
       "coord_source": "osm",
-      "osm": "node/5884951589"
+      "osm": "node/5884951589",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-tokusyukai",
@@ -26003,7 +26183,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "aw-urumaagena",
@@ -26060,7 +26244,11 @@
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
       "coord_source": "osm",
-      "osm": "node/5885009899"
+      "osm": "node/5885009899",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.awok.co.jp/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47005",
@@ -26116,7 +26304,11 @@
       },
       "parking_en": "28 spaces, free",
       "parking_ja": "28台・無料",
-      "parking_ko": "28대, 무료"
+      "parking_ko": "28대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47006",
@@ -26172,7 +26364,11 @@
       },
       "parking_en": "33 spaces, free",
       "parking_ja": "33台・無料",
-      "parking_ko": "33대, 무료"
+      "parking_ko": "33대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47008",
@@ -26228,7 +26424,11 @@
       },
       "parking_en": "9 spaces, free",
       "parking_ja": "9台・無料",
-      "parking_ko": "9대, 무료"
+      "parking_ko": "9대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47015",
@@ -26284,7 +26484,11 @@
       },
       "parking_en": "106 spaces, free",
       "parking_ja": "106台・無料",
-      "parking_ko": "106대, 무료"
+      "parking_ko": "106대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47016",
@@ -26340,7 +26544,11 @@
       },
       "parking_en": "27 spaces, free",
       "parking_ja": "27台・無料",
-      "parking_ko": "27대, 무료"
+      "parking_ko": "27대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47018",
@@ -26396,7 +26604,11 @@
       },
       "parking_en": "24 spaces, free",
       "parking_ja": "24台・無料",
-      "parking_ko": "24대, 무료"
+      "parking_ko": "24대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47020",
@@ -26452,7 +26664,11 @@
       },
       "parking_en": "23 spaces, free",
       "parking_ja": "23台・無料",
-      "parking_ko": "23대, 무료"
+      "parking_ko": "23대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47021",
@@ -26508,7 +26724,11 @@
       },
       "parking_en": "32 spaces, free",
       "parking_ja": "32台・無料",
-      "parking_ko": "32대, 무료"
+      "parking_ko": "32대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47022",
@@ -26564,7 +26784,11 @@
       },
       "parking_en": "14 spaces, free",
       "parking_ja": "14台・無料",
-      "parking_ko": "14대, 무료"
+      "parking_ko": "14대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47025",
@@ -26620,7 +26844,11 @@
       },
       "parking_en": "16 spaces, free",
       "parking_ja": "16台・無料",
-      "parking_ko": "16대, 무료"
+      "parking_ko": "16대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47506",
@@ -26676,7 +26904,11 @@
       },
       "parking_en": "519 spaces, free",
       "parking_ja": "519台・無料",
-      "parking_ko": "519대, 무료"
+      "parking_ko": "519대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47509",
@@ -26734,7 +26966,11 @@
       "parking_ja": "700台・無料",
       "parking_ko": "700대, 무료",
       "coord_source": "osm",
-      "osm": "node/5885064157"
+      "osm": "node/5885064157",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47512",
@@ -26792,7 +27028,11 @@
       "parking_ja": "480台・無料",
       "parking_ko": "480대, 무료",
       "coord_source": "osm",
-      "osm": "node/5885063044"
+      "osm": "node/5885063044",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47517",
@@ -26847,7 +27087,11 @@
       },
       "parking_en": "No parking",
       "parking_ja": "駐車場なし",
-      "parking_ko": "주차 없음"
+      "parking_ko": "주차 없음",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47518",
@@ -26903,7 +27147,11 @@
       },
       "parking_en": "27 spaces, free",
       "parking_ja": "27台・無料",
-      "parking_ko": "27대, 무료"
+      "parking_ko": "27대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47519",
@@ -26959,7 +27207,11 @@
       },
       "parking_en": "500 spaces, free",
       "parking_ja": "500台・無料",
-      "parking_ko": "500대, 무료"
+      "parking_ko": "500대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47520",
@@ -27015,7 +27267,11 @@
       },
       "parking_en": "27 spaces, free",
       "parking_ja": "27台・無料",
-      "parking_ko": "27대, 무료"
+      "parking_ko": "27대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47521",
@@ -27071,7 +27327,11 @@
       },
       "parking_en": "220 spaces, free",
       "parking_ja": "220台・無料",
-      "parking_ko": "220대, 무료"
+      "parking_ko": "220대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47522",
@@ -27127,7 +27387,11 @@
       },
       "parking_en": "713 spaces, free",
       "parking_ja": "713台・無料",
-      "parking_ko": "713대, 무료"
+      "parking_ko": "713대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47524",
@@ -27185,7 +27449,11 @@
       "parking_ja": "2000台・無料",
       "parking_ko": "2000대, 무료",
       "coord_source": "osm",
-      "osm": "node/5885063046"
+      "osm": "node/5885063046",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47526",
@@ -27241,7 +27509,11 @@
       },
       "parking_en": "49 spaces, free",
       "parking_ja": "49台・無料",
-      "parking_ko": "49대, 무료"
+      "parking_ko": "49대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47527",
@@ -27297,7 +27569,11 @@
       },
       "parking_en": "2406 spaces, free",
       "parking_ja": "2406台・無料",
-      "parking_ko": "2406대, 무료"
+      "parking_ko": "2406대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47528",
@@ -27353,7 +27629,11 @@
       },
       "parking_en": "73 spaces, free",
       "parking_ja": "73台・無料",
-      "parking_ko": "73대, 무료"
+      "parking_ko": "73대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47529",
@@ -27409,7 +27689,11 @@
       },
       "parking_en": "69 spaces, free",
       "parking_ja": "69台・無料",
-      "parking_ko": "69대, 무료"
+      "parking_ko": "69대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47530",
@@ -27465,7 +27749,11 @@
       },
       "parking_en": "478 spaces, free",
       "parking_ja": "478台・無料",
-      "parking_ko": "478대, 무료"
+      "parking_ko": "478대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47532",
@@ -27521,7 +27809,11 @@
       },
       "parking_en": "32 spaces, free",
       "parking_ja": "32台・無料",
-      "parking_ko": "32대, 무료"
+      "parking_ko": "32대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47533",
@@ -27577,7 +27869,11 @@
       },
       "parking_en": "26 spaces, free",
       "parking_ja": "26台・無料",
-      "parking_ko": "26대, 무료"
+      "parking_ko": "26대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47534",
@@ -27633,7 +27929,11 @@
       },
       "parking_en": "31 spaces, free",
       "parking_ja": "31台・無料",
-      "parking_ko": "31대, 무료"
+      "parking_ko": "31대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47535",
@@ -27689,7 +27989,11 @@
       },
       "parking_en": "43 spaces, free",
       "parking_ja": "43台・無料",
-      "parking_ko": "43대, 무료"
+      "parking_ko": "43대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47536",
@@ -27745,7 +28049,11 @@
       },
       "parking_en": "50 spaces, free",
       "parking_ja": "50台・無料",
-      "parking_ko": "50대, 무료"
+      "parking_ko": "50대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47537",
@@ -27801,7 +28109,11 @@
       },
       "parking_en": "49 spaces, free",
       "parking_ja": "49台・無料",
-      "parking_ko": "49대, 무료"
+      "parking_ko": "49대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47538",
@@ -27857,7 +28169,11 @@
       },
       "parking_en": "124 spaces, free",
       "parking_ja": "124台・無料",
-      "parking_ko": "124대, 무료"
+      "parking_ko": "124대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47539",
@@ -27915,7 +28231,11 @@
       "parking_ja": "4000台・無料",
       "parking_ko": "4000대, 무료",
       "coord_source": "osm",
-      "osm": "node/5885064156"
+      "osm": "node/5885064156",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47540",
@@ -27971,7 +28291,11 @@
       },
       "parking_en": "220 spaces, free",
       "parking_ja": "220台・無料",
-      "parking_ko": "220대, 무료"
+      "parking_ko": "220대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47543",
@@ -28027,7 +28351,11 @@
       },
       "parking_en": "1850 spaces, free",
       "parking_ja": "1850台・無料",
-      "parking_ko": "1850대, 무료"
+      "parking_ko": "1850대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47544",
@@ -28083,7 +28411,11 @@
       },
       "parking_en": "28 spaces, free",
       "parking_ja": "28台・無料",
-      "parking_ko": "28대, 무료"
+      "parking_ko": "28대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47546",
@@ -28139,7 +28471,11 @@
       },
       "parking_en": "23 spaces, free",
       "parking_ja": "23台・無料",
-      "parking_ko": "23대, 무료"
+      "parking_ko": "23대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47547",
@@ -28194,7 +28530,11 @@
       },
       "parking_en": "No parking",
       "parking_ja": "駐車場なし",
-      "parking_ko": "주차 없음"
+      "parking_ko": "주차 없음",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47548",
@@ -28250,7 +28590,11 @@
       },
       "parking_en": "128 spaces, free",
       "parking_ja": "128台・無料",
-      "parking_ko": "128대, 무료"
+      "parking_ko": "128대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mcd-47549",
@@ -28306,7 +28650,11 @@
       },
       "parking_en": "33 spaces, free",
       "parking_ja": "33台・無料",
-      "parking_ko": "33대, 무료"
+      "parking_ko": "33대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mcdonalds.co.jp/shop/mobileorder/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "s88-tsuji",
@@ -28351,7 +28699,11 @@
       "desc_ko": "오키나와의 오래된 스테이크하우스. 공식 매장 페이지의 영업시간.",
       "example": false,
       "coord_source": "osm",
-      "osm": "node/4330721291"
+      "osm": "node/4330721291",
+      "takeaway": true,
+      "takeaway_source_url": "https://s88.co.jp/shop/steak88/tsuji/",
+      "takeaway_source_type": "official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "s88-kokusaidori",
@@ -28394,7 +28746,11 @@
       "desc_en": "Long-established Okinawa steakhouse. Hours from the official shop page.",
       "desc_ja": "沖縄の老舗ステーキハウス。公式店舗ページの営業時間。",
       "desc_ko": "오키나와의 오래된 스테이크하우스. 공식 매장 페이지의 영업시간.",
-      "example": false
+      "example": false,
+      "takeaway": true,
+      "takeaway_source_url": "https://s88.co.jp/shop/steak88/kokusaidori/",
+      "takeaway_source_type": "official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "s88-kokusaidori-annex",
@@ -28480,7 +28836,11 @@
       "desc_en": "Long-established Okinawa steakhouse. Hours from the official shop page.",
       "desc_ja": "沖縄の老舗ステーキハウス。公式店舗ページの営業時間。",
       "desc_ko": "오키나와의 오래된 스테이크하우스. 공식 매장 페이지의 영업시간.",
-      "example": false
+      "example": false,
+      "takeaway": true,
+      "takeaway_source_url": "https://s88.co.jp/shop/steak88/nishiguchi/",
+      "takeaway_source_type": "official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "s88-churaumi",
@@ -28525,7 +28885,11 @@
       "desc_ko": "오키나와의 오래된 스테이크하우스. 공식 매장 페이지의 영업시간.",
       "example": false,
       "coord_source": "osm",
-      "osm": "node/4330747291"
+      "osm": "node/4330747291",
+      "takeaway": true,
+      "takeaway_source_url": "https://s88.co.jp/shop/steak88/churaumi/",
+      "takeaway_source_type": "official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "s88-chatan",
@@ -28740,7 +29104,11 @@
       "desc_en": "Long-established Okinawa steakhouse. Hours from the official shop page.",
       "desc_ja": "沖縄の老舗ステーキハウス。公式店舗ページの営業時間。",
       "desc_ko": "오키나와의 오래된 스테이크하우스. 공식 매장 페이지의 영업시간.",
-      "example": false
+      "example": false,
+      "takeaway": true,
+      "takeaway_source_url": "https://s88.co.jp/shop/steak88/ishigaki/",
+      "takeaway_source_type": "official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "joyfull-385",
@@ -29793,7 +30161,11 @@
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
       "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
       "coord_source": "osm",
-      "osm": "node/1998430085"
+      "osm": "node/1998430085",
+      "takeaway": true,
+      "takeaway_source_url": "https://map.blueseal.co.jp/shop-product/togo/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "blueseal-depotisland",
@@ -29923,7 +30295,11 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://map.blueseal.co.jp/shop-product/togo/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "blueseal-hanasaki_marche",
@@ -30083,7 +30459,11 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://map.blueseal.co.jp/shop-product/togo/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "blueseal-makiminato",
@@ -30117,7 +30497,11 @@
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
       "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
       "coord_source": "osm",
-      "osm": "node/12049809235"
+      "osm": "node/12049809235",
+      "takeaway": true,
+      "takeaway_source_url": "https://map.blueseal.co.jp/shop-product/togo/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "blueseal-miyako_island",
@@ -30149,7 +30533,11 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://map.blueseal.co.jp/shop-product/togo/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "blueseal-nago",
@@ -30181,7 +30569,11 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://map.blueseal.co.jp/shop-product/togo/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "blueseal-okinawa_rycom",
@@ -30213,7 +30605,11 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://map.blueseal.co.jp/shop-product/togo/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "blueseal-painagama",
@@ -30245,7 +30641,11 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://map.blueseal.co.jp/shop-product/togo/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "blueseal-palette_kumoji",
@@ -30279,7 +30679,11 @@
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
       "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
       "coord_source": "osm",
-      "osm": "node/2449050332"
+      "osm": "node/2449050332",
+      "takeaway": true,
+      "takeaway_source_url": "https://map.blueseal.co.jp/shop-product/togo/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "blueseal-toyosaki",
@@ -30311,7 +30715,11 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://map.blueseal.co.jp/shop-product/togo/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "blueseal-urasoe_parcocity",
@@ -30343,7 +30751,11 @@
       "payment": "card_ok",
       "desc_en": "Okinawa-born Blue Seal ice cream shop. Address from official shop map (hours not published on page).",
       "desc_ja": "沖縄発ブルーシール。公式店舗マップの住所（ページに営業時間なしのため省略）。",
-      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략)."
+      "desc_ko": "오키나와 발 블루실. 공식 매장 지도 주소(페이지에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://map.blueseal.co.jp/shop-product/togo/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-08114",
@@ -30379,7 +30791,11 @@
       "hours_ko": "평일 07:00-22:00 · 토 07:00-22:00 · 일·공휴일 07:00-22:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-00330",
@@ -30415,7 +30831,11 @@
       "hours_ko": "평일 07:00-23:00 · 토 07:00-23:00 · 일·공휴일 07:00-23:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-05061",
@@ -30451,7 +30871,11 @@
       "hours_ko": "평일 08:00-00:00 · 토 08:00-00:00 · 일·공휴일 08:00-00:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-05249",
@@ -30487,7 +30911,11 @@
       "hours_ko": "평일 07:00-01:00 · 토 07:00-01:00 · 일·공휴일 07:00-01:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-05062",
@@ -30523,7 +30951,11 @@
       "hours_ko": "평일 07:00-01:00 · 토 07:00-01:00 · 일·공휴일 07:00-01:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-00400",
@@ -30559,7 +30991,11 @@
       "hours_ko": "평일 08:00-23:00 · 토 08:00-23:00 · 일·공휴일 08:00-23:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-05043",
@@ -30595,7 +31031,11 @@
       "hours_ko": "평일 07:00-00:00 · 토 07:00-00:00 · 일·공휴일 07:00-23:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-04807",
@@ -30631,7 +31071,11 @@
       "hours_ko": "평일 07:00-00:00 · 토 07:00-00:00 · 일·공휴일 07:00-00:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-05471",
@@ -30667,7 +31111,11 @@
       "hours_ko": "평일 07:00-23:00 · 토 07:00-23:00 · 일·공휴일 07:00-23:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-01664",
@@ -30703,7 +31151,11 @@
       "hours_ko": "평일 07:00-00:00 · 토 07:00-00:00 · 일·공휴일 07:00-00:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-01647",
@@ -30739,7 +31191,11 @@
       "hours_ko": "평일 07:00-23:00 · 토 07:00-23:00 · 일·공휴일 07:00-23:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-05402",
@@ -30775,7 +31231,11 @@
       "hours_ko": "평일 09:00-22:00 · 토 09:00-22:00 · 일·공휴일 09:00-22:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-04480",
@@ -30811,7 +31271,11 @@
       "hours_ko": "평일 07:00-00:00 · 토 07:00-00:00 · 일·공휴일 07:00-00:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-05243",
@@ -30849,7 +31313,11 @@
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
       "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
       "coord_source": "osm",
-      "osm": "node/5885062616"
+      "osm": "node/5885062616",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-05199",
@@ -30885,7 +31353,11 @@
       "hours_ko": "평일 07:00-00:00 · 토 07:00-00:00 · 일·공휴일 07:00-00:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-01691",
@@ -30921,7 +31393,11 @@
       "hours_ko": "평일 07:00-23:00 · 토 07:00-23:00 · 일·공휴일 07:00-23:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-00804",
@@ -30957,7 +31433,11 @@
       "hours_ko": "평일 09:00-23:00 · 토 08:00-23:00 · 일·공휴일 08:00-23:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-05105",
@@ -30993,7 +31473,11 @@
       "hours_ko": "평일 08:00-23:00 · 토 08:00-23:00 · 일·공휴일 08:00-23:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-05031",
@@ -31029,7 +31513,11 @@
       "hours_ko": "평일 07:00-21:00 · 토 07:00-21:00 · 일·공휴일 07:00-21:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-01755",
@@ -31065,7 +31553,11 @@
       "hours_ko": "평일 07:00-23:00 · 토 07:00-23:00 · 일·공휴일 07:00-23:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "mos-01526",
@@ -31101,7 +31593,11 @@
       "hours_ko": "평일 07:00-23:00 · 토 07:00-23:00 · 일·공휴일 07:00-23:00",
       "desc_en": "MOS Burger branch. Hours from official shop data.",
       "desc_ja": "モスバーガー。公式店舗データの営業時間。",
-      "desc_ko": "모스버거. 공식 매장 데이터 영업시간."
+      "desc_ko": "모스버거. 공식 매장 데이터 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.mos.jp/service/appli/how_to_order/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-724",
@@ -31141,7 +31637,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-3112",
@@ -31181,7 +31681,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-3083",
@@ -31221,7 +31725,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-1271",
@@ -31261,7 +31769,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-3486",
@@ -31300,7 +31812,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-650",
@@ -31333,7 +31849,11 @@
       "payment": "card_ok",
       "desc_en": "KFC Japan branch. Hours/parking from official store locator.",
       "desc_ja": "ケンタッキー。公式店舗検索の営業時間・駐車場。",
-      "desc_ko": "KFC. 공식 매장 검색의 영업시간·주차."
+      "desc_ko": "KFC. 공식 매장 검색의 영업시간·주차.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-7111",
@@ -31366,7 +31886,11 @@
       "payment": "card_ok",
       "desc_en": "KFC Japan branch. Hours/parking from official store locator.",
       "desc_ja": "ケンタッキー。公式店舗検索の営業時間・駐車場。",
-      "desc_ko": "KFC. 공식 매장 검색의 영업시간·주차."
+      "desc_ko": "KFC. 공식 매장 검색의 영업시간·주차.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-3359",
@@ -31405,7 +31929,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-647",
@@ -31444,7 +31972,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-3475",
@@ -31484,7 +32016,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-7138",
@@ -31525,7 +32061,11 @@
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
       "coord_source": "osm",
-      "osm": "node/5885018549"
+      "osm": "node/5885018549",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-3180",
@@ -31565,7 +32105,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-3478",
@@ -31607,7 +32151,11 @@
       "parking_ko": "주차 가능, 무료",
       "drive_thru": true,
       "coord_source": "osm",
-      "osm": "way/1305167637"
+      "osm": "way/1305167637",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-3128",
@@ -31647,7 +32195,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-646",
@@ -31687,7 +32239,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-1272",
@@ -31727,7 +32283,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-529",
@@ -31766,7 +32326,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-5077",
@@ -31800,7 +32364,11 @@
       "desc_en": "KFC Japan branch. Hours/parking from official store locator.",
       "desc_ja": "ケンタッキー。公式店舗検索の営業時間・駐車場。",
       "desc_ko": "KFC. 공식 매장 검색의 영업시간·주차.",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-1087",
@@ -31840,7 +32408,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-3167",
@@ -31880,7 +32452,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-3384",
@@ -31919,7 +32495,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-801",
@@ -31958,7 +32538,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-1473",
@@ -31997,7 +32581,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "kfc-468",
@@ -32039,7 +32627,11 @@
       "parking_ko": "주차 가능, 무료",
       "drive_thru": true,
       "coord_source": "osm",
-      "osm": "node/1993313815"
+      "osm": "node/1993313815",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.kfc.co.jp/netorder",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-1000",
@@ -32074,7 +32666,11 @@
       "hours_ko": "07:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-1105",
@@ -32109,7 +32705,11 @@
       "hours_ko": "07:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-1244",
@@ -32144,7 +32744,11 @@
       "hours_ko": "07:00–23:30",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-1245",
@@ -32179,7 +32783,11 @@
       "hours_ko": "08:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-1277",
@@ -32214,7 +32822,11 @@
       "hours_ko": "10:00–22:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-1543",
@@ -32251,7 +32863,11 @@
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
       "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
       "coord_source": "osm",
-      "osm": "node/10872818762"
+      "osm": "node/10872818762",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-1630",
@@ -32286,7 +32902,11 @@
       "hours_ko": "07:00–22:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-1671",
@@ -32321,7 +32941,11 @@
       "hours_ko": "09:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-1822",
@@ -32356,7 +32980,11 @@
       "hours_ko": "10:00–21:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-2050",
@@ -32391,7 +33019,11 @@
       "hours_ko": "07:30–20:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-2132",
@@ -32426,7 +33058,11 @@
       "hours_ko": "07:00–21:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-2185",
@@ -32461,7 +33097,11 @@
       "hours_ko": "10:00–22:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-381",
@@ -32496,7 +33136,11 @@
       "hours_ko": "07:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-398",
@@ -32531,7 +33175,11 @@
       "hours_ko": "09:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-406",
@@ -32566,7 +33214,11 @@
       "hours_ko": "09:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4101",
@@ -32601,7 +33253,11 @@
       "hours_ko": "07:00–22:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4129",
@@ -32636,7 +33292,11 @@
       "hours_ko": "07:00–22:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4151",
@@ -32671,7 +33331,11 @@
       "hours_ko": "07:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4199",
@@ -32706,7 +33370,11 @@
       "hours_ko": "07:00–22:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4219",
@@ -32741,7 +33409,11 @@
       "hours_ko": "07:00–22:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4227",
@@ -32776,7 +33448,11 @@
       "hours_ko": "08:00–21:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-428",
@@ -32811,7 +33487,11 @@
       "hours_ko": "09:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4290",
@@ -32846,7 +33526,11 @@
       "hours_ko": "07:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4322",
@@ -32881,7 +33565,11 @@
       "hours_ko": "07:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4496",
@@ -32916,7 +33604,11 @@
       "hours_ko": "07:00–21:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4503",
@@ -32951,7 +33643,11 @@
       "hours_ko": "07:30–21:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4562",
@@ -32986,7 +33682,11 @@
       "hours_ko": "10:00–22:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-4625",
@@ -33021,7 +33721,11 @@
       "hours_ko": "07:30–22:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-559",
@@ -33056,7 +33760,11 @@
       "hours_ko": "10:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-577",
@@ -33091,7 +33799,11 @@
       "hours_ko": "09:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-623",
@@ -33126,7 +33838,11 @@
       "hours_ko": "09:00–22:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-636",
@@ -33161,7 +33877,11 @@
       "hours_ko": "07:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-652",
@@ -33196,7 +33916,11 @@
       "hours_ko": "09:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-702",
@@ -33231,7 +33955,11 @@
       "hours_ko": "06:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-842",
@@ -33266,7 +33994,11 @@
       "hours_ko": "월–금 06:30-23:00 · 토–일 07:00-23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-875",
@@ -33301,7 +34033,11 @@
       "hours_ko": "09:00–23:00",
       "desc_en": "Starbucks Coffee. Hours from official store locator.",
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
-      "desc_ko": "스타벅스. 공식 매장 검색 영업시간."
+      "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "starbucks-893",
@@ -33338,7 +34074,11 @@
       "desc_ja": "スターバックス。公式店舗検索の営業時間。",
       "desc_ko": "스타벅스. 공식 매장 검색 영업시간.",
       "coord_source": "osm",
-      "osm": "node/13762403249"
+      "osm": "node/13762403249",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.starbucks.co.jp/mobileorder/guide/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-1815",
@@ -33374,7 +34114,11 @@
       "hours_ko": "11:00〜23:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-1639",
@@ -33410,7 +34154,11 @@
       "hours_ko": "10:45〜22:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-2217",
@@ -33446,7 +34194,11 @@
       "hours_ko": "10:45〜22:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-1602",
@@ -33482,7 +34234,11 @@
       "hours_ko": "10:45〜24:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-2377",
@@ -33518,7 +34274,11 @@
       "hours_ko": "11:00〜23:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-3241",
@@ -33554,7 +34314,11 @@
       "hours_ko": "11:00〜24:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-1280",
@@ -33590,7 +34354,11 @@
       "hours_ko": "11:00〜3:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-2387",
@@ -33626,7 +34394,11 @@
       "hours_ko": "11:00〜24:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-2604",
@@ -33662,7 +34434,11 @@
       "hours_ko": "10:45〜23:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-1961",
@@ -33698,7 +34474,11 @@
       "hours_ko": "11:00〜22:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-2134",
@@ -33734,7 +34514,11 @@
       "hours_ko": "11:00〜22:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-1557",
@@ -33770,7 +34554,11 @@
       "hours_ko": "11:00〜24:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-2481",
@@ -33806,7 +34594,11 @@
       "hours_ko": "11:00〜23:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-1877",
@@ -33842,7 +34634,11 @@
       "hours_ko": "11:00〜23:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "coco-2880",
@@ -33878,7 +34674,11 @@
       "hours_ko": "11:00〜23:00(라스트 오더)악천후 · 매장 사정으로 조기 종료될 수 있습니다.",
       "desc_en": "CoCo Ichibanya curry. Hours from official shop detail.",
       "desc_ja": "カレーハウスCoCo壱番屋。公式店舗の営業時間。",
-      "desc_ko": "코코이치 카레. 공식 매장 영업시간."
+      "desc_ko": "코코이치 카레. 공식 매장 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ichibanya.co.jp/takuhai/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059701",
@@ -33911,7 +34711,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059705",
@@ -33944,7 +34748,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059706",
@@ -33977,7 +34785,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059707",
@@ -34010,7 +34822,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059708",
@@ -34043,7 +34859,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059710",
@@ -34076,7 +34896,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059711",
@@ -34109,7 +34933,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059715",
@@ -34142,7 +34970,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059718",
@@ -34175,7 +35007,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059719",
@@ -34208,7 +35044,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059721",
@@ -34241,7 +35081,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059722",
@@ -34274,7 +35118,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059723",
@@ -34307,7 +35155,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059724",
@@ -34340,7 +35192,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059725",
@@ -34373,7 +35229,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059726",
@@ -34406,7 +35266,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059728",
@@ -34439,7 +35303,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yoshinoya-ysn_059729",
@@ -34472,7 +35340,11 @@
       "payment": "card_ok",
       "desc_en": "Yoshinoya gyudon. Address/coords from official locator (hours not in list API).",
       "desc_ja": "吉野家。公式店舗リストの住所・座標（リストに営業時間なしのため省略）。",
-      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략)."
+      "desc_ko": "요시노야. 공식 매장 리스트 주소·좌표(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.yoshinoya.com/service/bentou/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-6457",
@@ -34515,7 +35387,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1441",
@@ -34558,7 +35434,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-6458",
@@ -34600,7 +35480,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1821",
@@ -34643,7 +35527,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1214",
@@ -34686,7 +35574,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1315",
@@ -34729,7 +35621,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1197",
@@ -34772,7 +35668,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1947",
@@ -34815,7 +35715,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-947",
@@ -34858,7 +35762,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1794",
@@ -34900,7 +35808,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-2039",
@@ -34943,7 +35855,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-5705",
@@ -34985,7 +35901,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1348",
@@ -35027,7 +35947,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-6239",
@@ -35069,7 +35993,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-2043",
@@ -35112,7 +36040,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1683",
@@ -35155,7 +36087,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-2032",
@@ -35198,7 +36134,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1777",
@@ -35241,7 +36181,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-6177",
@@ -35284,7 +36228,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1697",
@@ -35327,7 +36275,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1894",
@@ -35370,7 +36322,11 @@
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
-      "drive_thru": true
+      "drive_thru": true,
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sukiya-1570",
@@ -35412,7 +36368,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.sukiya.jp/sp/menu/out/gyudon/100100/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "matsuya-0000001931",
@@ -35445,7 +36405,11 @@
       "payment": "card_ok",
       "desc_en": "Matsuya gyudon. Address from official locator (hours not in list).",
       "desc_ja": "松屋。公式店舗リストの住所（リストに営業時間なしのため省略）。",
-      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략)."
+      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.matsuyafoods.co.jp/menu/takeout.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "matsuya-0000001966",
@@ -35478,7 +36442,11 @@
       "payment": "card_ok",
       "desc_en": "Matsuya gyudon. Address from official locator (hours not in list).",
       "desc_ja": "松屋。公式店舗リストの住所（リストに営業時間なしのため省略）。",
-      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략)."
+      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.matsuyafoods.co.jp/menu/takeout.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "matsuya-0000001991",
@@ -35511,7 +36479,11 @@
       "payment": "card_ok",
       "desc_en": "Matsuya gyudon. Address from official locator (hours not in list).",
       "desc_ja": "松屋。公式店舗リストの住所（リストに営業時間なしのため省略）。",
-      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략)."
+      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.matsuyafoods.co.jp/menu/takeout.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "matsuya-0000002105",
@@ -35544,7 +36516,11 @@
       "payment": "card_ok",
       "desc_en": "Matsuya gyudon. Address from official locator (hours not in list).",
       "desc_ja": "松屋。公式店舗リストの住所（リストに営業時間なしのため省略）。",
-      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략)."
+      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.matsuyafoods.co.jp/menu/takeout.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "matsuya-0000002194",
@@ -35577,7 +36553,11 @@
       "payment": "card_ok",
       "desc_en": "Matsuya gyudon. Address from official locator (hours not in list).",
       "desc_ja": "松屋。公式店舗リストの住所（リストに営業時間なしのため省略）。",
-      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략)."
+      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.matsuyafoods.co.jp/menu/takeout.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "matsuya-0000002253",
@@ -35610,7 +36590,11 @@
       "payment": "card_ok",
       "desc_en": "Matsuya gyudon. Address from official locator (hours not in list).",
       "desc_ja": "松屋。公式店舗リストの住所（リストに営業時間なしのため省略）。",
-      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략)."
+      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.matsuyafoods.co.jp/menu/takeout.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "matsuya-0000002269",
@@ -35643,7 +36627,11 @@
       "payment": "card_ok",
       "desc_en": "Matsuya gyudon. Address from official locator (hours not in list).",
       "desc_ja": "松屋。公式店舗リストの住所（リストに営業時間なしのため省略）。",
-      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략)."
+      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.matsuyafoods.co.jp/menu/takeout.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "matsuya-0000002302",
@@ -35676,7 +36664,11 @@
       "payment": "card_ok",
       "desc_en": "Matsuya gyudon. Address from official locator (hours not in list).",
       "desc_ja": "松屋。公式店舗リストの住所（リストに営業時間なしのため省略）。",
-      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략)."
+      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.matsuyafoods.co.jp/menu/takeout.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "matsuya-0000002311",
@@ -35709,7 +36701,11 @@
       "payment": "card_ok",
       "desc_en": "Matsuya gyudon. Address from official locator (hours not in list).",
       "desc_ja": "松屋。公式店舗リストの住所（リストに営業時間なしのため省略）。",
-      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략)."
+      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.matsuyafoods.co.jp/menu/takeout.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "matsuya-0000002520",
@@ -35742,7 +36738,11 @@
       "payment": "card_ok",
       "desc_en": "Matsuya gyudon. Address from official locator (hours not in list).",
       "desc_ja": "松屋。公式店舗リストの住所（リストに営業時間なしのため省略）。",
-      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략)."
+      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.matsuyafoods.co.jp/menu/takeout.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "matsuya-0000002530",
@@ -35775,7 +36775,11 @@
       "payment": "card_ok",
       "desc_en": "Matsuya gyudon. Address from official locator (hours not in list).",
       "desc_ja": "松屋。公式店舗リストの住所（リストに営業時間なしのため省略）。",
-      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략)."
+      "desc_ko": "마츠야. 공식 매장 리스트 주소(리스트에 영업시간 없어 생략).",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.matsuyafoods.co.jp/menu/takeout.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "skylark-012856",
@@ -35826,7 +36830,11 @@
           "name_ko": "어린이 메뉴",
           "is_kids": true
         }
-      ]
+      ],
+      "takeaway": true,
+      "takeaway_source_url": "https://www.skylark.co.jp/gusto/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "skylark-012874",
@@ -35877,7 +36885,11 @@
           "name_ko": "어린이 메뉴",
           "is_kids": true
         }
-      ]
+      ],
+      "takeaway": true,
+      "takeaway_source_url": "https://www.skylark.co.jp/gusto/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "skylark-012892",
@@ -35928,7 +36940,11 @@
           "name_ko": "어린이 메뉴",
           "is_kids": true
         }
-      ]
+      ],
+      "takeaway": true,
+      "takeaway_source_url": "https://www.skylark.co.jp/gusto/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "skylark-012901",
@@ -35979,7 +36995,11 @@
           "name_ko": "어린이 메뉴",
           "is_kids": true
         }
-      ]
+      ],
+      "takeaway": true,
+      "takeaway_source_url": "https://www.skylark.co.jp/gusto/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "skylark-012921",
@@ -36030,7 +37050,11 @@
           "name_ko": "어린이 메뉴",
           "is_kids": true
         }
-      ]
+      ],
+      "takeaway": true,
+      "takeaway_source_url": "https://www.skylark.co.jp/gusto/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "skylark-012986",
@@ -36081,7 +37105,11 @@
           "name_ko": "어린이 메뉴",
           "is_kids": true
         }
-      ]
+      ],
+      "takeaway": true,
+      "takeaway_source_url": "https://www.skylark.co.jp/gusto/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "skylark-017737",
@@ -36132,7 +37160,11 @@
           "name_ko": "어린이 메뉴",
           "is_kids": true
         }
-      ]
+      ],
+      "takeaway": true,
+      "takeaway_source_url": "https://www.skylark.co.jp/gusto/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "skylark-018970",
@@ -36183,7 +37215,11 @@
           "name_ko": "어린이 메뉴",
           "is_kids": true
         }
-      ]
+      ],
+      "takeaway": true,
+      "takeaway_source_url": "https://www.skylark.co.jp/gusto/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "skylark-198325",
@@ -36235,7 +37271,11 @@
           "name_ko": "어린이 메뉴",
           "is_kids": true
         }
-      ]
+      ],
+      "takeaway": true,
+      "takeaway_source_url": "https://www.skylark.co.jp/gusto/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "skylark-198408",
@@ -36287,7 +37327,11 @@
           "name_ko": "어린이 메뉴",
           "is_kids": true
         }
-      ]
+      ],
+      "takeaway": true,
+      "takeaway_source_url": "https://www.skylark.co.jp/gusto/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "skylark-440112",
@@ -36336,7 +37380,11 @@
           "name_ko": "어린이 메뉴",
           "is_kids": true
         }
-      ]
+      ],
+      "takeaway": true,
+      "takeaway_source_url": "https://www.skylark.co.jp/gusto/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "ringer-r1016",
@@ -36372,7 +37420,11 @@
       "hours_ko": "10:00–22:00",
       "desc_en": "Ringer Hut Nagasaki champon. Hours from official store page.",
       "desc_ja": "リンガーハット。公式店舗ページの営業時間。",
-      "desc_ko": "린거햇. 공식 매장 페이지 영업시간."
+      "desc_ko": "린거햇. 공식 매장 페이지 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ringerhut.jp/customer_support/faq/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "ringer-r0875",
@@ -36408,7 +37460,11 @@
       "hours_ko": "10:00–21:00",
       "desc_en": "Ringer Hut Nagasaki champon. Hours from official store page.",
       "desc_ja": "リンガーハット。公式店舗ページの営業時間。",
-      "desc_ko": "린거햇. 공식 매장 페이지 영업시간."
+      "desc_ko": "린거햇. 공식 매장 페이지 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ringerhut.jp/customer_support/faq/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "ringer-r0902",
@@ -36444,7 +37500,11 @@
       "hours_ko": "10:00–22:00",
       "desc_en": "Ringer Hut Nagasaki champon. Hours from official store page.",
       "desc_ja": "リンガーハット。公式店舗ページの営業時間。",
-      "desc_ko": "린거햇. 공식 매장 페이지 영업시간."
+      "desc_ko": "린거햇. 공식 매장 페이지 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ringerhut.jp/customer_support/faq/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "ringer-r0821",
@@ -36480,7 +37540,11 @@
       "hours_ko": "10:00–22:00",
       "desc_en": "Ringer Hut Nagasaki champon. Hours from official store page.",
       "desc_ja": "リンガーハット。公式店舗ページの営業時間。",
-      "desc_ko": "린거햇. 공식 매장 페이지 영업시간."
+      "desc_ko": "린거햇. 공식 매장 페이지 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ringerhut.jp/customer_support/faq/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "ringer-r1083",
@@ -36516,7 +37580,11 @@
       "hours_ko": "10:00–22:00",
       "desc_en": "Ringer Hut Nagasaki champon. Hours from official store page.",
       "desc_ja": "リンガーハット。公式店舗ページの営業時間。",
-      "desc_ko": "린거햇. 공식 매장 페이지 영업시간."
+      "desc_ko": "린거햇. 공식 매장 페이지 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ringerhut.jp/customer_support/faq/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "ringer-r1026",
@@ -36552,7 +37620,11 @@
       "hours_ko": "10:00–22:00",
       "desc_en": "Ringer Hut Nagasaki champon. Hours from official store page.",
       "desc_ja": "リンガーハット。公式店舗ページの営業時間。",
-      "desc_ko": "린거햇. 공식 매장 페이지 영업시간."
+      "desc_ko": "린거햇. 공식 매장 페이지 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ringerhut.jp/customer_support/faq/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "ringer-r1082",
@@ -36588,7 +37660,11 @@
       "hours_ko": "10:00–21:00",
       "desc_en": "Ringer Hut Nagasaki champon. Hours from official store page.",
       "desc_ja": "リンガーハット。公式店舗ページの営業時間。",
-      "desc_ko": "린거햇. 공식 매장 페이지 영업시간."
+      "desc_ko": "린거햇. 공식 매장 페이지 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ringerhut.jp/customer_support/faq/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "ringer-r0563",
@@ -36624,7 +37700,11 @@
       "hours_ko": "10:00–22:00",
       "desc_en": "Ringer Hut Nagasaki champon. Hours from official store page.",
       "desc_ja": "リンガーハット。公式店舗ページの営業時間。",
-      "desc_ko": "린거햇. 공식 매장 페이지 영업시간."
+      "desc_ko": "린거햇. 공식 매장 페이지 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.ringerhut.jp/customer_support/faq/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-ae992050",
@@ -36666,7 +37746,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-dea3ff2b",
@@ -36710,7 +37794,11 @@
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
       "coord_source": "osm",
-      "osm": "way/1372085685"
+      "osm": "way/1372085685",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-2b802c73",
@@ -36752,7 +37840,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-10104ee5",
@@ -36794,7 +37886,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-03d1db1c",
@@ -36836,7 +37932,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-f890110b",
@@ -36872,7 +37972,11 @@
       "hours_ko": "11:00–21:00(L.O · 20:30) 11:00–21:00(L.O",
       "desc_en": "Yappari Steak (Okinawa-founded). Hours from official shop page.",
       "desc_ja": "やっぱりステーキ（沖縄発）。公式店舗ページの営業時間。",
-      "desc_ko": "야빠리 스테이크(오키나와 발). 공식 매장 페이지 영업시간."
+      "desc_ko": "야빠리 스테이크(오키나와 발). 공식 매장 페이지 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-da160783",
@@ -36914,7 +38018,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-3700d372",
@@ -36955,7 +38063,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-b3ca6c3f",
@@ -36991,7 +38103,11 @@
       "hours_ko": "11:00–21:00 （L.O",
       "desc_en": "Yappari Steak (Okinawa-founded). Hours from official shop page.",
       "desc_ja": "やっぱりステーキ（沖縄発）。公式店舗ページの営業時間。",
-      "desc_ko": "야빠리 스테이크(오키나와 발). 공식 매장 페이지 영업시간."
+      "desc_ko": "야빠리 스테이크(오키나와 발). 공식 매장 페이지 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-87cd12c5",
@@ -37027,7 +38143,11 @@
       "hours_ko": "월–토 11:00-04:00(L.O · 03:00) 월–토 11:00-04:00(L.O · 03:00) 일요일 11:00-21:00(L.O",
       "desc_en": "Yappari Steak (Okinawa-founded). Hours from official shop page.",
       "desc_ja": "やっぱりステーキ（沖縄発）。公式店舗ページの営業時間。",
-      "desc_ko": "야빠리 스테이크(오키나와 발). 공식 매장 페이지 영업시간."
+      "desc_ko": "야빠리 스테이크(오키나와 발). 공식 매장 페이지 영업시간.",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-3956d366",
@@ -37068,7 +38188,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-bfa4d3f6",
@@ -37110,7 +38234,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-4cd96b2f",
@@ -37152,7 +38280,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-95635aca",
@@ -37193,7 +38325,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-bd3cbb0d",
@@ -37234,7 +38370,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-57fdde5e",
@@ -37275,7 +38415,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-4a75e88a",
@@ -37316,7 +38460,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "sams-by-the-sea-awase",
@@ -38128,7 +39276,11 @@
       "desc_en": "Yappari Steak (Okinawa-founded). Hours from official shop page.",
       "desc_ja": "やっぱりステーキ（沖縄発）。公式店舗ページの営業時間。",
       "desc_ko": "야빠리 스테이크(오키나와 발). 공식 매장 페이지 영업시간.",
-      "example": false
+      "example": false,
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-24c2dd5d",
@@ -38164,7 +39316,11 @@
       "desc_en": "Yappari Steak (Okinawa-founded). Hours from official shop page.",
       "desc_ja": "やっぱりステーキ（沖縄発）。公式店舗ページの営業時間。",
       "desc_ko": "야빠리 스테이크(오키나와 발). 공식 매장 페이지 영업시간.",
-      "example": false
+      "example": false,
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "yappari-fa1d64d0",
@@ -38206,7 +39362,11 @@
       },
       "parking_en": "Parking available, free",
       "parking_ja": "駐車場あり・無料",
-      "parking_ko": "주차 가능, 무료"
+      "parking_ko": "주차 가능, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://yapparigroup.jp/menu.html",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "donkey-2231",
@@ -38275,7 +39435,11 @@
       },
       "parking_en": "1,000 shared spaces, free",
       "parking_ja": "駐車場1,000台共用・無料",
-      "parking_ko": "공용 1,000대, 무료"
+      "parking_ko": "공용 1,000대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.bikkuri-donkey.com/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "donkey-2232",
@@ -38344,7 +39508,11 @@
       },
       "parking_en": "55 spaces, free",
       "parking_ja": "駐車場55台・無料",
-      "parking_ko": "55대, 무료"
+      "parking_ko": "55대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.bikkuri-donkey.com/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "donkey-2233",
@@ -38414,7 +39582,11 @@
       "parking_ja": "駐車場あり・無料",
       "parking_ko": "주차 가능, 무료",
       "coord_source": "osm",
-      "osm": "way/643434399"
+      "osm": "way/643434399",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.bikkuri-donkey.com/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "donkey-2234",
@@ -38483,7 +39655,11 @@
       },
       "parking_en": "49 spaces, free",
       "parking_ja": "駐車場49台・無料",
-      "parking_ko": "49대, 무료"
+      "parking_ko": "49대, 무료",
+      "takeaway": true,
+      "takeaway_source_url": "https://www.bikkuri-donkey.com/takeout/",
+      "takeaway_source_type": "chain_official",
+      "takeaway_checked": "2026-11-10"
     },
     {
       "id": "gyukaku-5071",
